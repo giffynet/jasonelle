@@ -13,13 +13,20 @@
                     "type": "vertical",
                     "components": [{
                         "type": "image",
-                        "url": "https://giffynet.github.io/jasonelle/giffy_circle.png"
+                        "url": "https://giffynet.github.io/jasonelle/giffy_circle.png",
+                        "style": {
+                            "width": "100",
+                            "height": "100"
                         },{
-                        "type": "label",
-                        "text": "Nonce"
+                            "type": "textfield",
+                            "name": "nonce",
+                            "value": "",
+                            "placeholder": "Enter Nonce"
                         },{
-                        "type": "label",
-                        "text": "Activation Code"
+                            "type": "textfield",
+                            "name": "activation_code",
+                            "value": "",
+                            "placeholder": "Enter Activation Code"
                     }]
                 }]
             }]
