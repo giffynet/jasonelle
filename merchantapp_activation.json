@@ -58,7 +58,7 @@
                         "action" : {
                             "type": "$network.request",
                             "options": {
-                                "url": "http://ptsv2.com/t/giffynet/post"
+                                "url": "https://giffynet.github.io/jasonelle/index.html"
                             },
                             "success": {
                                 "type": "$util.alert",
