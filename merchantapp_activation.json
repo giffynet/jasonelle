@@ -6,7 +6,15 @@
         },
         "body": {
             "header": {
-                "title": "Giffy Merchant"
+                "title": "Giffy Merchant",
+                "style": {
+                    "background": "#f3f3f3"
+                }
+            },
+            "footer": {
+                "style": {
+                    "background": "#f3f3f3"
+                }
             },
             "sections": [{
                 "items": [{
@@ -50,7 +58,7 @@
                             "background": "#d9d9d9",
                             "color": "#000000",
                             "height": "50",
-                            "size": "16"
+                            "size": "18"
                         }
                     }]
                 }]
