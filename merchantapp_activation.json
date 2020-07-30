@@ -60,7 +60,9 @@
                             "options": {
                                 "url": "https://ptsv2.com/t/giffynet/post",
                                 "method": "post",
-                                "content_type": "json",
+                                "header" : {
+                                    "content_type": "json"
+                                },
                                 "data": {
                                     "nonce": "{{$get.nonce}}",
                                     "activation_code": "{{$get.activation_code}}"
