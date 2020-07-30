@@ -5,15 +5,13 @@
             "description": "This app enable merchant to  accept digital gift card powered by Giffy"
         },
         "body": {
+            "background": "#f3f3f3",
             "header": {
                 "title": "Giffy Merchant",
                 "style": {
-                    "background": "#f3f3f3"
-                }
-            },
-            "footer": {
-                "style": {
-                    "background": "#f3f3f3"
+                    "background": "#000000",
+                    "color": "#ffffff",
+                    "size": "18"
                 }
             },
             "sections": [{
@@ -21,8 +19,7 @@
                     "type": "vertical",
                     "style": {
                         "align": "center",
-                        "padding": "30",
-                        "background": "#f3f3f3"
+                        "padding": "30"
                     },
                     "components": [{
                         "type": "image",
