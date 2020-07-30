@@ -17,12 +17,20 @@
                             "jwt_token": "{{$global.jwt_token}}"
                         }
                     },
-                    "success": {
-                        "type": "$render"
-                    },
-                    "error": {
-                        "type": "$render"
-                    }
+                            "success": {
+                                "type": "$util.alert",
+                                "options": {
+                                    "title": "Basic Alert",
+                                    "description": "successful lah"
+                                }
+                            },
+                            "error": {
+                                "type": "$util.alert",
+                                "options": {
+                                    "title": "Basic Alert",
+                                    "description": "error leh"
+                                }
+                            }
                 }
             }
         },
