@@ -13,7 +13,7 @@
                     "type": "vertical",
                     "style": {
                         "align": "center",
-                        "padding": "20"
+                        "padding": "30"
                     },
                     "components": [{
                         "type": "image",
@@ -32,6 +32,9 @@
                         "name": "activation_code",
                         "value": "",
                         "placeholder": "Enter Activation Code"
+                    },{
+                        "type": "button",
+                        "text", "Activate"
                     }]
                 }]
             }]
