@@ -87,17 +87,28 @@
                                 }
                             },
                             "success": {
+                                "type": "$global.set",
+                                "options": {
+                                    "jwt_token": "{{$jason.jwt_token}}"
+                                }
+                            },
+                            "success": {
                                 "type": "$util.alert",
                                 "options": {
                                     "title": "Basic Alert",
-                                    "description": "successful lah"
+                                    "description": "successful lah. jwt: {{$global.jwt_token}}"
+                                }
+                            },
+                            "error": {
+                                "type": "$global.reset",
+                                "items": ["jwt_token"]
                                 }
                             },
                             "error": {
                                 "type": "$util.alert",
                                 "options": {
                                     "title": "Basic Alert",
-                                    "description": "error leh"
+                                    "description": "error leh. jwt: {{$global.jwt_token}}"
                                 }
                             }
                         }
