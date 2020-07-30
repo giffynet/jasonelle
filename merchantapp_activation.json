@@ -12,7 +12,7 @@
                     "type": "$network.request",
                     "options": {
                         "url": "http://ptsv2.com/t/giffynet/post",
-                        "method": "post",
+                        "method": "get",
                         "header": {
                             "jwt_token": "token"
                         }
