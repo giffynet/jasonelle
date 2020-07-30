@@ -102,7 +102,6 @@
                             "error": {
                                 "type": "$global.reset",
                                 "items": ["jwt_token"]
-                                }
                             },
                             "error": {
                                 "type": "$util.alert",
