@@ -7,7 +7,22 @@
         "body": {
             "header": {
                 "title": "Giffy Merchant"
-            }
+            },
+            "sections"[{
+                "items": [{
+                    "type": "vertical",
+                    "components": [{
+                        "type": "image",
+                        "url": "https://giffynet.github.io/jasonelle/giffy_circle.png"
+                        },{
+                        "type": "label",
+                        "text": "Nonce"
+                        },{
+                        "type": "label",
+                        "text": "Activation Code"
+                    }]
+                }]
+            }]
         }
     }
 }
