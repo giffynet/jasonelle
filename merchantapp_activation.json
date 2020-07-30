@@ -78,10 +78,9 @@
                             "size": "18"
                         },
                         "action" : {
-                            "type": "$util.alert",
+                            "type": "$network.request",
                             "options": {
-                                "title": "Basic Alert",
-                                "description": "{{'The  value of variable #bar# is #'+$get.bar+'#'}}"
+                                "url": "http://ptsv2.com/t/giffynet/post"
                             },
                             "success": {
                                 "type": "$util.alert",
