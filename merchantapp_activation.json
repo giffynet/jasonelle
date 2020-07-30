@@ -8,9 +8,8 @@
                     "type": "$network.request",
                     "options": {
                         "url": "https://ptsv2.com/t/giffynet/post",
-                        "method": "post",
+                        "method": "get",
                         "header" : {
-                            "content_type": "json",
                             "jwt_token" : "{{$global.jwt_token}}"
                         }
                     }
