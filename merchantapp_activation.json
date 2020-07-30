@@ -89,26 +89,12 @@
                             "success": {
                                 "type": "$global.set",
                                 "options": {
-                                    "items": "{{$jason}}"
-                                }
-                            },
-                            "success": {
-                                "type": "$util.alert",
-                                "options": {
-                                    "title": "Basic Alert",
-                                    "description": "successful lah. jason: {{$jason.jwt_token}} jwt: {{$global.items.jwt_token}}"
+                                    "jwt_token": "{{$jason.jwt_token}}"
                                 }
                             },
                             "error": {
                                 "type": "$global.reset",
                                 "items": ["jwt_token"]
-                            },
-                            "error": {
-                                "type": "$util.alert",
-                                "options": {
-                                    "title": "Basic Alert",
-                                    "description": "error leh. jwt: {{$global.jwt_token}}"
-                                }
                             }
                         }
                     }]
