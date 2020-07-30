@@ -121,11 +121,15 @@
                             },
                             "success": {
                                 "type": "$global.reset",
-                                "items": ["jwt_token"]
+                                "options": {
+                                    "items": ["jwt_token"]
+                                }
                             },
                             "error": {
                                 "type": "$global.reset",
-                                "items": ["jwt_token"]
+                                "options": {
+                                    "items": ["jwt_token"]
+                                }
                             }
                         }
                     }]
