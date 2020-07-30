@@ -96,7 +96,7 @@
                                 "type": "$util.alert",
                                 "options": {
                                     "title": "Basic Alert",
-                                    "description": "successful lah. jwt: {{$global.jwt_token}}"
+                                    "description": "successful lah. jason: {{$jason}} jwt: {{$global.jwt_token}}"
                                 }
                             },
                             "error": {
