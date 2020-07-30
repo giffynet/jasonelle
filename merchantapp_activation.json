@@ -17,16 +17,17 @@
                         "style": {
                             "width": "100",
                             "height": "100"
-                        },{
-                            "type": "textfield",
-                            "name": "nonce",
-                            "value": "",
-                            "placeholder": "Enter Nonce"
-                        },{
-                            "type": "textfield",
-                            "name": "activation_code",
-                            "value": "",
-                            "placeholder": "Enter Activation Code"
+                        }
+                    },{
+                        "type": "textfield",
+                        "name": "nonce",
+                        "value": "",
+                        "placeholder": "Enter Nonce"
+                    },{
+                        "type": "textfield",
+                        "name": "activation_code",
+                        "value": "",
+                        "placeholder": "Enter Activation Code"
                     }]
                 }]
             }]
