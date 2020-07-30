@@ -6,7 +6,10 @@
         },
         "body": {
             "header": {
-                "title": "Giffy Merchant"
+                "title": {
+                    "type": "image",
+                    "url": "https://giffynet.github.io/jasonelle/giffy_circle.png"
+                }
             }
         }
     }
