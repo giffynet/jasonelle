@@ -9,7 +9,7 @@
                     "type": "$render"
                 }
             },
-            "templates": {
+
                 "body": {
                     "background": "#f3f3f3",
                     "header": {
@@ -32,12 +32,6 @@
                                     "width": "100",
                                     "height": "100"
                                 }
-                            },{
-                                "type": "label",
-                                "text": "Latitude: {{ $jason.coord.split(',')[0] }}"
-                            },{
-                                "type": "label",
-                                "text": "Longitude: {{ $jason.coord.split(',')[1] }}"
                             },{
                                 "type": "space",
                                 "style": {
@@ -93,6 +87,6 @@
                     }]
                 }
             }
-        }
+
     }
 }
