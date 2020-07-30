@@ -4,22 +4,10 @@
             "title": "Giffy Merchant",
             "description": "This app enable merchant to  accept digital gift card powered by Giffy",
             "actions": {
-                "$pull": {
-                    "type": "$global.reset",
-                    "items": ["jwt_token"]
-                },
                 "$load": {
                     "type": "$network.request",
                     "options": {
-                        "url": "http://ptsv2.com/t/giffynet/post",
-                        "method": "post",
-                        "data": {
-                            "user_id": "fI9",
-                            "message": "Hello there"
-                        },
-                        "header": {
-                            "jwt_token": "token"
-                        }
+                        "url": "http://ptsv2.com/t/giffynet/post"
                     },
                             "success": {
                                 "type": "$util.alert",
