@@ -14,7 +14,7 @@
                         "url": "http://ptsv2.com/t/giffynet/post",
                         "method": "post",
                         "header": {
-                            "jwt_token": "{{$global.jwt_token}}"
+                            "jwt_token": "token"
                         }
                     },
                             "success": {
