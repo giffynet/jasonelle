@@ -58,7 +58,13 @@
                         "action" : {
                             "type": "$network.request",
                             "options": {
-                                "url": "https://ptsv2.com/t/giffynet/post"
+                                "url": "https://ptsv2.com/t/giffynet/post",
+                                "method": "post",
+                                "content_type": "json",
+                                "data": {
+                                    "nonce": "{{$get.nonce}}",
+                                    "activation_code": "{{$get.activation_code}}"
+                                }
                             },
                             "success": {
                                 "type": "$util.alert",
