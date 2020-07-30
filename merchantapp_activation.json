@@ -1,10 +1,13 @@
 {
     "$jason": {
         "head": {
-          "title": "Giffy Merchant",
-          "description": "This app enable merchant to  accept digital gift card powered by Giffy",
+            "title": "Giffy Merchant",
+            "description": "This app enable merchant to  accept digital gift card powered by Giffy"
         }
         "body": {
+            "header": {
+                "title": "Giffy Merchant"
+            }
         }
     }
 }
