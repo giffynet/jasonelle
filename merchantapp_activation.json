@@ -96,6 +96,36 @@
                                 "type": "$global.reset",
                                 "items": ["jwt_token"]
                             }
+                    },{
+                        "type": "button",
+                        "text": "Reset",
+                        "style": {
+                            "background": "#d9d9d9",
+                            "color": "#000000",
+                            "height": "50",
+                            "size": "18"
+                        },
+                        "action" : {
+                            "type": "$network.request",
+                            "options": {
+                                "url": "https://ptsv2.com/t/giffynet/post",
+                                "method": "post",
+                                "header" : {
+                                    "content_type": "json"
+                                },
+                                "data": {
+                                    "nonce": "{{$get.nonce}}",
+                                    "activation_code": "{{$get.activation_code}}"
+                                }
+                            },
+                            "success": {
+                                "type": "$global.reset",
+                                "items": ["jwt_token"]
+                            },
+                            "error": {
+                                "type": "$global.reset",
+                                "items": ["jwt_token"]
+                            }
                         }
                     }]
                 }]
