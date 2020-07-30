@@ -34,7 +34,7 @@
                         "placeholder": "Enter Activation Code"
                     },{
                         "type": "button",
-                        "text", "Activate"
+                        "text": "Activate"
                     }]
                 }]
             }]
