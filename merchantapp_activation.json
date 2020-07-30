@@ -96,6 +96,7 @@
                                 "type": "$global.reset",
                                 "items": ["jwt_token"]
                             }
+                        }
                     },{
                         "type": "button",
                         "text": "Reset",
