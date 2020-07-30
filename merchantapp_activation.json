@@ -11,6 +11,10 @@
             "sections": [{
                 "items": [{
                     "type": "vertical",
+                    "style": {
+                        "align": "center",
+                        "padding": "20"
+                    },
                     "components": [{
                         "type": "image",
                         "url": "https://giffynet.github.io/jasonelle/giffy_circle.png",
@@ -30,10 +34,7 @@
                         "placeholder": "Enter Activation Code"
                     }]
                 }]
-            }],
-            "style": {
-                "align": "center"
-            }
+            }]
         }
     }
 }
