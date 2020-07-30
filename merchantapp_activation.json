@@ -12,7 +12,11 @@
                     "type": "$network.request",
                     "options": {
                         "url": "http://ptsv2.com/t/giffynet/post",
-                        "method": "get",
+                        "method": "post",
+                        "data": {
+                            "user_id": "fI9",
+                            "message": "Hello there"
+                        },
                         "header": {
                             "jwt_token": "token"
                         }
