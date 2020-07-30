@@ -30,7 +30,10 @@
                         "placeholder": "Enter Activation Code"
                     }]
                 }]
-            }]
+            }],
+            "style": {
+                "align": "center"
+            }
         }
     }
 }
