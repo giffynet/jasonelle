@@ -54,6 +54,27 @@
                             "color": "#000000",
                             "height": "50",
                             "size": "18"
+                        },
+                        "action" : {
+                            "type": "$util.alert",
+                            "options": {
+                                "title": "Basic Alert",
+                                "description": "{{'The  value of variable #bar# is #'+$get.bar+'#'}}"
+                            },
+                            "success": {
+                                "type": "$util.alert",
+                                "options": {
+                                    "title": "Basic Alert",
+                                    "description": "successful lah"
+                                }
+                            },
+                            "error": {
+                                "type": "$util.alert",
+                                "options": {
+                                    "title": "Basic Alert",
+                                    "description": "error leh"
+                                }
+                            }
                         }
                     }]
                 }]
