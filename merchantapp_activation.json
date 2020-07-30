@@ -89,14 +89,14 @@
                             "success": {
                                 "type": "$global.set",
                                 "options": {
-                                    "jwt_token": "{{$jason.jwt_token}}"
+                                    "items": "{{$jason}}"
                                 }
                             },
                             "success": {
                                 "type": "$util.alert",
                                 "options": {
                                     "title": "Basic Alert",
-                                    "description": "successful lah. jason: {{$jason.jwt_token}} jwt: {{$global.jwt_token}}"
+                                    "description": "successful lah. jason: {{$jason.jwt_token}} jwt: {{$global.items.jwt_token}}"
                                 }
                             },
                             "error": {
