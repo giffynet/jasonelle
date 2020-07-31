@@ -77,7 +77,7 @@
                             "{{#if default_value>0}}": "{{default_value}}"
                           },
                           {
-                            "{{#elseif defaukt_value==0}}": ""
+                            "{{#else}}": ""
                           }
                         ]
                       }]
