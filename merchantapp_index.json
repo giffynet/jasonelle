@@ -7,10 +7,7 @@
     "body": {
       "background": "#f3f3f3",
       "header": {
-        "title": {
-          "type": "image",
-          "url": "https://giffynet.github.io/jasonelle/giffy_circle.png"
-        },
+        "title": "Giffy Merchant",
         "style": {
           "size": "18"
         },
@@ -55,7 +52,10 @@
               "size": "24"
             }
           },{
-            "type": "space"
+            "type": "space",
+            "style": {
+              "height": "10"
+            }
           },{
             "type": "button",
             "text": "Topup",
@@ -66,7 +66,10 @@
               "size": "24"
             }
           },{
-            "type": "space"
+            "type": "space",
+            "style": {
+              "height": "10"
+            }
           },{
             "type": "button",
             "text": "Redeem",
@@ -77,7 +80,10 @@
               "size": "24"
             }
           },{
-            "type": "space"
+            "type": "space",
+            "style": {
+              "height": "10"
+            }
           },{
             "type": "button",
             "text": "View Transactions",
@@ -88,7 +94,10 @@
               "size": "24"
             }
           },{
-            "type": "space"
+            "type": "space",
+            "style": {
+              "height": "10"
+            }
           },{
             "type": "button",
             "text": "Batch Total",
