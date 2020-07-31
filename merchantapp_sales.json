@@ -43,10 +43,16 @@
                 },
                 "components": [{
                   "type": "label",
-                  "text": "{{name}}"
+                  "text": "{{name}}",
+                  "style": {
+                    "size": "18"
+                  }
                 },{
                   "type": "label",
-                  "text": "{{reloadable}}"
+                  "text": "Currency: {{currency}}, Reloadable: {{reloadable}}, Single Use: {{single_use}}"
+                  "style": {
+                    "size": "12"
+                  }
                 }]
               }
             }
