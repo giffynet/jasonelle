@@ -16,6 +16,9 @@
         },
         "menu": {
           "text": "MORE",
+          "style": {
+            "color": "#FFFFFF"
+          },
           "action": {
             "type": "$util.picker",
             "title": "Batch Menu",
