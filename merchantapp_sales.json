@@ -39,7 +39,7 @@
                 "type": "vertical",
                 "style": {
                   "align": "center",
-                  "padding": "30",
+                  "padding": "10",
                   "distribution": "equalspacing"
                 },
                 "components": [{
@@ -56,11 +56,7 @@
                   }
                 },{
                   "type": "button",
-                  "url": "{{image_url}}",
-                  "style": {
-                    "corner_radius": "25",
-                    "padding": "10"
-                  }
+                  "url": "{{image_url}}"
                 }]
               }
             }
