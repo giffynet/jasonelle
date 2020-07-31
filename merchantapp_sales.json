@@ -38,15 +38,6 @@
               "style": {
                 "background": "#f3f3f3"
               }
-            },
-            "menu": {
-              "text": "BACK",
-              "style": {
-                "color": "#FFFFFF"
-              },
-              "action": {
-                "type": "$back"
-              }
             }
           },
           "sections": [{
