@@ -29,15 +29,15 @@
               "type": "image",
               "url": "https://giffynet.github.io/jasonelle/giffy_circle.png"
             },
+            "style": {
+              "background": "#BC845C"
+            },
             "search": {
               "name": "query_text",
               "placeholder": "Enter Keywords",
               "style": {
                 "color": "#FFFFFF"
               }
-            },
-            "style": {
-              "background": "#BC845C"
             }
           },
           "sections": [{
