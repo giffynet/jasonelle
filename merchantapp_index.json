@@ -21,7 +21,8 @@
           "style": {
             "align": "center",
             "padding": "30",
-            "border": "none"
+            "border": "none",
+            "opacity": "0"
           },
           "components": [{
             "type": "space",
