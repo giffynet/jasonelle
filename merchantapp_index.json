@@ -20,15 +20,7 @@
             "style": {
               "size": "18"
             }
-          },
-          "sections": [{
-            "items": {
-              "{{#each members}}": {
-                "type": "label",
-                "text": "{{name}}"
-              }
-            }
-          }]
+          }
         }
       }
     }
