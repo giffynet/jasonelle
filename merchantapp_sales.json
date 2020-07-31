@@ -39,7 +39,7 @@
                 "type": "vertical",
                 "style": {
                   "align": "center",
-                  "padding": "10",
+                  "padding": "15",
                   "distribution": "equalspacing"
                 },
                 "components": [{
