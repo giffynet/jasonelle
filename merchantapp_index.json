@@ -15,14 +15,33 @@
           "text": "MENU"
         }
       },
+      "layers": [
+        {
+          "type": "label",
+          "text": "Recent Transactions"
+          "style": {
+            "top": "15",
+            "right": "10",
+            "width": "20"
+          }
+        },
+        {
+          "type": "label",
+          "text": "Sales",
+          "style": {
+            "top": "15",
+            "right": "40",
+            "width": "20"
+          }
+        }
+      ],
       "sections": [{
         "items": [{
           "type": "vertical",
           "style": {
             "align": "center",
             "padding": "30",
-            "border": "none",
-            "opacity": "1"
+            "border": "none"
           },
           "components": [{
             "type": "space",
