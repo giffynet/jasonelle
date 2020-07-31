@@ -31,12 +31,9 @@
             },
             "search": {
               "name": "query_text",
-              "placeholder": "Enter Keywords",
-              "style": {
-                "background": "#000000"
-              }
+              "placeholder": "Enter Keywords"
             },
-             "style": {
+            "style": {
               "background": "#BC845C"
             }
           },
