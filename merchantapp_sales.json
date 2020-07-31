@@ -67,7 +67,7 @@
                   "action": {
                     "type": "$util.alert",
                     "options": {
-                      "title": "Enter Amount",
+                      "title": "{{name}}",
                       "description": "Please enter initial value of the gift card",
                       "form": [{
                         "name": "sales_amount",
