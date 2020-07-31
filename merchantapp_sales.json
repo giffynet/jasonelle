@@ -35,10 +35,17 @@
           },
           "sections": [{
             "items": {
-              "{{#each $jason.programmes}}": {
-                "type": "label",
-                "text": "This is row {{name}}"
-              }
+              "type": "vertical",
+              "style": {
+                "align": "center",
+                "padding": "30"
+              },
+              "components": [{
+                "{{#each $jason.programmes}}": {
+                  "type": "label",
+                  "text": "This is row {{name}}"
+                }
+              }]
             }
           }]
         }
