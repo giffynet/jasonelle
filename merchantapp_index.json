@@ -14,6 +14,13 @@
       },
       "templates": {
         "body": {
+          "background": "#f3f3f3",
+          "header": {
+            "title": "Giffy Merchant",
+            "style": {
+              "size": "18"
+            }
+          },
           "sections": [{
             "items": {
               "{{#each members}}": {
