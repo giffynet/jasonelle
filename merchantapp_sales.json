@@ -48,8 +48,8 @@
                   "padding": "20",
                   "distribution": "equalspacing"
                 },
-                "components": {
               "{{#each $jason.programmes}}": {
+                "components": [{
                   "type": "label",
                   "text": "{{name}}",
                   "style": {
@@ -64,8 +64,8 @@
                 },{
                   "type": "button",
                   "url": "{{image_url}}"
+                }]
               }
-                }
             }]
           }]
         }
