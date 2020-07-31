@@ -1,0 +1,43 @@
+{
+  "programmes": [{
+    "programme_id": "1",
+    "name": "$50 Gift Card"
+    "image_url": "https://giffynet.github.io/jasonelle/giftcard1.png",
+    "reloadable": "no",
+    "single_use": "no",
+    "default_value": 50,
+    "currency": "SGD"
+  },{
+    "programme_id": "2",
+    "name": "$10 Gift Card"
+    "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
+    "reloadable": "no",
+    "single_use": "yes",
+    "default_value": 10,
+    "currency": "SGD"
+  },{
+    "programme_id": "3",
+    "name": "Cashback Gift Card"
+    "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
+    "reloadable": "yes",
+    "single_use": "no",
+    "default_value": 0,
+    "currency": "SGD"
+  },{
+    "programme_id": "4",
+    "name": "Extra Value Gift Card"
+    "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
+    "reloadable": "yes",
+    "single_use": "no",
+    "default_value": 0,
+    "currency": "SGD"
+  },{
+    "programme_id": "5",
+    "name": "High Way Or No Way Gift Card"
+    "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
+    "reloadable": "yes",
+    "single_use": "no",
+    "default_value": 0,
+    "currency": "SGD"
+  }]
+}
