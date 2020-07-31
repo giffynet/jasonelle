@@ -31,11 +31,11 @@
             },
             "search": {
               "name": "query_text",
-              "placeholder": "Enter Keywords"
+              "placeholder": "Enter Keywords",
+              "color": "#FFFFFF"
             },
             "style": {
-              "background": "#BC845C",
-              "color": "#FFFFFF"
+              "background": "#BC845C"
             }
           },
           "sections": [{
