@@ -20,12 +20,13 @@
           "type": "vertical",
           "style": {
             "align": "center",
-            "padding": "30"
+            "padding": "30",
+            "border": "none"
           },
           "components": [{
             "type": "space",
             "style": {
-              "height": "25"
+              "height": "50"
             }
           },{
             "type": "image",
