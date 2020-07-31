@@ -12,29 +12,25 @@
           "size": "18"
         },
         "menu": {
-          "text": "MENU"
+          "text": "MENU",
+          "action": {
+            "type": "$util.picker",
+            "title": "Menu",
+            "items": [{
+              "text": "Recent Transactions"
+            },{
+              "text": "Redeem"
+            },{
+              "text": "Topup"
+            },{
+              "text": "Sales"
+            },{
+              "text": "Close Batch"
+            },{
+            }]
+          }
         }
       },
-      "layers": [
-        {
-          "type": "label",
-          "text": "Recent Transactions"
-          "style": {
-            "top": "15",
-            "right": "10",
-            "width": "20"
-          }
-        },
-        {
-          "type": "label",
-          "text": "Sales",
-          "style": {
-            "top": "15",
-            "right": "40",
-            "width": "20"
-          }
-        }
-      ],
       "sections": [{
         "items": [{
           "type": "vertical",
