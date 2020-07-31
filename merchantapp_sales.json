@@ -23,9 +23,12 @@
         "body": {
           "background": "#f3f3f3",
           "header": {
-            "title": "Giffy Merchant",
+            "title": {
+              "type": "image",
+              "url": "https://giffynet.github.io/jasonelle/giffy_circle.png"
+            },
             "style": {
-              "size": "18"
+              "background": "#BC845C"
             }
           }
         }
