@@ -42,10 +42,13 @@
               },
               "components": {
                 "{{#each $jason.programmes}}": {
+                  {
                   "type": "label",
-                  "text": "{{name}}",
+                  "text": "{{name}}"
+                  },{
                   "type": "label",
                   "text": "{{reloadable}}"
+                  }
                 }
               }
             }]
