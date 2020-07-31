@@ -40,12 +40,12 @@
                 "align": "center",
                 "padding": "30"
               },
-              "components": [{
+              "components": {
                 "{{#each $jason.programmes}}": {
                   "type": "label",
                   "text": "This is row {{name}}"
                 }
-              }]
+              }
             }
           }]
         }
