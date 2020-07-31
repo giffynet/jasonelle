@@ -32,7 +32,9 @@
             "search": {
               "name": "query_text",
               "placeholder": "Enter Keywords",
-              "color": "#FFFFFF"
+              "style": {
+                "color": "#FFFFFF"
+              }
             },
             "style": {
               "background": "#BC845C"
