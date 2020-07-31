@@ -63,7 +63,28 @@
                   }
                 },{
                   "type": "button",
-                  "url": "{{image_url}}"
+                  "url": "{{image_url}}",
+                  "action": {
+                    "type": "$util.alert",
+                    "options": {
+                      "title": "Enter Amount",
+                      "description", "Please enter initial value of the gift card",
+                      "form": [{
+                        "name": "sales_amount",
+                        "placeholder": "Enter Amount",
+                        "value": [
+                          {
+                            "{{#if default_value>0}}": "{{default_value}}"
+                          },
+                          {
+                            "{{#elseif defaukt_value==0}}": ""
+                          }
+                        ]
+                      }]
+                    }
+                  },
+                  "success": {
+                  }
                 }]
               }
             }
