@@ -16,18 +16,19 @@
           "action": {
             "type": "$util.picker",
             "title": "Menu",
-            "items": [{
-              "text": "Recent Transactions"
-            },{
-              "text": "Redeem"
-            },{
-              "text": "Topup"
-            },{
-              "text": "Sales"
-            },{
-              "text": "Close Batch"
-            },{
-            }]
+            "options": {
+              "items": [{
+                "text": "Recent Transactions"
+              },{
+                "text": "Redeem"
+              },{
+                "text": "Topup"
+              },{
+               "text": "Sales"
+              },{
+                "text": "Close Batch"
+              }]
+            }
           }
         }
       },
