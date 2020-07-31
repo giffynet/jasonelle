@@ -57,6 +57,10 @@
                 },{
                   "type": "button",
                   "url": "{{image_url}}",
+                  "style": {
+                    "corner_radius": "25",
+                    "padding": "10"
+                  }
                 }]
               }
             }
