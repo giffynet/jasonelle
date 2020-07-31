@@ -54,6 +54,9 @@
                   "style": {
                     "size": "12"
                   }
+                },{
+                  "type": "image",
+                  "url": "{{image_url}}",
                 }]
               }
             }
