@@ -18,15 +18,17 @@
             "title": "Menu",
             "options": {
               "items": [{
-                "text": "Recent Transactions"
-              },{
-                "text": "Redeem"
+               "text": "Sales"
               },{
                 "text": "Topup"
               },{
-               "text": "Sales"
+                "text": "Redeem"
               },{
-                "text": "Close Batch"
+                "text": "View Transactions"
+              },{
+                "text": "Batch Total"
+              },{
+                "text": "Deacivate Device"
               }]
             }
           }
@@ -46,11 +48,49 @@
               "height": "50"
             }
           },{
-            "type": "image",
-            "url": "https://giffynet.github.io/jasonelle/giffy_circle.png",
+            "type": "button",
+            "text": "Sales",
             "style": {
-              "width": "200",
-              "height": "200"
+              "background": "#d9d9d9",
+              "color": "#000000",
+              "height": "100",
+              "size": "24"
+            }
+          },{
+            "type": "button",
+            "text": "Topup",
+            "style": {
+              "background": "#d9d9d9",
+              "color": "#000000",
+              "height": "100",
+              "size": "24"
+            }
+          },{
+            "type": "button",
+            "text": "Redeem",
+            "style": {
+              "background": "#d9d9d9",
+              "color": "#000000",
+              "height": "100",
+              "size": "24"
+            }
+          },{
+            "type": "button",
+            "text": "View Transactions",
+            "style": {
+              "background": "#d9d9d9",
+              "color": "#000000",
+              "height": "100",
+              "size": "24"
+            }
+          },{
+            "type": "button",
+            "text": "Batch Total",
+            "style": {
+              "background": "#d9d9d9",
+              "color": "#000000",
+              "height": "100",
+              "size": "24"
             }
           }]
         }]
