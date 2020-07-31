@@ -40,7 +40,7 @@
           },
           "components": [{
             "type": "image",
-            "url": "https://giffynet.github.io/jasonelle/giffy_circle.png",
+            "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png",
             "style": {
               "width": "100",
               "height": "100"
