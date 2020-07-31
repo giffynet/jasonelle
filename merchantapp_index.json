@@ -7,12 +7,15 @@
     "body": {
       "background": "#f3f3f3",
       "header": {
-        "title": "Giffy Merchant",
+        "title": {
+          "type": "image",
+          "url": "https://giffynet.github.io/jasonelle/giffy_circle.png"
+        },
         "style": {
           "size": "18"
         },
         "menu": {
-          "image": "https://giffynet.github.io/jasonelle/3-dot-menu.png",
+          "image": "https://giffynet.github.io/jasonelle/hamburger-menu.png",
           "action": {
             "type": "$util.picker",
             "title": "Menu",
@@ -43,11 +46,6 @@
             "border": "none"
           },
           "components": [{
-            "type": "space",
-            "style": {
-              "height": "50"
-            }
-          },{
             "type": "button",
             "text": "Sales",
             "style": {
@@ -56,6 +54,8 @@
               "height": "100",
               "size": "24"
             }
+          },{
+            "type": "space"
           },{
             "type": "button",
             "text": "Topup",
@@ -66,6 +66,8 @@
               "size": "24"
             }
           },{
+            "type": "space"
+          },{
             "type": "button",
             "text": "Redeem",
             "style": {
@@ -75,6 +77,8 @@
               "size": "24"
             }
           },{
+            "type": "space"
+          },{
             "type": "button",
             "text": "View Transactions",
             "style": {
@@ -83,6 +87,8 @@
               "height": "100",
               "size": "24"
             }
+          },{
+            "type": "space"
           },{
             "type": "button",
             "text": "Batch Total",
