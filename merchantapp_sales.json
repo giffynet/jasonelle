@@ -34,7 +34,8 @@
               "placeholder": "Enter Keywords"
             },
             "style": {
-              "background": "#BC845C"
+              "background": "#BC845C",
+              "color": "#FFFFFF"
             }
           },
           "sections": [{
