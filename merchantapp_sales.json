@@ -42,13 +42,13 @@
           },
           "sections": [{
             "items": {
+              "{{#each $jason.programmes}}": {
                 "type": "vertical",
                 "style": {
                   "align": "center",
                   "padding": "20",
                   "distribution": "equalspacing"
                 },
-              "{{#each $jason.programmes}}": {
                 "components": [{
                   "type": "label",
                   "text": "{{name}}",
