@@ -24,7 +24,7 @@
             "title": "Batch Menu",
             "options": {
               "items": [{
-                "text": "Batch Detail"
+                "text": "Batch Details"
               },{
                 "text": "Batch Total"
               }]
@@ -47,7 +47,7 @@
             }
           },{
             "type": "button",
-            "text": "SALES",
+            "text": "Sales",
             "style": {
               "background": "#d9d9d9",
               "color": "#000000",
@@ -61,7 +61,7 @@
             }
           },{
             "type": "button",
-            "text": "TOPUP",
+            "text": "Topup",
             "style": {
               "background": "#d9d9d9",
               "color": "#000000",
@@ -75,7 +75,7 @@
             }
           },{
             "type": "button",
-            "text": "REDEEM",
+            "text": "Redeem",
             "style": {
               "background": "#d9d9d9",
               "color": "#000000",
