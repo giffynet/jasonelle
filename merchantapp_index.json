@@ -11,7 +11,17 @@
         "style": {
           "size": "18"
         }
-      }
+      },
+      "sections": [{
+        "type": "vertical",
+        "items": [{
+          "type": "image",
+          "url": "https://giffynet.github.io/jasonelle/giffy_circle.png",
+          "style": {
+            "width": "100",
+            "height": "100",
+          }
+       }
     }
   }
 }
