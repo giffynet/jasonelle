@@ -34,22 +34,22 @@
             }
           },
           "sections": [{
-            "items": [{
-              "type": "vertical",
-              "style": {
-                "align": "center",
-                "padding": "30"
-              },
-              "components": {
-                "{{#each $jason.programmes}}": {
+            "items": {
+              "{{#each $jason.programmes}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "30"
+                },
+                "components": [{
                   "type": "label",
                   "text": "{{name}}"
-                  },{
+                },{
                   "type": "label",
                   "text": "{{reloadable}}"
-                }
+                }]
               }
-            }]
+            }
           }]
         }
       }
