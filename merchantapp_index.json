@@ -10,7 +10,24 @@
         "title": "Giffy Merchant",
         "style": {
           "size": "18"
+        },
+        "menu": {
+          "text": "MENU",
+          "action": {
+            "type": "$util.toast",
+            "options": {
+              "text": "Good job!"
+            }
+          },
+          "badge": {
+            "text": "3",
+            "style": {
+              "background": "#ff0000",
+              "color": "#ffffff"
+            }
+          }
         }
+      }
       },
       "sections": [{
         "items": [{
