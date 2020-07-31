@@ -39,7 +39,8 @@
                 "type": "vertical",
                 "style": {
                   "align": "center",
-                  "padding": "30"
+                  "padding": "30",
+                  "distribution": "equalspacing"
                 },
                 "components": [{
                   "type": "label",
