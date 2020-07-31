@@ -41,15 +41,15 @@
             }
           },
           "sections": [{
-            "items": {
-              "{{#each $jason.programmes}}": {
+            "items": [{
                 "type": "vertical",
                 "style": {
                   "align": "center",
                   "padding": "20",
                   "distribution": "equalspacing"
                 },
-                "components": [{
+                "components": {
+              "{{#each $jason.programmes}}": {
                   "type": "label",
                   "text": "{{name}}",
                   "style": {
@@ -64,9 +64,9 @@
                 },{
                   "type": "button",
                   "url": "{{image_url}}"
-                }]
               }
-            }
+                }
+            }]
           }]
         }
       }
