@@ -68,7 +68,7 @@
                     "type": "$util.alert",
                     "options": {
                       "title": "{{name}}",
-                      "description": "Please enter initial value of the gift card",
+                      "description": "Please enter initial amount as the gift card balance",
                       "form": [{
                         "name": "sales_amount",
                         "placeholder": "e.g. 100",
