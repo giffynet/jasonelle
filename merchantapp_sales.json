@@ -43,7 +43,9 @@
               "components": {
                 "{{#each $jason.programmes}}": {
                   "type": "label",
-                  "text": "This is row {{name}}"
+                  "text": "{{name}}",
+                  "type": "label",
+                  "text": "{{reloadable}}"
                 }
               }
             }]
