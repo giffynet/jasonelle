@@ -71,7 +71,7 @@
                       "description": "Please enter initial value of the gift card",
                       "form": [{
                         "name": "sales_amount",
-                        "placeholder": "Enter Amount",
+                        "placeholder": "e.g. 100",
                         "value": [
                           {
                             "{{#if default_value>0}}": "{{default_value}}"
