@@ -22,7 +22,7 @@
             "align": "center",
             "padding": "30",
             "border": "none",
-            "opacity": "0"
+            "opacity": "1"
           },
           "components": [{
             "type": "space",
