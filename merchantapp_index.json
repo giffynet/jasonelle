@@ -58,7 +58,7 @@
               "type": "$href",
               "options": {
                 "url": "https://giffynet.github.io/jasonelle/merchantapp_sales.json",
-                "transition": "push"
+                "transition": "modal"
               }
             }
           },{
