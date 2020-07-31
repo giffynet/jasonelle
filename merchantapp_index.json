@@ -74,6 +74,19 @@
               "color": "#000000",
               "height": "80",
               "size": "24"
+            },
+            "action": {
+              "type": "$util.alert",
+              "options": {
+                "title": "Topup",
+                "description": "Please enter amount to add to the gift card balance",
+                "form": [{
+                  "name": "topup_amount",
+                  "placeholder": "e.g. 100",
+                }]
+              }
+            },
+            "success": {
             }
           },{
             "type": "space",
@@ -88,6 +101,19 @@
               "color": "#000000",
               "height": "80",
               "size": "24"
+            },
+            "action": {
+              "type": "$util.alert",
+              "options": {
+                "title": "Redeem",
+                "description": "Please enter amount to deduct from the gift card balance",
+                "form": [{
+                  "name": "redeem_amount",
+                  "placeholder": "e.g. 100",
+                }]
+              }
+            },
+            "success": {
             }
           }]
         }]
