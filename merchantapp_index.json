@@ -12,7 +12,7 @@
           "size": "18"
         },
         "menu": {
-          "image": "https://giffynet.github.io/jasonelle/menu.png",
+          "image": "https://giffynet.github.io/jasonelle/3-dot-menu.png",
           "action": {
             "type": "$util.picker",
             "title": "Menu",
