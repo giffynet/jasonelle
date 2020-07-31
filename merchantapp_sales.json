@@ -34,7 +34,7 @@
             }
           },
           "sections": [{
-            "items": {
+            "items": [{
               "type": "vertical",
               "style": {
                 "align": "center",
@@ -46,7 +46,7 @@
                   "text": "This is row {{name}}"
                 }
               }
-            }
+            }]
           }]
         }
       }
