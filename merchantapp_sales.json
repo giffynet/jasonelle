@@ -36,7 +36,8 @@
               "name": "query_text",
               "placeholder": "Enter Keywords",
               "style": {
-                "color": "#FFFFFF"
+                "color": "#0000FF",
+                "background": "#FFFFFF"
               }
             }
           },
