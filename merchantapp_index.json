@@ -20,6 +20,11 @@
             "padding": "30"
           },
           "components": [{
+            "type": "space",
+            "style": {
+              "height": "25"
+            }
+          },{
             "type": "image",
             "url": "https://giffynet.github.io/jasonelle/giffy_circle.png",
             "style": {
