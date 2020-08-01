@@ -87,12 +87,10 @@
                       }]
                     },
                     "success": {
-                      "href": {
-                        "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json",
-                        "transition": "push",
-                        "options": {
-                          "sales_amount": "{{$jason.sales_amount}}"
-                        }
+                      "type": "$href",
+                      "options": {
+                        "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json?sales_amount={{$jason.sales_amount}}",
+                        "transition": "push"
                       }
                     },
                     "error": {
