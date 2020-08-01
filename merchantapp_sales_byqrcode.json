@@ -46,7 +46,9 @@
       },
       "actions": {
         "$load": {
-          "type": "$render"
+          "type": "$util.alert",
+          "title": "parameter",
+          "description": "{{$params.sales_amount}}"
         },
         "$vision.ready": {
           "type": "$vision.scan"
