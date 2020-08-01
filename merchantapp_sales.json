@@ -76,7 +76,6 @@
                       "form": [{
                         "name": "sales_amount",
                         "placeholder": "e.g. 100",
-                        "keyboard": "number",
                         "value": [
                           {
                             "{{#if default_value>0}}": "{{default_value}}"
