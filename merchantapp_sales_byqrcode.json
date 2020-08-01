@@ -47,8 +47,16 @@
       "actions": {
         "$load": {
           "type": "$util.alert",
-          "title": "parameter",
-          "description": "{{$params.sales_amount}}"
+          "options": {
+            "title": "parameter",
+            "description": "{{$params.sales_amount}}"
+          },
+          "success": {
+            "type": "$render"
+          },
+          "error": {
+            "type": "$render"
+          }
         },
         "$vision.ready": {
           "type": "$vision.scan"
