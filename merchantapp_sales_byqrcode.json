@@ -44,7 +44,7 @@
             "type": "label",
             "text": "{{$global.currency}} {{$global.sales_amount}}",
             "style": {
-              "top": "130",
+              "top": "125",
               "color": "#FFFFFF",
               "size": "18",
               "padding": "5",
