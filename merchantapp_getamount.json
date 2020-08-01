@@ -96,7 +96,7 @@
                         "{{#if $params.value>=0}}": "{{$params.value}}"
                       },
                       {
-                        "{{#elseif $get.amount>=0}}": "{{$get.amount}}"
+                        "{{#elseif parseFloat($get.amount)>=0}}": "{{$get.amount}}"
                       },
                       {
                         "{{#else}}": "0"
