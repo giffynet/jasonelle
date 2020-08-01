@@ -20,6 +20,16 @@
               "background": "#BC845C"
             }
           },
+          "layers": [{
+            "type": "label",
+            "text": "Please SCAN Customer's QR Code",
+            "style": {
+              "top": "100",
+              "left": "50%-25",
+              "width": "50",
+              "padding": "10"
+            }
+          }],
           "footer": {
             "tabs": {
               "style": {
