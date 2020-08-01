@@ -33,7 +33,7 @@
             }
           },{
             "type": "label",
-            "text": "{{$global.programme_name}}",
+            "text": "{{$params.programme_name}}",
             "style": {
               "background": "rgba(0,0,0,0.1)",
               "top": "100",
@@ -44,7 +44,7 @@
             }
           },{
             "type": "label",
-            "text": "{{$global.currency}} {{$global.amount}}",
+            "text": "{{$params.currency}} {{$params.amount}}",
             "style": {
               "background": "rgba(0,0,0,0.1)",
               "top": "125",
@@ -98,7 +98,7 @@
           "type": "$util.alert",
           "options": {
             "title": "Scanned content",
-            "description": "Type: {{$jason.type}}, Content: {{$jason.content}}, Sales Amount: {{$global.amount}}, Programme_ID: {{$global.programme_id}}"
+            "description": "Type: {{$jason.type}}, Content: {{$jason.content}}, Sales Amount: {{$params.amount}}, Programme_ID: {{$params.programme_id}}"
            },
           "success": {
           },
