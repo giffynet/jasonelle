@@ -25,7 +25,6 @@
             "text": "Please SCAN QR Code / Barcode",
             "style": {
               "bottom": "100",
-              "left": "50%-110",
               "color": "#FFFFFF",
               "size": "14",
               "padding": "5",
@@ -36,7 +35,6 @@
             "text": "{{$global.programme_name}}",
             "style": {
               "top": "100",
-              "left": "50%-50",
               "color": "#FFFFFF",
               "size": "18",
               "padding": "5",
@@ -47,7 +45,6 @@
             "text": "{{$global.currency}} {{$global.sales_amount}}",
             "style": {
               "top": "130",
-              "left": "50%-50",
               "color": "#FFFFFF",
               "size": "18",
               "padding": "5",
