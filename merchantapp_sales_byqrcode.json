@@ -28,7 +28,7 @@
                 "color": "#009efa"
               },
               "items": [{
-                "text": "BY QR CODE  {{$params.sales_amount}}",
+                "text": "BY QR CODE",
                 "style": {
                   "height": "21"
                 },
@@ -55,7 +55,7 @@
           "type": "$util.alert",
           "options": {
             "title": "Scanned content",
-            "description": "{{$jason.type}} {{$jason.content}}"
+            "description": "Type: {{$jason.type}}, Content: {{$jason.content}}, Sales Amount: {{$global.sales_amount}}, Programme_ID: {{$global.programme_id}}"
            },
           "success": {
           },
