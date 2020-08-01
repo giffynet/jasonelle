@@ -65,15 +65,7 @@
                   "height": "20"
                 }
               },{
-                "type": [
-                  {
-                    "{{#if $params.amount>0}}": "label"
-                  },
-                  {
-                    "{{#else}}": "textfield"
-                  }
-                ],
-                "text": "{{$params.amount}}",
+                "type": "textfield",
                 "name": "amount",
                 "placeholder": "e.g. 1500.00",
                 "keyboard": "number",
@@ -98,14 +90,7 @@
                   "url": "{{$params.next_url}}",
                   "transition": "replace",
                   "options": {
-                    "amount": [
-                      {
-                        "{{#if $params.amount>0}}": "{{$params.amount}}"
-                      },
-                      {
-                        "{{#else}}": "{{$get.amount}}"
-                      }
-                    ],
+                    "amount": "{{$get.amount}}",
                     "programme_id": "{{$params.programme_id}}",
                     "programme_name": "{{$params.programme_name}}",
                     "currency": "{{$params.currency}}"
