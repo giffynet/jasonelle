@@ -11,132 +11,131 @@
           "type": "$reload"
         }
       },
-      "template": {
-
-    "body": {
-      "background": "#f3f3f3",
-      "header": {
-        "title": {
-        "type": "image",
-        "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png"
-        },
-        "style": {
-          "background": "#BC845C"
-        }
-      },
-      "sections": [{
-        "items": [{
-          "type": "vertical",
-          "style": {
-            "align": "center",
-            "padding": "20",
-            "distribution": "equalspacing"
-          },
-          "components": [{
-            "type": "space",
-            "style": {
-              "height": "20"
-            }
-          },{
-            "type": "label",
-            "text": "{{$global.programme_name}}",
-            "style": {
-              "size": "18",
-              "align": "center"
-            }
-          },{
-            "type": "label",
-            "text": "{{$global.currency}} {{$global.sales_amount}}",
-            "style": {
-              "size": "18",
-              "align": "center"
-            }
-          },{
-            "type": "space",
-            "style": {
-              "height": "20"
-            }
-          },{
-            "type": "label",
-            "text": "Enter Customer's Mobile Number",
-            "style": {
-              "size": "18"
-            }
-          },{
-            "type": "label",
-            "text": "Please include country and area code",
-            "style": {
-              "size": "12"
-            }
-          },{
-            "type": "space",
-            "style": {
-              "height": "20"
-            }
-          },{
-            "type": "textfield",
-            "name": "mobile_number",
-            "placeholder": "e.g. +6221811198111",
-            "keyboard": "phone",
-            "style": {
-              "size": "18"
-            }
-          },{
-            "type": "space",
-            "style": {
-              "height": "20"
-            }
-          },{
-            "type": "button",
-            "text": "Submit",
-            "style": {
-              "background": "#d9d9d9",
-              "color": "#000000",
-              "height": "80",
-              "size": "24"
+      "templates": {
+        "body": {
+          "background": "#f3f3f3",
+          "header": {
+            "title": {
+            "type": "image",
+            "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png"
             },
-            "action": {
-              "type": "$util.alert",
-              "options": {
-                "title": "Data content",
-                "description": "Mobile No: {{$get.mobile_number}}, Sales Amount: {{$global.currency}} {{$global.sales_amount}}, Programme_ID: {{$global.programme_id}} {{$global.programme_name}}"
-               },
-              "success": {
+            "style": {
+              "background": "#BC845C"
+            }
+          },
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "align": "center",
+                "padding": "20",
+                "distribution": "equalspacing"
               },
-              "error": {
-                "type": "$util.toast",
-                "options": {
-                  "text": "Sales is cancelled",
-                  "type": "warning"
+              "components": [{
+                "type": "space",
+                "style": {
+                "height": "20"
                 }
-              }
+              },{
+                "type": "label",
+                "text": "{{$global.programme_name}}",
+                "style": {
+                  "size": "18",
+                  "align": "center"
+                }
+              },{
+                "type": "label",
+                "text": "{{$global.currency}} {{$global.sales_amount}}",
+                "style": {
+                  "size": "18",
+                  "align": "center"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "label",
+                "text": "Enter Customer's Mobile Number",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "Please include country and area code",
+                "style": {
+                  "size": "12"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "textfield",
+                "name": "mobile_number",
+                "placeholder": "e.g. +6221811198111",
+                "keyboard": "phone",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "button",
+                "text": "Submit",
+                "style": {
+                  "background": "#d9d9d9",
+                  "color": "#000000",
+                  "height": "80",
+                  "size": "24"
+                },
+                "action": {
+                  "type": "$util.alert",
+                  "options": {
+                    "title": "Data content",
+                    "description": "Mobile No: {{$get.mobile_number}}, Sales Amount: {{$global.currency}} {{$global.sales_amount}}, Programme_ID: {{$global.programme_id}} {{$global.programme_name}}"
+                  },
+                  "success": {
+                  },
+                  "error": {
+                    "type": "$util.toast",
+                    "options": {
+                      "text": "Sales is cancelled",
+                      "type": "warning"
+                    }
+                  }
+                }
+              }]
+            }]
+          }],
+          "footer": {
+            "tabs": {
+              "style": {
+                "background": "rgba(255,255,255,0.8)",
+                "color:disabled": "#cecece",
+                "color": "#009efa"
+              },
+              "items": [{
+                "text": "BY MOBILE NO",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json"
+              }, {
+                "text": "BY QR CODE",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json"
+              }]
             }
-          }]
-        }]
-      }],
-      "footer": {
-        "tabs": {
-          "style": {
-            "background": "rgba(255,255,255,0.8)",
-            "color:disabled": "#cecece",
-            "color": "#009efa"
-          },
-          "items": [{
-            "text": "BY MOBILE NO",
-            "style": {
-              "height": "21"
-            },
-            "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json"
-          }, {
-            "text": "BY QR CODE",
-            "style": {
-              "height": "21"
-            },
-            "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json"
-          }]
+          }
         }
-      }
-    }
       }
     }
   }
