@@ -47,7 +47,7 @@
             "text": "{{$global.currency}} {{$global.sales_amount}}",
             "style": {
               "background": "rgba(0,0,0,0.1)",
-              "top": "135",
+              "top": "125",
               "left": "20",
               "color": "#FFFFFF",
               "size": "18",
