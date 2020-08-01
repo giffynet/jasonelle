@@ -40,15 +40,13 @@
                 "type": "label",
                 "text": "{{$global.programme_name}}",
                 "style": {
-                  "size": "18",
-                  "align": "center"
+                  "size": "18"
                 }
               },{
                 "type": "label",
                 "text": "{{$global.currency}} {{$global.sales_amount}}",
                 "style": {
-                  "size": "18",
-                  "align": "center"
+                  "size": "18"
                 }
               },{
                 "type": "space",
