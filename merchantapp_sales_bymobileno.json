@@ -38,13 +38,13 @@
                 }
               },{
                 "type": "label",
-                "text": "{{$global.programme_name}}",
+                "text": "{{params.programme_name}}",
                 "style": {
                   "size": "18"
                 }
               },{
                 "type": "label",
-                "text": "{{$global.currency}} {{$global.amount}}",
+                "text": "{{params.currency}} {{params.amount}}",
                 "style": {
                   "size": "18"
                 }
@@ -96,7 +96,7 @@
                   "type": "$util.alert",
                   "options": {
                     "title": "Data content",
-                    "description": "Mobile No: {{$get.mobile_number}}, Sales Amount: {{$global.currency}} {{$global.amount}}, Programme_ID: {{$global.programme_id}} {{$global.programme_name}}"
+                    "description": "Mobile No: {{$get.mobile_number}}, Sales Amount: {{params.currency}} {{params.amount}}, Programme_ID: {{params.programme_id}} {{params.programme_name}}"
                   },
                   "success": {
                   },
