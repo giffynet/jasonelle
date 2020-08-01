@@ -6,6 +6,9 @@
       "actions": {
         "$load": {
           "type": "$render"
+        },
+        "$show": {
+          "type": "$render"
         }
       }
     },
