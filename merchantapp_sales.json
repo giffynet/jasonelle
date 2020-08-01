@@ -14,7 +14,15 @@
             }
           },
           "success": {
-            "type": "$render"
+            "type": "$global.set",
+            options": {
+              "programme_id": "{{$jason.programmes.programme_id}}",
+              "programme_name": "{{$jason.programmes.name}}",
+              "currency": "{{$jason.programmes.currency}}"
+            },
+            "success": {
+              "type": "$render"
+            }
           },
           "error": {
             "type": "$util.alert",
@@ -68,46 +76,12 @@
                 },{
                   "type": "button",
                   "url": "{{image_url}}",
-                  "action": {
-                    "type": "$util.alert",
+                  "href": {
+                    "url": "https://giffynet.github.io/jasonelle/merchantapp_getamount.json",
+                    "transition": "push",
                     "options": {
-                      "title": "{{name}}",
-                      "description": "Please enter initial amount as the gift card balance",
-                      "form": [{
-                        "name": "sales_amount",
-                        "placeholder": "e.g. 100",
-                        "value": [
-                          {
-                            "{{#if default_value>0}}": "{{default_value}}"
-                          },
-                          {
-                            "{{#else}}": ""
-                          }
-                        ]
-                      }]
-                    },
-                    "success": {
-                      "type": "$global.set",
-                      "options": {
-                        "sales_amount": "{{$jason.sales_amount}}",
-                        "programme_id": "{{programme_id}}",
-                        "programme_name": "{{name}}",
-                        "currency": "{{currency}}"
-                      },
-                      "success": {
-                        "type": "$href",
-                        "options": {
-                          "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json",
-                          "transition": "push"
-                        }
-                      }
-                    },
-                    "error": {
-                      "type": "$util.toast",
-                      "options": {
-                        "text": "Sales is cancelled",
-                        "type": "warning"
-                      }
+                      "activity": "Sales",
+                      "next_url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json"
                     }
                   }
                 }]
