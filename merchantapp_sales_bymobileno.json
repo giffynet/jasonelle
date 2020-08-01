@@ -63,7 +63,15 @@
             }
           },{
             "type": "button",
-            "text": "Submit"
+            "text": "Submit",
+            "style": {
+              "background": "#d9d9d9",
+              "color": "#000000",
+              "height": "80",
+              "size": "24"
+            },
+            "action": {
+            }
           }]
         }]
       }],
