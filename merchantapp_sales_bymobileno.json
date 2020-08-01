@@ -20,6 +20,50 @@
           "background": "#BC845C"
         }
       },
+      "sections": [{
+        "items": [{
+          "type": "vertical",
+          "style": {
+            "align": "center",
+            "padding": "20",
+            "distribution": "equalspacing"
+          },
+          "components": [{
+            "type": "space",
+            "style": {
+              "height": "10"
+            }
+          },{
+            "type": "label",
+            "text": "Mobile Number",
+            "style": {
+              "size": "18"
+            }
+          },{
+            "type": "label",
+            "text": "Please include country and area code",
+            "style": {
+              "size": "12"
+            }
+          },{
+            "type": "textfield",
+            "name": "mobile_number",
+            "placeholder": "e.g. +6221811198111",
+            "keyboard": "phone",
+            "style": {
+              "size": "18"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "10"
+            }
+          },{
+            "type": "button",
+            "text": "Submit"
+          }]
+        }]
+      }],
       "footer": {
         "tabs": {
           "style": {
