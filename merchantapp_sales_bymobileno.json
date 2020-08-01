@@ -95,7 +95,7 @@
               "type": "$util.alert",
               "options": {
                 "title": "Data content",
-                "description": "Mobile No: {{$get.mobile_number}}, Sales Amount: {{$global.sales_amount}}, Programme_ID: {{$global.programme_id}}"
+                "description": "Mobile No: {{$get.mobile_number}}, Sales Amount: {{$global.currency}} {{$global.sales_amount}}, Programme_ID: {{$global.programme_id}} {{$global.programme_name}}"
                },
               "success": {
               },
