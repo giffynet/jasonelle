@@ -15,7 +15,7 @@
           },
           "success": {
             "type": "$global.set",
-            options": {
+            "options": {
               "programme_id": "{{$jason.programmes.programme_id}}",
               "programme_name": "{{$jason.programmes.name}}",
               "currency": "{{$jason.programmes.currency}}"
