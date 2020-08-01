@@ -68,7 +68,13 @@
                 },
                 "href": {
                   "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json",
-                  "transition": "replace"
+                  "transition": "replace",
+                  "options": {
+                    "amount": "{{$params.amount}}",
+                    "programme_id": "{{$params.programme_id}}",
+                    "programme_name": "{{$params.programme_name}}",
+                    "currency": "{{$params.currency}}"
+                  }
                 }
               }, {
                 "text": "BY QR CODE",
@@ -77,7 +83,13 @@
                 },
                 "href": {
                   "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json",
-                  "transition": "replace"
+                  "transition": "replace",
+                  "options": {
+                    "amount": "{{$params.amount}}",
+                    "programme_id": "{{$params.programme_id}}",
+                    "programme_name": "{{$params.programme_name}}",
+                    "currency": "{{$params.currency}}"
+                  }
                 }
               }]
             }
