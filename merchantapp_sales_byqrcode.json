@@ -28,17 +28,17 @@
                 "color": "#009efa"
               },
               "items": [{
-                "text": "BY QR CODE",
-                "style": {
-                  "height": "21"
-                },
-                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json"
-              }, {
                 "text": "BY MOBILE NO",
                 "style": {
                   "height": "21"
                 },
                 "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json"
+              }, {
+                "text": "BY QR CODE",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json"
               }]
             }
           }
