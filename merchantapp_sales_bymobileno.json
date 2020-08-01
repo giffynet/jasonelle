@@ -35,6 +35,25 @@
             }
           },{
             "type": "label",
+            "text": "{{$global.programme_name}}",
+            "style": {
+              "size": "18",
+              "align": "center"
+            }
+          },{
+            "type": "label",
+            "text": "{{$global.currency}} {{$global.sales_amount}}",
+            "style": {
+              "size": "18",
+              "align": "center"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
+            "type": "label",
             "text": "Enter Customer's Mobile Number",
             "style": {
               "size": "18"
