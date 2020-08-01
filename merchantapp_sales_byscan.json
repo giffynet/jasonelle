@@ -28,17 +28,17 @@
                 "color": "#009efa"
               },
               "items": [{
-                "text": "BY SCAN",
+                "text": "BY QR CODE",
                 "style": {
                   "height": "21"
                 },
-                "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json"
               }, {
-                "text": "BY MOBILE",
+                "text": "BY MOBILE NO",
                 "style": {
                   "height": "21"
                 },
-                "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/notifications.json"
+                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json"
               }]
             }
           }
@@ -56,7 +56,20 @@
           "options": {
             "title": "Scanned content",
             "description": "{{$jason.type}} {{$jason.content}}"
-           }
+           },
+          "success": {
+            "type": "$render"
+          },
+          "error": {
+            "type": "$timer.start",
+            "options": {
+              "interval": "1",
+              "name": "timer1",
+              "action": {
+                "type": "$vision.scan"
+              }
+            }
+          }
         }
       }
     }
