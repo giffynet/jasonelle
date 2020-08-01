@@ -67,6 +67,7 @@
               },{
                 "type": "textfield",
                 "name": "amount",
+                "value": "{{$params.value}}",
                 "placeholder": "e.g. 1500.00",
                 "keyboard": "number",
                 "style": {
@@ -89,7 +90,10 @@
                 "action": {
                   "type": "$global.set",
                   "options": {
-                    "amount": "{{amount}}"
+                    "amount": "{{amount}}",
+                    "programme_id": "{{$params.programme_id}}",
+                    "programme_name": "{{$params.programme_name}}",
+                    "currency": "{{$params.currency}}"
                   },
                   "success": {
                     "type": "href",
