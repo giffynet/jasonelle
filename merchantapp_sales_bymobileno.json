@@ -71,6 +71,15 @@
               "size": "24"
             },
             "action": {
+              "type": "$util.alert",
+              "options": {
+                "title": "Data content",
+                "description": "Mobile No: {{$jason.mobile_number}}, Sales Amount: {{$global.sales_amount}}, Programme_ID: {{$global.programme_id}}"
+               },
+              "success": {
+              },
+              "error": {
+              }
             }
           }]
         }]
