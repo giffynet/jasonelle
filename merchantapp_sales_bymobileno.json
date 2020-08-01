@@ -79,6 +79,11 @@
               "success": {
               },
               "error": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "Sales is cancelled",
+                  "type": "warning"
+                }
               }
             }
           }]
