@@ -54,12 +54,9 @@
               "height": "80",
               "size": "24"
             },
-            "action": {
-              "type": "$href",
-              "options": {
-                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales.json",
-                "transition": "push"
-              }
+            "href": {
+              "url": "https://giffynet.github.io/jasonelle/merchantapp_sales.json",
+              "transition": "push"
             }
           },{
             "type": "space",
@@ -75,18 +72,13 @@
               "height": "80",
               "size": "24"
             },
-            "action": {
-              "type": "$util.alert",
+            "href": {
+              "url": "https://giffynet.github.io/jasonelle/merchantapp_getamount.json",
+              "transition": "push",
               "options": {
-                "title": "Topup",
-                "description": "Please enter amount to add to the gift card balance",
-                "form": [{
-                  "name": "topup_amount",
-                  "placeholder": "e.g. 100",
-                }]
+                "activity": "Topup",
+                "next_url": "https://giffynet.github.io/jasonelle/merchantapp_topup.json"
               }
-            },
-            "success": {
             }
           },{
             "type": "space",
@@ -102,19 +94,13 @@
               "height": "80",
               "size": "24"
             },
-            "action": {
-              "type": "$util.alert",
+            "href": {
+              "url": "https://giffynet.github.io/jasonelle/merchantapp_getamount.json",
+              "transition": "push",
               "options": {
-                "title": "Redeem",
-                "description": "Please enter amount to deduct from the gift card balance",
-                "form": [{
-                  "name": "redeem_amount",
-                  "placeholder": "e.g. 100",
-                }]
+                "activity": "Topup",
+                "next_url": "https://giffynet.github.io/jasonelle/merchantapp_topup.json"
               }
-            },
-            "success": {
-            }
           }]
         }]
       }]
