@@ -90,7 +90,7 @@
                 "action": {
                   "type": "$global.set",
                   "options": {
-                    "amount": "{{$get.amount}}"
+                    "amount": "$get.amount"
                   },
                   "success": {
                     "type": "href",
