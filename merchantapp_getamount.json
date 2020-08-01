@@ -67,15 +67,14 @@
               },{
                 "type": [
                   {
-                    "{{#if $params.value>0}}": "label"
+                    "{{#if $params.amount>0}}": "label"
                   },
                   {
                     "{{#else}}": "textfield"
                   }
                 ],
-                "text": "{{$params.value}}",
+                "text": "{{$params.amount}}",
                 "name": "amount",
-                "value": "{{$params.value}}",
                 "placeholder": "e.g. 1500.00",
                 "keyboard": "number",
                 "style": {
@@ -101,7 +100,7 @@
                   "options": {
                     "amount": [
                       {
-                        "{{#if $params.value>0}}": "{{$params.value}}"
+                        "{{#if $params.amount>0}}": "{{$params.amount}}"
                       },
                       {
                         "{{#else}}": "{{$get.amount}}"
