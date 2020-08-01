@@ -4,7 +4,7 @@
       "title": "Giffy Merchant - Sales",
       "description": "This app enable merchant to  accept digital gift card powered by Giffy",
       "actions": {
-        "$foreground": {
+        "$load": {
           "type": "$network.request",
           "options": {
             "url": "https://giffynet.github.io/jasonelle/programme.json",
