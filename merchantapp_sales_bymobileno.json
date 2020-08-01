@@ -1,0 +1,77 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy Merchant - Sales by Scan",
+      "description": "This app enable merchant to  accept digital gift card powered by Giffy",
+      "templates": {
+        "body": {
+          "background": {
+            "type": "camera",
+            "options": {
+              "device": "back"
+            }
+          },
+          "header": {
+            "title": {
+            "type": "image",
+            "url": "https://giffynet.github.io/jasonelle/giffy_circle.png"
+            },
+            "style": {
+              "background": "#BC845C"
+            }
+          },
+          "footer": {
+            "tabs": {
+              "style": {
+                "background": "rgba(255,255,255,0.8)",
+                "color:disabled": "#cecece",
+                "color": "#009efa"
+              },
+              "items": [{
+                "text": "BY QR CODE",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json"
+              }, {
+                "text": "BY MOBILE NO",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json"
+              }]
+            }
+          }
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$render"
+        },
+        "$vision.ready": {
+          "type": "$vision.scan"
+        },
+        "$vision.onscan": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Scanned content",
+            "description": "{{$jason.type}} {{$jason.content}}"
+           },
+          "success": {
+            "type": "$render"
+          },
+          "error": {
+            "type": "$timer.start",
+            "options": {
+              "interval": "1",
+              "name": "timer1",
+              "action": {
+                "type": "$vision.scan"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
