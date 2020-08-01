@@ -14,15 +14,7 @@
             }
           },
           "success": {
-            "type": "$global.set",
-            "options": {
-              "programme_id": "{{$jason.programmes.programme_id}}",
-              "programme_name": "{{$jason.programmes.name}}",
-              "currency": "{{$jason.programmes.currency}}"
-            },
-            "success": {
-              "type": "$render"
-            }
+            "type": "$render"
           },
           "error": {
             "type": "$util.alert",
