@@ -24,7 +24,7 @@
             "type": "label",
             "text": "Please SCAN QR Code / Barcode",
             "style": {
-              "top": "100",
+              "bottom": "100",
               "left": "50%-110",
               "color": "#FFFFFF",
               "size": "14",
@@ -35,10 +35,10 @@
             "type": "label",
             "text": "{{$global.programme_name}}",
             "style": {
-              "bottom": "100",
-              "left": "50%-110",
+              "top": "100",
+              "left": "50%-50",
               "color": "#FFFFFF",
-              "size": "14",
+              "size": "18",
               "padding": "5",
               "align": "center"
             }
@@ -46,10 +46,10 @@
             "type": "label",
             "text": "{{$global.currency}} {{$global.sales_amount}}",
             "style": {
-              "bottom": "80",
-              "left": "50%-110",
+              "top": "130",
+              "left": "50%-50",
               "color": "#FFFFFF",
-              "size": "14",
+              "size": "18",
               "padding": "5",
               "align": "center"
             }
