@@ -76,7 +76,7 @@
                   "height": "21"
                 },
                 "href": {
-                  "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json"
+                  "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json",
                   "transition": "replace"
                 }
               }]
