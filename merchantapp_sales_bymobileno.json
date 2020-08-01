@@ -49,6 +49,11 @@
               "size": "12"
             }
           },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
             "type": "textfield",
             "name": "mobile_number",
             "placeholder": "e.g. +6221811198111",
@@ -59,7 +64,7 @@
           },{
             "type": "space",
             "style": {
-              "height": "10"
+              "height": "20"
             }
           },{
             "type": "button",
