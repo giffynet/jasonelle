@@ -26,6 +26,7 @@
             "style": {
               "background": "rgba(0,0,0,0.1)",
               "bottom": "100",
+              "left": "20",
               "color": "#FFFFFF",
               "size": "14",
               "padding": "5",
@@ -37,6 +38,7 @@
             "style": {
               "background": "rgba(0,0,0,0.1)",
               "top": "100",
+              "left": "20",
               "color": "#FFFFFF",
               "size": "18",
               "padding": "5",
@@ -48,6 +50,7 @@
             "style": {
               "background": "rgba(0,0,0,0.1)",
               "top": "140",
+              "left": "20",
               "color": "#FFFFFF",
               "size": "18",
               "padding": "5",
