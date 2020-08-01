@@ -28,7 +28,7 @@
                 "color": "#009efa"
               },
               "items": [{
-                "text": "BY QR CODE",
+                "text": "BY QR CODE  {{$params.sales_amount}}",
                 "style": {
                   "height": "21"
                 },
@@ -46,17 +46,7 @@
       },
       "actions": {
         "$load": {
-          "type": "$util.alert",
-          "options": {
-            "title": "parameter",
-            "description": "{{$params.sales_amount}}"
-          },
-          "success": {
-            "type": "$render"
-          },
-          "error": {
-            "type": "$render"
-          }
+          "type": "$render"
         },
         "$vision.ready": {
           "type": "$vision.scan"
