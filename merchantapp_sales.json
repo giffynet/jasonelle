@@ -89,6 +89,11 @@
                     }
                   },
                   "success": {
+                    "type": "$util.alert",
+                    "options": {
+                      "title": "test",
+                      "description": {{$jason.sales_amount}}
+                    }
                   }
                 }]
               }
