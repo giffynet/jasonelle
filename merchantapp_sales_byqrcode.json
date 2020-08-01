@@ -22,7 +22,7 @@
           },
           "layers": [{
             "type": "label",
-            "text": "Please SCAN Customer's QR Code",
+            "text": "Please SCAN QR Code / Barcode",
             "style": {
               "top": "100",
               "left": "50%-200",
