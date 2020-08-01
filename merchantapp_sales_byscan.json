@@ -1,0 +1,64 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy Merchant - Sales by Scan",
+      "description": "This app enable merchant to  accept digital gift card powered by Giffy",
+      "templates": {
+        "body": {
+          "background": {
+            "type": "camera",
+            "options": {
+              "device": "back"
+            }
+          }
+          "header": {
+            "title": {
+            "type": "image",
+            "url": "https://giffynet.github.io/jasonelle/giffy_circle.png"
+            },
+            "style": {
+              "background": "#BC845C"
+            }
+          },
+          "footer": {
+            "tabs": {
+              "style": {
+                "background": "rgba(255,255,255,0.8)",
+                "color:disabled": "#cecece",
+                "color": "#009efa"
+              },
+              "items": [{
+                "text": "BY SCAN",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/home.json"
+              }, {
+                "text": "BY MOBILE",
+                "style": {
+                  "height": "21"
+                },
+                "url": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/notifications.json"
+              }]
+            }
+          }
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$render"
+        },
+        "$vision.ready": {
+          "type": "$vision.scan"
+        },
+        "$vision.onscan": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Scanned content",
+            "description": "{{$jason.type}} {{$jason.content}}"
+           }
+        }
+      }
+    }
+  }
+}
