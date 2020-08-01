@@ -44,7 +44,7 @@
                 }
               },{
                 "type": "label",
-                "text": "{{$global.currency}} {{$global.sales_amount}}",
+                "text": "{{$global.currency}} {{$global.amount}}",
                 "style": {
                   "size": "18"
                 }
@@ -96,7 +96,7 @@
                   "type": "$util.alert",
                   "options": {
                     "title": "Data content",
-                    "description": "Mobile No: {{$get.mobile_number}}, Sales Amount: {{$global.currency}} {{$global.sales_amount}}, Programme_ID: {{$global.programme_id}} {{$global.programme_name}}"
+                    "description": "Mobile No: {{$get.mobile_number}}, Sales Amount: {{$global.currency}} {{$global.amount}}, Programme_ID: {{$global.programme_id}} {{$global.programme_name}}"
                   },
                   "success": {
                   },
