@@ -69,13 +69,19 @@
                 "style": {
                   "height": "21"
                 },
-                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json"
+                "href": {
+                  "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json",
+                  "transition": "push"
+                }
               }, {
                 "text": "BY QR CODE",
                 "style": {
                   "height": "21"
                 },
-                "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json"
+                "href": {
+                  "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json"
+                  "transition": "push"
+                }
               }]
             }
           }
