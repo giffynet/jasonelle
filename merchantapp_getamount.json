@@ -93,10 +93,13 @@
                   "options": {
                     "amount": [
                       {
-                        "{{#if $params.value>0}}": "{{$params.value}}"
+                        "{{#if $params.value>=0}}": "{{$params.value}}"
                       },
                       {
-                        "{{#else}}": "{{$get.amount}}"
+                        "{{#elseif $get.amount>=0}}": "{{$get.amount}}"
+                      },
+                      {
+                        "{{#else}}": "0"
                       }
                     ],
                     "programme_id": "{{$params.programme_id}}",
