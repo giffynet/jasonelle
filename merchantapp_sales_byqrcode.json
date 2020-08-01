@@ -49,7 +49,10 @@
           "type": "$render"
         },
         "$show": {
-          "type": "$render"
+          "type": "$reload"
+        },
+        "$foreground": {
+          "type": "$reload"
         },
         "$vision.ready": {
           "type": "$vision.scan"
