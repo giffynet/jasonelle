@@ -48,6 +48,9 @@
         "$load": {
           "type": "$render"
         },
+        "$show": {
+          "type": "$render"
+        },
         "$vision.ready": {
           "type": "$vision.scan"
         },
