@@ -34,7 +34,7 @@
           "components": [{
             "type": "space",
             "style": {
-              "height": "10"
+              "height": "50"
             }
           },{
             "type": "label",
