@@ -73,14 +73,7 @@
                     "transition": "push",
                     "options": {
                       "activity": "Sales - {{name}}",
-                      "value": [
-                        {
-                          "{{#if default_value>0}}": "{{default_value}}"
-                        },
-                        {
-                          "{{#else}}": ""
-                        }
-                      ],
+                      "value": "{{default_value}}",
                       "programme_id": "{{programme_id}}",
                       "programme_name": "{{name}}",
                       "currency": "{{currency}}",
