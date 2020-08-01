@@ -65,7 +65,15 @@
                   "height": "20"
                 }
               },{
-                "type": "textfield",
+                "type": [
+                  {
+                    "{{#if $params.value>0}}": "label"
+                  },
+                  {
+                    "{{#else}}": "textfield"
+                  }
+                ],
+                "text": "{{$params.value}}",
                 "name": "amount",
                 "value": "{{$params.value}}",
                 "placeholder": "e.g. 1500.00",
