@@ -25,7 +25,7 @@
             "text": "Please SCAN QR Code / Barcode",
             "style": {
               "top": "100",
-              "left": "50%-120",
+              "left": "50%-110",
               "color": "#FFFFFF",
               "size": "14",
               "padding": "5",
