@@ -85,17 +85,17 @@
                           }
                         ]
                       }]
+                    },
+                    "success": {
+                      "type": "$util.alert",
+                      "options": {
+                        "title": "test",
+                        "description": "test"
+                      }
+                    },
+                    "error": {
+                      "type": "$render"
                     }
-                  },
-                  "success": {
-                    "type": "$util.alert",
-                    "options": {
-                      "title": "test",
-                      "description": "test"
-                    }
-                  },
-                  "error": {
-                    "type": "$render"
                   }
                 }]
               }
