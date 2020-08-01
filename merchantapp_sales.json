@@ -90,7 +90,9 @@
                       "type": "$global.set",
                       "options": {
                         "sales_amount": "{{$jason.sales_amount}}",
-                        "programme_id": "{{programme_id}}"
+                        "programme_id": "{{programme_id}}",
+                        "programme_name": "{{name}}",
+                        "currency": "{{currency}}"
                       },
                       "success": {
                         "type": "$href",
