@@ -71,7 +71,7 @@
                 },
                 "href": {
                   "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json",
-                  "transition": "push"
+                  "transition": "replace"
                 }
               }, {
                 "text": "BY QR CODE",
@@ -80,7 +80,7 @@
                 },
                 "href": {
                   "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_byqrcode.json"
-                  "transition": "push"
+                  "transition": "replace"
                 }
               }]
             }
