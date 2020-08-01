@@ -80,7 +80,7 @@
                     "transition": "push",
                     "options": {
                       "activity": "Sales - {{name}}",
-                      "value": [
+                      "amount": [
                         {
                           "{{#if initial_value>0}}": "{{initial_value}}"
                         },
