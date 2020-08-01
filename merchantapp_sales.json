@@ -90,7 +90,7 @@
                       "type": "$util.alert",
                       "options": {
                         "title": "test",
-                        "description": "test"
+                        "description": "{{$jason.sales_amount}}"
                       }
                     },
                     "error": {
