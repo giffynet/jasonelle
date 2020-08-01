@@ -35,7 +35,7 @@
             }
           },{
             "type": "label",
-            "text": "Mobile Number",
+            "text": "Enter Customer's Mobile Number",
             "style": {
               "size": "18"
             }
