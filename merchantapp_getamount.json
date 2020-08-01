@@ -1,0 +1,109 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy Merchant - Get Amount",
+      "description": "This app enable merchant to  accept digital gift card powered by Giffy",
+      "actions": {
+        "$load": {
+          "type": "$render"
+        },
+        "$foreground": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "background": "#f3f3f3",
+          "header": {
+            "title": {
+            "type": "image",
+            "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png"
+            },
+            "style": {
+              "background": "#BC845C"
+            }
+          },
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "align": "center",
+                "padding": "20",
+                "distribution": "equalspacing"
+              },
+              "components": [{
+                "type": "space",
+                "style": {
+                "height": "20"
+                }
+              },{
+                "type": "label",
+                "text": "{{$params.activity}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "label",
+                "text": "Enter Amount",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "Please use decimal point to indicate cents, if applicable",
+                "style": {
+                  "size": "12"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "textfield",
+                "name": "amount",
+                "placeholder": "e.g. 1500.00",
+                "keyboard": "number",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "button",
+                "text": "Next",
+                "style": {
+                  "background": "#d9d9d9",
+                  "color": "#000000",
+                  "height": "80",
+                  "size": "24"
+                },
+                "action": {
+                  "type": "$global.set",
+                  "options": {
+                    "amount": "{{amount}}"
+                  },
+                  "success": {
+                    "type": "href",
+                    "options": {
+                      "url": "{{$params.next_url}}",
+                      "transition": "replace"
+                    }
+                  }
+                }
+              }]
+            }]
+          }],
+        }
+      }
+    }
+  }
+}
