@@ -90,10 +90,14 @@
                 "action": {
                   "type": "$global.set",
                   "options": {
-                    "programme_id": "{{$params.programme_id}}",
-                    "programme_name": "{{$params.programme_name}}",
-                    "currency": "{{$params.currency}}",
                     "amount": "{{$get.amount}}"
+                  },
+                  "success": {
+                    "type": "href",
+                    "options": {
+                      "url": "{{$params.next_url}}",
+                      "transition": "replace"
+                    }
                   }
                 }
               }]
