@@ -25,8 +25,8 @@
             "text": "Please SCAN Customer's QR Code",
             "style": {
               "top": "100",
-              "left": "50%-50",
-              "color": "#000000",
+              "left": "50%-200",
+              "color": "#FFFFFF",
               "size": "14",
               "padding": "5",
               "align": "center"
