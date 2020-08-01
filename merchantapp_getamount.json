@@ -90,7 +90,7 @@
                 "action": {
                   "type": "$global.set",
                   "options": {
-                    "amount": "{{amount}}",
+                    "amount": "{{$get.amount}}",
                     "programme_id": "{{$params.programme_id}}",
                     "programme_name": "{{$params.programme_name}}",
                     "currency": "{{$params.currency}}"
