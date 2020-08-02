@@ -114,6 +114,7 @@
                     "options": {
                       "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_result.json",
                       "transition": "replace",
+                      "view": "modal",
                       "options": {
                         "transaction_id": "{{$jason.transaction_id}}",
                         "transaction_datetime": "{{$jason.transaction_datetime}}",
