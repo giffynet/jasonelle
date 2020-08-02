@@ -38,6 +38,17 @@
                 }
               },{
                 "type": "label",
+                "text": "{{$params.transaction_id}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "label",
                 "text": "{{$params.transaction_datetime}}",
                 "style": {
                   "size": "18"
@@ -52,17 +63,6 @@
                 "text": "{{$params.transaction_amount}}",
                 "style": {
                   "size": "18"
-                }
-              },{
-                "type": "label",
-                "text": "{{$params.transaction_reference}}",
-                "style": {
-                  "size": "18"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
                 }
               },{
                 "type": "label",
