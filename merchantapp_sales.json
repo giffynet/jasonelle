@@ -79,7 +79,7 @@
                     ],
                     "transition": "push",
                     "options": {
-                      "activity": "Sales - {{proramme_name}}",
+                      "activity": "Sales - {{programme_name}}",
                       "amount": [
                         {
                           "{{#if initial_value>0}}": "{{initial_value}}"
@@ -89,7 +89,7 @@
                         }
                       ],
                       "programme_id": "{{programme_id}}",
-                      "programme_name": "{{proramme_name}}",
+                      "programme_name": "{{programme_name}}",
                       "currency": "{{currency}}",
                       "next_url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json"
                     }
