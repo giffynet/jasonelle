@@ -98,9 +98,9 @@
                     "url": "https://ptsv2.com/t/giffynet/post",
                     "method": "post",
                     "header" : {
-                      "Authorization" : "Bearer {{$global.jwt_token}}"
+                      "Authorization" : "Bearer {{$global.jwt_token}}",
+                      "content_type": "json"
                     },
-                    "content_type": "json",
                     "data": {
                       "amount": "{{$params.amount}}",
                       "programme_id": "{{$params.programme_id}}",
