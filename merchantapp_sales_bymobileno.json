@@ -99,7 +99,7 @@
                     "method": "post",
                     "header" : {
                       "Authorization": "Bearer {{$global.jwt_token}}",
-                      "Content-Type": "application/json"
+                      "content_type": "json"
                     },
                     "data": {
                       "amount": "{{$params.amount}}",
