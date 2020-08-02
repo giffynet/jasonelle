@@ -95,12 +95,12 @@
                 "action": {
                   "type": "$network.request",
                   "options": {
-                    "url": "https://giffynet.github.io/jasonelle/sales.json",
-                    "method": "get",
+                    "url": "https://ptsv2.com/t/giffynet/post",
+                    "method": "post",
                     "header" : {
-                      "content_type": "json",
                       "Authorization" : "Bearer {{$global.jwt_token}}"
                     },
+                    "content_type": "json",
                     "data": {
                       "amount": "{{$params.amount}}",
                       "programme_id": "{{$params.programme_id}}",
