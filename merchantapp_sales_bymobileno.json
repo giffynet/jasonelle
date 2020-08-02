@@ -103,8 +103,9 @@
                   "error": {
                     "type": "$util.banner",
                     "options": {
-                      "text": "Sales is cancelled",
-                      "type": "warning"
+                      "title": "Sales is cancelled",
+                      "description": "Sales is cancelled",
+                      "type": "info"
                     }
                   }
                 }
