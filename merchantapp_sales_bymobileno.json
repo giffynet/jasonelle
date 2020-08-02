@@ -93,6 +93,14 @@
                   "size": "24"
                 },
                 "action": {
+                  "type": "$session.set",
+                  "options": {
+                    "domain": "ptsv2.com",
+                    "header": {
+                      "Authorization": "Bearer {{$global.token}}"
+                    }
+                  },
+                  "success": {
                   "type": "$network.request",
                   "options": {
                     "url": "https://ptsv2.com/t/giffynet/post",
@@ -124,6 +132,7 @@
                       "text": "Transaction is not successful",
                       "type": "warning"
                     }
+                  }
                   }
                 }
               }]
