@@ -95,16 +95,34 @@
                 "action": {
                   "type": "$network.request",
                   "options": {
-                    "url": "https://giffynet.github.io/jasonelle/sales.json",
+                    "url": "https://giffynet.github.io/jasonelle/sale.json",
                     "method": "post",
-                    
+                    "header" : {
+                      "content_type": "json",
+                      "Authorization" : "Bearer {{$global.jwt_token}}"
+                    },
+                    "data": {
+                      "amount": "{{$params.amount}}",
+                      "programme_id": "{{$params.programme_id}}",
+                      "currency": "{{$params.currency}}",
+                      "transaction_type": "sales",
+                      "payload": "{{$get.mobile_number}}"
+                    }
                   },
                   "success": {
+                    "type": "href",
+                    "options": {
+                      "url": "https://giffynet.github.io/jasonelle/merchantapp_sales_result.json",
+                      "transition": "replace",
+                      "options": {
+                        "transaction_datetime": "{{$jason.transaction_datetime}}"
+                      }
+                    }
                   },
                   "error": {
                     "type": "$util.toast",
                     "options": {
-                      "text": "Sales is cancelled",
+                      "text": "Transaction is not successful",
                       "type": "warning"
                     }
                   }
