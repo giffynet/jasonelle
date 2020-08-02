@@ -55,7 +55,7 @@
                 },
                 "components": [{
                   "type": "label",
-                  "text": "{{name}}",
+                  "text": "{{programme_name}}",
                   "style": {
                     "size": "18"
                   }
@@ -79,7 +79,7 @@
                     ],
                     "transition": "push",
                     "options": {
-                      "activity": "Sales - {{name}}",
+                      "activity": "Sales - {{proramme_name}}",
                       "amount": [
                         {
                           "{{#if initial_value>0}}": "{{initial_value}}"
@@ -89,7 +89,7 @@
                         }
                       ],
                       "programme_id": "{{programme_id}}",
-                      "programme_name": "{{name}}",
+                      "programme_name": "{{proramme_name}}",
                       "currency": "{{currency}}",
                       "next_url": "https://giffynet.github.io/jasonelle/merchantapp_sales_bymobileno.json"
                     }
