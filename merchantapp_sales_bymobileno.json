@@ -95,7 +95,7 @@
                 "action": {
                   "type": "$network.request",
                   "options": {
-                    "url": "https://giffynet.github.io/jasonelle/sale.json",
+                    "url": "https://giffynet.github.io/jasonelle/sales.json",
                     "method": "post",
                     "header" : {
                       "content_type": "json",
