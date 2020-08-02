@@ -101,11 +101,10 @@
                   "success": {
                   },
                   "error": {
-                    "type": "$util.banner",
+                    "type": "$util.toast",
                     "options": {
-                      "title": "Sales is cancelled",
-                      "description": "Sales is cancelled",
-                      "type": "info"
+                      "text": "Sales is cancelled",
+                      "type": "warning"
                     }
                   }
                 }
