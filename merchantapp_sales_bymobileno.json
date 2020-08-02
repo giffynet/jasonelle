@@ -98,7 +98,7 @@
                     "url": "https://ptsv2.com/t/giffynet/post",
                     "method": "post",
                     "header" : {
-                      "auth_token" : "Bearer {{$global.jwt_token}}"
+                      "Authorization": "Bearer {{$global.jwt_token}}"
                     },
                     "data": {
                       "amount": "{{$params.amount}}",
