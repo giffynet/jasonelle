@@ -93,10 +93,11 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$util.alert",
+                  "type": "$network.request",
                   "options": {
-                    "title": "Data content",
-                    "description": "Mobile No: {{$get.mobile_number}}, Sales Amount: {{$params.currency}} {{$params.amount}}, Programme_ID: {{$params.programme_id}} {{$params.programme_name}}"
+                    "url": "https://giffynet.github.io/jasonelle/sales.json",
+                    "method": "post",
+                    
                   },
                   "success": {
                   },
