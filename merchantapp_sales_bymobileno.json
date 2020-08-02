@@ -93,19 +93,12 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$session.set",
-                  "options": {
-                    "domain": "ptsv2.com",
-                    "header": {
-                      "Authorization": "Bearer {{$global.token}}"
-                    }
-                  },
-                  "success": {
                   "type": "$network.request",
                   "options": {
-                    "url": "https://ptsv2.com/t/giffynet/post",
+                    "url": "https://giffynet.github.io/jasonelle/sales.json",
                     "method": "post",
                     "header" : {
+                      "Authorization": "Bearer {{$global.token}}",
                       "content_type": "json"
                     },
                     "data": {
@@ -132,7 +125,6 @@
                       "text": "Transaction is not successful",
                       "type": "warning"
                     }
-                  }
                   }
                 }
               }]
