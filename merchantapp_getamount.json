@@ -87,17 +87,7 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$util.toast",
-                  "options": {
-                    "text": [
-                      {
-                        "{{#if $get.amount==''}}": "one {{$get.amount}}"
-                      },
-                      {
-                        "{{#else}}": "two {{$get.amount}}"
-                      }
-                    ]
-                  }
+                  "type": "$return.success"
                 },
                 "success": {
                   "type": "$href",
