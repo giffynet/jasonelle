@@ -91,7 +91,7 @@
                   "options": {
                     "text": [
                       {
-                        "{{#if $get.amount>0}}": "one {{$get.amount}}"
+                        "{{#if $get.amount==''}}": "one {{$get.amount}}"
                       },
                       {
                         "{{#else}}": "two {{$get.amount}}"
