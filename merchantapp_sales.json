@@ -61,7 +61,7 @@
                   }
                 },{
                   "type": "label",
-                  "text": "Currency: {{currency}}, Reloadable: {{reloadable}}, Single Use: {{single_use}}",
+                  "text": "Currency: {{currency}}, Reloadable: {{reloadable}}, Single Use: {{single_use}}, Valid for: {{validity_period}} days",
                   "style": {
                     "size": "12"
                   }
