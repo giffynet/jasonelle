@@ -77,7 +77,7 @@
               "transition": "push",
               "options": {
                 "activity": "Topup",
-                "next_url": "https://giffynet.github.io/jasonelle/merchantapp_topup.json"
+                "next_url": "https://giffynet.github.io/jasonelle/merchantapp_topup_byqrcode.json"
               }
             }
           },{
@@ -99,7 +99,7 @@
               "transition": "push",
               "options": {
                 "activity": "Redeem",
-                "next_url": "https://giffynet.github.io/jasonelle/merchantapp_redeem.json"
+                "next_url": "https://giffynet.github.io/jasonelle/merchantapp_redeem_byqrcode.json"
               }
             }
           }]
