@@ -93,7 +93,7 @@
           "type": "$util.alert",
           "options": {
             "title": "Do you want to continue?",
-            "description": "Gift Card Token: {{$jason.content}}"
+            "description": "Card Token: {{$jason.content}}"
            },
           "success": {
             "type": "$network.request",
