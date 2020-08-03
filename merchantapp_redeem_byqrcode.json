@@ -1,0 +1,148 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy Merchant - Redeem by QR Code",
+      "description": "This app enable merchant to  accept digital gift card powered by Giffy",
+      "templates": {
+        "body": {
+          "background": {
+            "type": "camera",
+            "options": {
+              "device": "back"
+            }
+          },
+          "header": {
+            "title": {
+            "type": "image",
+            "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png"
+            },
+            "style": {
+              "background": "#BC845C"
+            }
+          },
+          "layers": [{
+            "type": "label",
+            "text": "Please SCAN QR Code / Barcode",
+            "style": {
+              "background": "rgba(0,0,0,0.1)",
+              "bottom": "100",
+              "left": "20",
+              "color": "#FFFFFF",
+              "size": "14",
+              "align": "center"
+            }
+          },{
+            "type": "label",
+            "text": "Redeem {{$params.amount}}",
+            "style": {
+              "background": "rgba(0,0,0,0.1)",
+              "top": "100",
+              "left": "20",
+              "color": "#FFFFFF",
+              "size": "18",
+              "align": "center"
+            }
+          }],
+          "footer": {
+            "tabs": {
+              "style": {
+                "background": "rgba(255,255,255,0.8)",
+                "color:disabled": "#cecece",
+                "color": "#009efa"
+              },
+              "items": [{
+                "text": "BY QR CODE",
+                "style": {
+                  "height": "21"
+                },
+                "href": {
+                  "url": "https://giffynet.github.io/jasonelle/merchantapp_redeem_byqrcode.json",
+                  "transition": "replace",
+                  "options": {
+                    "amount": "{{$params.amount}}"
+                  }
+                }
+              }, {
+                "text": "BY MOBILE NO",
+                "style": {
+                  "height": "21"
+                },
+                "href": {
+                  "url": "https://giffynet.github.io/jasonelle/merchantapp_redeem_bymobileno.json",
+                  "transition": "replace",
+                  "options": {
+                    "amount": "{{$params.amount}}"
+                  }
+                }
+              }]
+            }
+          }
+        }
+      },
+      "actions": {
+        "$load": {
+          "type": "$render"
+        },
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$vision.ready": {
+          "type": "$vision.scan"
+        },
+        "$vision.onscan": {
+          "type": "$util.alert",
+          "options": {
+            "title": "Do you want to continue?",
+            "description": "Card Token: {{$jason.content}}"
+           },
+          "success": {
+            "type": "$network.request",
+            "options": {
+              "url": "https://giffynet.github.io/jasonelle/redeem.json",
+              "method": "get",
+              "header" : {
+                "Authorization": "Bearer {{$global.jwt_token}}",
+                "content_type": "json"
+              },
+              "data": {
+                "amount": "{{$params.amount}}",
+                "transaction_type": "topup",
+                "payload": "{{$jason.content}}"
+              }
+            },
+            "success": {
+              "type": "$href",
+              "options": {
+                "url": "https://giffynet.github.io/jasonelle/merchantapp_redeem_result.json",
+                "transition": "replace",
+                "options": {
+                  "transaction_id": "{{$jason.transaction_id}}",
+                  "transaction_datetime": "{{$jason.transaction_datetime}}",
+                  "transaction_amount": "{{$jason.transaction_amount}}",
+                  "result_text": "{{$jason.result_text}}"
+                }
+              }
+            },
+            "error": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Transaction is not successful",
+                "type": "warning"
+              }
+            }
+          },
+          "error": {
+            "type": "$timer.start",
+            "options": {
+              "interval": "1",
+              "name": "timer1",
+              "action": {
+                "type": "$vision.scan"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
