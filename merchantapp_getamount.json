@@ -97,7 +97,8 @@
                   ]
                 },
                 "success": {
-                  "href": {
+                  "type": "href",
+                  "options": {
                     "url": "{{$params.next_url}}",
                     "transition": "replace",
                     "options": {
@@ -106,13 +107,13 @@
                       "programme_name": "{{$params.programme_name}}",
                       "currency": "{{$params.currency}}"
                     }
-                  },
-                  "error": {
-                    "type": "$util.toast",
-                    "options": {
-                      "text": "Please enter a valid amount",
-                      "type": "warning"
-                    }
+                  }
+                },
+                "error": {
+                  "type": "$util.toast",
+                  "options": {
+                    "text": "Please enter a valid amount",
+                    "type": "warning"
                   }
                 }
               }]
