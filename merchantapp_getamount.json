@@ -91,10 +91,10 @@
                   "options": {
                     "text": [
                       {
-                        "{{#if $get.amount>0}}": "one"
+                        "{{#if $get.amount>0}}": "one {{$get.amount}}"
                       },
                       {
-                        "{{#else}}": "two"
+                        "{{#else}}": "two {{$get.amount}}"
                       }
                     ]
                   }
