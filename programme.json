@@ -6,7 +6,8 @@
     "reloadable": "no",
     "single_use": "no",
     "initial_value": 50,
-    "currency": "SGD"
+    "currency": "SGD",
+    "validity_period": 180
   },{
     "programme_id": "2",
     "programme_name": "$10 Gift Card",
@@ -14,7 +15,8 @@
     "reloadable": "no",
     "single_use": "yes",
     "initial_value": 10,
-    "currency": "SGD"
+    "currency": "SGD",
+    "validity_period": 180
   },{
     "programme_id": "3",
     "programme_name": "Cashback Gift Card",
@@ -22,7 +24,8 @@
     "reloadable": "yes",
     "single_use": "no",
     "initial_value": 0,
-    "currency": "SGD"
+    "currency": "SGD",
+    "validity_period": 3650 
   },{
     "programme_id": "4",
     "programme_name": "Extra Value Gift Card",
@@ -30,7 +33,8 @@
     "reloadable": "yes",
     "single_use": "no",
     "initial_value": 0,
-    "currency": "SGD"
+    "currency": "SGD",
+    "validity_period": 3650
   },{
     "programme_id": "5",
     "programme_name": "High Way Or No Way Gift Card",
@@ -38,6 +42,7 @@
     "reloadable": "yes",
     "single_use": "no",
     "initial_value": 0,
-    "currency": "SGD"
+    "currency": "SGD",
+    "validity_period": 3650
   }]
 }
