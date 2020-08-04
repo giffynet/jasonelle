@@ -123,7 +123,7 @@
                 "action": {
                   "type": "$network.request",
                   "options": {
-                    "url": "https://giffynet.github.io/jasonelle/merchgencode.json",
+                    "url": "https://giffynet.github.io/jasonelle/merchantapp_merchgencode.json",
                     "method": "get",
                     "header" : {
                       "Authorization": "Bearer {{$global.jwt_token}}",
