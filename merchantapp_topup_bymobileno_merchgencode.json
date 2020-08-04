@@ -7,7 +7,8 @@
         "$load": {
           "type": "$set",
           "options": {
-            "dynamic_pin2": ""
+            "dynamic_pin2": "",
+            "mobile_number2": ""
           },
           "success": {
             "type": "$render"
@@ -44,13 +45,7 @@
                 }
               },{
                 "type": "label",
-                "text": "Topup",
-                "style": {
-                  "size": "18"
-                }
-              },{
-                "type": "label",
-                "text": "{{$params.currency}} {{$params.amount}}",
+                "text": "Topup {{$params.currency}} {{$params.amount}}",
                 "style": {
                   "size": "18"
                 }
@@ -79,6 +74,7 @@
               },{
                 "type": "textfield",
                 "name": "mobile_number2",
+                "value": "{{$get.mobile_number2}}",
                 "placeholder": "e.g. 6221811198111",
                 "keyboard": "phone",
                 "style": {
