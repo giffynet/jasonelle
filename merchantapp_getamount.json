@@ -67,6 +67,7 @@
               },{
                 "type": "textfield",
                 "name": "amount",
+                "focus": "true",
                 "placeholder": "e.g. 1500.00",
                 "keyboard": "number",
                 "style": {
@@ -90,13 +91,7 @@
                   "url": "{{$params.next_url}}",
                   "transition": "replace",
                   "options": {
-                    "amount": [
-                      {
-                        "{{#if parseFloat($get.amount) > 0}}": "{{$get.amount}}"
-                      },{
-                        "{{#else}}": "0"
-                      }
-                    ],
+                    "amount": "{{$get.amount}}",
                     "programme_id": "{{$params.programme_id}}",
                     "programme_name": "{{$params.programme_name}}",
                     "currency": "{{$params.currency}}"
