@@ -133,8 +133,8 @@
           "footer": {
             "tabs": {
               "style": {
-                "background": "rgba(255,255,255,0.8)",
-                "color:disabled": "#cecece",
+                "background": "rgba(255,255,255,1)",
+                "color:disabled": "#d9d9d9",
                 "color": "#009efa"
               },
               "items": [{
