@@ -68,7 +68,7 @@
                   "height": "21"
                 },
                 "href": {
-                  "url": "https://giffynet.github.io/jasonelle/merchantapp_topup_bymobileno.json",
+                  "url": "https://giffynet.github.io/jasonelle/merchantapp_topup_bymobileno_custgencode.json",
                   "transition": "replace",
                   "options": {
                     "amount": "{{$params.amount}}"
