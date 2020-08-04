@@ -113,13 +113,10 @@
             "success": {
               "type": "$href",
               "options": {
-                "url": "https://giffynet.github.io/jasonelle/merchantapp_redeem_result.json",
+                "url": "https://giffynet.github.io/jasonelle/merchantapp_transactionresult.json",
                 "transition": "replace",
                 "options": {
-                  "transaction_id": "{{$jason.transaction_id}}",
-                  "transaction_datetime": "{{$jason.transaction_datetime}}",
-                  "transaction_amount": "{{$jason.transaction_amount}}",
-                  "result_text": "{{$jason.result_text}}"
+                  "transaction_id": "{{$jason.transaction_id}}"
                 }
               }
             },
