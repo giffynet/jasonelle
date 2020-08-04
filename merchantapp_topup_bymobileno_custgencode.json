@@ -171,8 +171,6 @@
                   "transition": "replace",
                   "options": {
                     "amount": "{{$params.amount}}",
-                    "programme_id": "{{$params.programme_id}}",
-                    "programme_name": "{{$params.programme_name}}",
                     "currency": "{{$params.currency}}"
                   }
                 }
@@ -185,6 +183,7 @@
                   "url": "https://giffynet.github.io/jasonelle/merchantapp_topup_bymobileno_custgencode.json",
                   "transition": "replace",
                   "options": {
+                    "currency": "{{$params.currency}}",
                     "amount": "{{$params.amount}}"
                   }
                 }
@@ -197,6 +196,7 @@
                   "url": "https://giffynet.github.io/jasonelle/merchantapp_topup_bymobileno_merchgencode.json",
                   "transition": "replace",
                   "options": {
+                    "currency": "{{$params.currency}}",
                     "amount": "{{$params.amount}}"
                   }
                 }
