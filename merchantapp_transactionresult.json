@@ -7,7 +7,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://ptsv2.com/t/giffynet/post",
+            "url": "https://giffynet.github.io/jasonelle/sales.json",
             "method": "get",
             "data": {
               "id": "{{$params.transaction_id}}"
