@@ -92,11 +92,11 @@
                   "options": {
                     "amount": [
                       {
-                        "{{#if $get.amount > 0}}": "{{$get.amount}}"
+                        "{{#if parseFloat($get.amount) > 0}}": "{{$get.amount}}"
                       },{
                         "{{#else}}": "0"
                       }
-                    ]
+                    ],
                     "programme_id": "{{$params.programme_id}}",
                     "programme_name": "{{$params.programme_name}}",
                     "currency": "{{$params.currency}}"
