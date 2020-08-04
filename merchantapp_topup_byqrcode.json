@@ -33,7 +33,7 @@
             }
           },{
             "type": "label",
-            "text": "Topup {{$params.amount}}",
+            "text": "Topup {{$params.currency}} {{$params.amount}}",
             "style": {
               "background": "rgba(0,0,0,0.1)",
               "top": "100",
