@@ -90,7 +90,7 @@
                   "url": "{{$params.next_url}}",
                   "transition": "replace",
                   "options": {
-                    "amount": "{{$get.amount}}",
+                    "amount": "{{if (isNaN($get.amount || $get.amount=='') {return 0;} else {return $get.amount;}}}",
                     "programme_id": "{{$params.programme_id}}",
                     "programme_name": "{{$params.programme_name}}",
                     "currency": "{{$params.currency}}"
