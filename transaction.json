@@ -1,0 +1,18 @@
+{
+  "transaction_id": "123456789012",
+  "transaction_type": "sales",
+  "transaction_datetime": "15-07-2020 14:00",
+  "transaction_amount": "100",
+  "result_code": "0",
+  "result_text": "Successful",
+  "programme_id": "4",
+  "programme_name": "Extra Value Gift Card",
+  "card_id": "1",
+  "card_basic_balance": 100,
+  "card_bonus_balance": 20,
+  "original_card_basic_balance": 0,
+  "original_card_bonus_balance": 0,
+  "card_expiry_date": "31-12-2030",
+  "consumer_id": "1",
+  "consumer_name" : "Optimus Prime"
+}
