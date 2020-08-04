@@ -17,10 +17,10 @@
             "type": "$render"
           },
           "error": {
-            "type": "$util.alert",
+            "type": "$util.toast",
             "options": {
-              "title": "ERROR",
-              "description": "Unable to  fetch programmes from server. Please check your internet connection."
+              "type": "warning",
+              "text": "Unable to  fetch programmes from server. Please check your internet connection."
             }
           }
         }
