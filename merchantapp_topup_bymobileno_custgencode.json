@@ -38,7 +38,7 @@
                 }
               },{
                 "type": "label",
-                "text": "{{$params.programme_name}}",
+                "text": "Topup",
                 "style": {
                   "size": "18"
                 }
@@ -108,70 +108,50 @@
                   "height": "20"
                 }
               },{
-                "type": "horizontal",
+                "type": "button",
+                "text": "Submit",
                 "style": {
-                  "align": "center",
-                  "padding": "20",
-                  "distribution": "equalspacing"
+                  "background": "#d9d9d9",
+                  "color": "#000000",
+                  "height": "80",
+                  "size": "24"
                 },
-                "components": [{
-                  "type": "button",
-                  "text": "Use Merchant Dynamic PIN",
-                  "style": {
-                    "background": "#d9d9d9",
-                    "color": "#000000",
-                    "height": "80",
-                    "size": "24"
+                "action": {
+                  "type": "$network.request",
+                  "options": {
+                    "url": "https://giffynet.github.io/jasonelle/transaction.json",
+                    "method": "get",
+                    "header" : {
+                      "Authorization": "Bearer {{$global.jwt_token}}",
+                      "content_type": "json"
+                    },
+                    "data": {
+                      "amount": "{{$params.amount}}",
+                      "programme_id": "{{$params.programme_id}}",
+                      "currency": "{{$params.currency}}",
+                      "transaction_type": "topup",
+                      "customer_mobile_no": "{{$get.mobile_number}}",
+                      "customer_dynamic_pin": "{{$get.dynamic_pin}}"
+                    }
                   },
-                  "href": {
-                    "url": "https://giffynet.github.io/jasonelle/merchantapp_topup_bymobileno_merchgencode.json",
-                    "transition": "replace"
-                  }
-                },{
-                  "type": "button",
-                  "text": "Submit",
-                  "style": {
-                    "background": "#d9d9d9",
-                    "color": "#000000",
-                    "height": "80",
-                    "size": "24"
-                  },
-                  "action": {
-                    "type": "$network.request",
+                  "success": {
+                    "type": "$href",
                     "options": {
-                      "url": "https://giffynet.github.io/jasonelle/transaction.json",
-                      "method": "get",
-                      "header" : {
-                        "Authorization": "Bearer {{$global.jwt_token}}",
-                        "content_type": "json"
-                      },
-                      "data": {
-                        "amount": "{{$params.amount}}",
-                        "programme_id": "{{$params.programme_id}}",
-                        "currency": "{{$params.currency}}",
-                        "transaction_type": "sales",
-                        "payload": "{{$get.mobile_number}}"
-                      }
-                    },
-                    "success": {
-                      "type": "$href",
+                      "url": "https://giffynet.github.io/jasonelle/merchantapp_transactionresult.json",
+                      "transition": "replace",
                       "options": {
-                        "url": "https://giffynet.github.io/jasonelle/merchantapp_transactionresult.json",
-                        "transition": "replace",
-                        "options": {
-                          "transaction_id": "{{$jason.transaction_id}}"
-                        }
-                      }
-                    },
-                    "error": {
-                      "type": "$util.toast",
-                      "options": {
-                        "text": "Transaction is not successful",
-                        "type": "warning"
+                        "transaction_id": "{{$jason.transaction_id}}"
                       }
                     }
+                  },
+                  "error": {
+                    "type": "$util.toast",
+                    "options": {
+                      "text": "Transaction is not successful",
+                      "type": "warning"
+                    }
                   }
-                }]
+                }
               }]
             }]
           }],
