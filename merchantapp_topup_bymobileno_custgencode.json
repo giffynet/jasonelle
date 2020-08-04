@@ -72,7 +72,7 @@
                 }
               },{
                 "type": "textfield",
-                "name": "mobile_number",
+                "name": "mobile_number1",
                 "placeholder": "e.g. 6221811198111",
                 "keyboard": "phone",
                 "style": {
@@ -96,7 +96,7 @@
                 }
               },{
                 "type": "textfield",
-                "name": "dynamic_pin",
+                "name": "dynamic_pin1",
                 "placeholder": "e.g. 123456",
                 "keyboard": "number",
                 "style": {
@@ -129,8 +129,8 @@
                       "amount": "{{$params.amount}}",
                       "currency": "{{$params.currency}}",
                       "transaction_type": "topup",
-                      "customer_mobile_no": "{{$get.mobile_number}}",
-                      "customer_dynamic_pin": "{{$get.dynamic_pin}}"
+                      "customer_mobile_no": "{{$get.mobile_number1}}",
+                      "customer_dynamic_pin": "{{$get.dynamic_pin1}}"
                     }
                   },
                   "success": {
