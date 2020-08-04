@@ -148,7 +148,7 @@
                   "error": {
                     "type": "$util.toast",
                     "options": {
-                      "text": "Transaction is not successful",
+                      "text": "Unable to generate dynamic PIN. Please check your internet connection.",
                       "type": "warning"
                     }
                   }
