@@ -127,7 +127,6 @@
                     },
                     "data": {
                       "amount": "{{$params.amount}}",
-                      "programme_id": "{{$params.programme_id}}",
                       "currency": "{{$params.currency}}",
                       "transaction_type": "topup",
                       "customer_mobile_no": "{{$get.mobile_number}}",
