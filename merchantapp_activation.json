@@ -90,7 +90,8 @@
               "success": {
                 "type": "$global.set",
                 "options": {
-                  "jwt_token": "{{$jason.jwt_token}}"
+                  "jwt_token": "{{$jason.jwt_token}}",
+                  "default_currency": "{{$jason.default_currency}}"
                 }
               },
               "error": {
