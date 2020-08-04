@@ -178,7 +178,7 @@
                   }
                 }
               }, {
-                "text": "BY CUSTOMER CODE",
+                "text": "CUST CODE",
                 "style": {
                   "height": "21"
                 },
@@ -190,7 +190,7 @@
                   }
                 }
               }, {
-                "text": "BY MERCHANT CODE",
+                "text": "MERCH CODE",
                 "style": {
                   "height": "21"
                 },
