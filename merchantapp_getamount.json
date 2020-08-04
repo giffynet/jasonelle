@@ -90,7 +90,13 @@
                   "url": "{{$params.next_url}}",
                   "transition": "replace",
                   "options": {
-                    "amount": "var numvalue; numvalue = (parseFloat('{{$get.amount}}') > 0) ? '{{$get.amount}}' : '0'; return numvalue;",
+                    "amount": [
+                      {
+                        "{{#if $get.amount > 0}}": "{{$get.amount}}"
+                      },{
+                        "{{#else}}": "0"
+                      }
+                    ]
                     "programme_id": "{{$params.programme_id}}",
                     "programme_name": "{{$params.programme_name}}",
                     "currency": "{{$params.currency}}"
