@@ -7,7 +7,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://giffynet.github.io/jasonelle/sales.json?id={{$params.transaction_id}}",
+            "url": "https://giffynet.github.io/jasonelle/sales.json",
             "method": "get",
             "header" : {
               "Authorization" : "Bearer {{$global.jwt_token}}"
