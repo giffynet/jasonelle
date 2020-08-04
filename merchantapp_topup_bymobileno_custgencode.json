@@ -198,7 +198,7 @@
                   }
                 }
               }, {
-                "text": "BY MOBILE NO",
+                "text": "BY CUSTOMER CODE",
                 "style": {
                   "height": "21"
                 },
@@ -206,10 +206,19 @@
                   "url": "https://giffynet.github.io/jasonelle/merchantapp_topup_bymobileno_custgencode.json",
                   "transition": "replace",
                   "options": {
-                    "amount": "{{$params.amount}}",
-                    "programme_id": "{{$params.programme_id}}",
-                    "programme_name": "{{$params.programme_name}}",
-                    "currency": "{{$params.currency}}"
+                    "amount": "{{$params.amount}}"
+                  }
+                }
+              }, {
+                "text": "BY MERCHANT CODE",
+                "style": {
+                  "height": "21"
+                },
+                "href": {
+                  "url": "https://giffynet.github.io/jasonelle/merchantapp_topup_bymobileno_merchgencode.json",
+                  "transition": "replace",
+                  "options": {
+                    "amount": "{{$params.amount}}"
                   }
                 }
               }]
