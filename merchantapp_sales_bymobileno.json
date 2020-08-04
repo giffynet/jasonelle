@@ -95,7 +95,7 @@
                 "action": {
                   "type": "$network.request",
                   "options": {
-                    "url": "https://giffynet.github.io/jasonelle/sales.json",
+                    "url": "https://giffynet.github.io/jasonelle/transaction.json",
                     "method": "get",
                     "header" : {
                       "Authorization": "Bearer {{$global.jwt_token}}",
