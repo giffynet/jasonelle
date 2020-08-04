@@ -38,13 +38,7 @@
                 }
               },{
                 "type": "label",
-                "text": "Topup",
-                "style": {
-                  "size": "18"
-                }
-              },{
-                "type": "label",
-                "text": "{{$params.currency}} {{$params.amount}}",
+                "text": "Topup {{$params.currency}} {{$params.amount}}",
                 "style": {
                   "size": "18"
                 }
