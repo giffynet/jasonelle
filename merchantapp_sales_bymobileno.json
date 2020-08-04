@@ -73,7 +73,7 @@
               },{
                 "type": "textfield",
                 "name": "mobile_number",
-                "placeholder": "e.g. +6221811198111",
+                "placeholder": "e.g. 6221811198111",
                 "keyboard": "phone",
                 "style": {
                   "size": "18"
