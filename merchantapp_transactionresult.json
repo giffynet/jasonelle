@@ -82,7 +82,7 @@
                 }
               },{
                 "type": "label",
-                "text": "Result: {{$jason.result_text}}",
+                "text": "Status: {{$jason.status_text}}",
                 "style": {
                   "size": "18"
                 }
