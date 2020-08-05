@@ -8,7 +8,8 @@
           "type": "$global.set",
           "options": {
             "jwt_token": "MySessionToken",
-            "default_currency": "SGD"
+            "default_currency": "SGD",
+            "jason_url": "https://giffynet.github.io/jasonelle"
           }
         }
       }
