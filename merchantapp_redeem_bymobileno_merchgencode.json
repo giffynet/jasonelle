@@ -39,7 +39,7 @@
                 "options": {
                   "items": [{
                     "type": "text",
-                    "text": "Please enter {{$get.dynamic_pin2}} to redeem {{$params.currency}} {{$params.amount}} from your gift card, which is registered under mobile number +{{$get.mobile_number2}}. Thank you for your support."
+                    "text": "Please enter PIN: {{$get.dynamic_pin2}} to redeem {{$params.currency}} {{$params.amount}} from your gift card, which is registered under mobile number +{{$get.mobile_number2}}. Thank you for your support."
                   }]
                 }
               }
