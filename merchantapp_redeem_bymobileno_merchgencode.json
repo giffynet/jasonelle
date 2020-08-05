@@ -28,6 +28,24 @@
             },
             "style": {
               "background": "#BC845C"
+            },
+            "menu": {
+              "text": "SNAP AND SHARE",
+              "style": {
+                "color": "#FFFFFF"
+              },
+              "action": {
+                "type": "$snapshot",
+                "success": {
+                  "type": "$util.share",
+                  "options": {
+                    "items": [{
+                      "type": "image",
+                      "data": "{{$jason.data}}"
+                    }]
+                  }
+                }
+              }
             }
           },
           "sections": [{
