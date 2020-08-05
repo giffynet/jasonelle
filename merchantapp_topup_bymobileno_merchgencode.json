@@ -39,7 +39,7 @@
                 "options": {
                   "items": [{
                     "type": "text",
-                    "text": "Please enter {{$get.dynamic_pin2}} to Giffy app to redeem {{$params.currency}} {{$params.amount}} from your gift card. Thank you for your support."
+                    "text": "Please enter {{$get.dynamic_pin2}} to topup {{$params.currency}} {{$params.amount}} to your gift card. Thank you for your support."
                   }]
                 }
               }
