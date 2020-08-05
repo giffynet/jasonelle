@@ -81,7 +81,35 @@
                 }]
               }
             }
-          }]
+          }],
+          "footer": {
+            "tabs": {
+              "style": {
+                "background": "#BC845C",
+                "color:disabled": "#FFFFFF",
+                "color": "#84522D"
+              },
+              "items": [{
+                "text": "CURRENT BATCH",
+                "style": {
+                  "height": "21"
+                },
+                "href": {
+                  "url": "https://giffynet.github.io/jasonelle/merchantapp_batchdetails.json",
+                  "transition": "replace"
+                }
+              }, {
+                "text": "PREV BATCH",
+                "style": {
+                  "height": "21"
+                },
+                "href": {
+                  "url": "https://giffynet.github.io/jasonelle/merchantapp_batchdetails_prev.json",
+                  "transition": "replace"
+                }
+              }]
+            }
+          }
         }
       }
     }
