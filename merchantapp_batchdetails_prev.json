@@ -7,7 +7,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://giffynet.github.io/jasonelle/transactionlist_prev.json",
+            "url": "{{$global.jason_url}}/transactionlist_prev.json",
             "method": "get",
             "header" : {
               "Authorization" : "Bearer {{$global.jwt_token}}"
@@ -34,7 +34,7 @@
           "header": {
             "title": {
               "type": "image",
-              "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png"
+              "url": "{{$global.jason_url}}/giffy_circle_small.png"
             },
             "style": {
               "background": "#BC845C"
@@ -69,7 +69,7 @@
                     "size": "18"
                   },
                   "href": {
-                    "url": "https://giffynet.github.io/jasonelle/merchantapp_transactionresult.json",
+                    "url": "{{$global.jason_url}}/merchantapp_transactionresult.json",
                     "transition": "push",
                     "options": {
                       "transaction_id": "{{transaction_id}}"
@@ -98,7 +98,7 @@
                   "height": "21"
                 },
                 "href": {
-                  "url": "https://giffynet.github.io/jasonelle/merchantapp_batchdetails.json",
+                  "url": "{{$global.jason_url}}/merchantapp_batchdetails.json",
                   "transition": "replace"
                 }
               }, {
@@ -107,7 +107,7 @@
                   "height": "21"
                 },
                 "href": {
-                  "url": "https://giffynet.github.io/jasonelle/merchantapp_batchdetails_prev.json",
+                  "url": "{{$global.jason_url}}/merchantapp_batchdetails_prev.json",
                   "transition": "replace"
                 }
               }]
