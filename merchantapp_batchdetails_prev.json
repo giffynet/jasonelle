@@ -23,6 +23,9 @@
               "text": "Unable to  fetch transaction list from server. Please check your internet connection."
             }
           }
+        },
+        "$foreground": {
+          "type": "$reload"
         }
       },
       "templates": {
