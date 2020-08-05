@@ -17,7 +17,7 @@
           "header": {
             "title": {
             "type": "image",
-            "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png"
+            "url": "{{$global.jason_url}}/giffy_circle_small.png"
             },
             "style": {
               "background": "#BC845C"
@@ -113,7 +113,7 @@
                 "action": {
                   "type": "$network.request",
                   "options": {
-                    "url": "https://giffynet.github.io/jasonelle/transaction.json",
+                    "url": "{{$global.jason_url}}/transaction.json",
                     "method": "get",
                     "header" : {
                       "Authorization": "Bearer {{$global.jwt_token}}",
@@ -130,7 +130,7 @@
                   "success": {
                     "type": "$href",
                     "options": {
-                      "url": "https://giffynet.github.io/jasonelle/merchantapp_transactionresult.json",
+                      "url": "{{$global.jason_url}}/merchantapp_transactionresult.json",
                       "transition": "replace",
                       "options": {
                         "transaction_id": "{{$jason.transaction_id}}"
@@ -161,7 +161,7 @@
                   "height": "21"
                 },
                 "href": {
-                  "url": "https://giffynet.github.io/jasonelle/merchantapp_redeem_byqrcode.json",
+                  "url": "{{$global.jason_url}}/merchantapp_redeem_byqrcode.json",
                   "transition": "replace",
                   "options": {
                     "amount": "{{$params.amount}}",
@@ -174,7 +174,7 @@
                   "height": "21"
                 },
                 "href": {
-                  "url": "https://giffynet.github.io/jasonelle/merchantapp_redeem_bymobileno_custgencode.json",
+                  "url": "{{$global.jason_url}}/merchantapp_redeem_bymobileno_custgencode.json",
                   "transition": "replace",
                   "options": {
                     "currency": "{{$params.currency}}",
@@ -187,7 +187,7 @@
                   "height": "21"
                 },
                 "href": {
-                  "url": "https://giffynet.github.io/jasonelle/merchantapp_redeem_bymobileno_merchgencode.json",
+                  "url": "{{$global.jason_url}}/merchantapp_redeem_bymobileno_merchgencode.json",
                   "transition": "replace",
                   "options": {
                     "currency": "{{$params.currency}}",
