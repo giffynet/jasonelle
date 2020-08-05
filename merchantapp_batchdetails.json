@@ -55,7 +55,7 @@
                 },
                 "components": [{
                   "type": "label",
-                  "text": "{{transaction_datetime}} / {{customer_name}}",
+                  "text": "{{transaction_datetime}} / {{consumer_name}}",
                   "style": {
                     "size": "12"
                   }
