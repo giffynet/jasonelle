@@ -33,7 +33,19 @@
             "title": "Batch Menu",
             "options": {
               "items": [{
-                "text": "Batch Details"
+                "text": "Batch Details",
+                "action": {
+                  "type": "$href",
+                  "options": {
+                    "url": "https://giffynet.github.io/jasonelle/merchantapp_batchdetails.json",
+                    "transition": "push"
+                  }
+                },
+                "success": {
+                  "type": "$render"
+                },
+                "error": {
+                }
               },{
                 "text": "Batch Total"
               }]
