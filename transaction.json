@@ -3,6 +3,7 @@
   "transaction_id": "123456789012",
   "transaction_type": "sales",
   "transaction_datetime": "15-07-2020 14:00",
+  "transaction_currency": "SGD",
   "transaction_amount": "100",
   "result_code": "0",
   "result_text": "Successful",
