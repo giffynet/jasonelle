@@ -7,7 +7,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "https://giffynet.github.io/jasonelle/transactionlist.json",
+            "url": "https://giffynet.github.io/jasonelle/transactionlist_prev.json",
             "method": "get",
             "header" : {
               "Authorization" : "Bearer {{$global.jwt_token}}"
