@@ -5,12 +5,18 @@
       "description": "This app enable merchant to  accept digital gift card powered by Giffy",
       "actions": {
         "$load": {
-          "type": "$network.request",
+          "type": "$global.set",
           "options": {
-            "url": "https://ptsv2.com/t/giffynet/post",
-            "method": "get",
-            "header" : {
-              "Authorization" : "Bearer {{$global.jwt_token}}"
+            "jason_url": "https://giffynet.github.io/jasonelle"
+          },
+          "success": {
+            "type": "$network.request",
+            "options": {
+              "url": "https://ptsv2.com/t/giffynet/post",
+              "method": "get",
+              "header" : {
+                "Authorization" : "Bearer {{$global.jwt_token}}"
+              }
             }
           }
         },
