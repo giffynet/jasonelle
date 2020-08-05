@@ -11,6 +11,9 @@
       "status_text": "Successful",
       "programme_id": "3",
       "programme_name": "Cashback Gift Card",
+      "basic_amount": 50,
+      "bonus_amount": 0,
+      "excess_amount": 0,
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     },
@@ -25,6 +28,9 @@
       "status_text": "Successful",
       "programme_id": "3",
       "programme_name": "Cashback Gift Card",
+      "basic_amount": 50,
+      "bonus_amount": 5,
+      "excess_amount": 0,
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     }
