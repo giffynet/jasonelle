@@ -19,7 +19,7 @@
       "header": {
         "title": {
           "type": "image",
-          "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png"
+          "url": "{{$global.jason_url}}/giffy_circle_small.png"
         },
         "style": {
           "background": "#BC845C"
@@ -38,7 +38,7 @@
                 "action": {
                   "type": "$href",
                   "options": {
-                    "url": "https://giffynet.github.io/jasonelle/merchantapp_batchdetails.json",
+                    "url": "{{$global.jason_url}}/merchantapp_batchdetails.json",
                     "transition": "push"
                   }
                 },
@@ -77,7 +77,7 @@
               "size": "24"
             },
             "href": {
-              "url": "https://giffynet.github.io/jasonelle/merchantapp_sales.json",
+              "url": "{{$global.jason_url}}/merchantapp_sales.json",
               "transition": "push"
             }
           },{
@@ -95,12 +95,12 @@
               "size": "24"
             },
             "href": {
-              "url": "https://giffynet.github.io/jasonelle/merchantapp_getamount.json",
+              "url": "{{$global.jason_url}}/merchantapp_getamount.json",
               "transition": "push",
               "options": {
                 "activity": "Topup",
                 "currency": "{{$global.default_currency}}",
-                "next_url": "https://giffynet.github.io/jasonelle/merchantapp_topup_byqrcode.json"
+                "next_url": "{{$global.jason_url}}/merchantapp_topup_byqrcode.json"
               }
             }
           },{
@@ -118,12 +118,12 @@
               "size": "24"
             },
             "href": {
-              "url": "https://giffynet.github.io/jasonelle/merchantapp_getamount.json",
+              "url": "{{$global.jason_url}}/merchantapp_getamount.json",
               "transition": "push",
               "options": {
                 "activity": "Redeem",
                 "currency": "{{$global.default_currency}}",
-                "next_url": "https://giffynet.github.io/jasonelle/merchantapp_redeem_byqrcode.json"
+                "next_url": "{{$global.jason_url}}/merchantapp_redeem_byqrcode.json"
               }
             }
           }]
