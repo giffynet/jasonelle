@@ -30,20 +30,17 @@
               "background": "#BC845C"
             },
             "menu": {
-              "text": "SNAP AND SHARE",
+              "text": "SHARE",
               "style": {
                 "color": "#FFFFFF"
               },
               "action": {
-                "type": "$snapshot",
-                "success": {
-                  "type": "$util.share",
-                  "options": {
-                    "items": [{
-                      "type": "image",
-                      "data": "{{$jason.data}}"
-                    }]
-                  }
+                "type": "$util.share",
+                "options": {
+                  "items": [{
+                    "type": "text",
+                    "text": "Please enter {{$get.dynamic_pin2}} to Giffy app to redeem {{$params.currency}} {{$params.amount}} from your gift card. Thank you for your support."
+                  }]
                 }
               }
             }
