@@ -58,46 +58,31 @@
                 }
               },{
                 "type": "label",
-                "text": "{{$jason.transaction_id}}",
-                "style": {
-                  "size": "18"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
-                "type": "label",
-                "text": "{{$jason.transaction_type}}",
-                "style": {
-                  "size": "18"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
-                "type": "label",
-                "text": "{{$jason.transaction_datetime}}",
-                "style": {
-                  "size": "18"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
-                "type": "label",
-                "text": "{{$jason.transaction_amount}}",
+                "text": "Trans ID: {{$jason.transaction_id}}",
                 "style": {
                   "size": "18"
                 }
               },{
                 "type": "label",
-                "text": "{{$jason.result_text}}",
+                "text": "Trans Type: {{$jason.transaction_type}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "Date/Time: {{$jason.transaction_datetime}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "Amount: {{$jason.transaction_currency}} {{$jason.transaction_amount}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "Result: {{$jason.result_text}}",
                 "style": {
                   "size": "18"
                 }
