@@ -11,6 +11,9 @@
       "status_text": "Successful",
       "programme_id": "4",
       "programme_name": "Extra Value Gift Card",
+      "basic_amount": 100,
+      "bonus_amount": 20,
+      "excess_amount": 0,
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     },
@@ -25,6 +28,9 @@
       "status_text": "Successful",
       "programme_id": "4",
       "programme_name": "Extra Value Gift Card",
+      "basic_amount": 20,
+      "bonus_amount": 2,
+      "excess_amount": 0,
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     },
@@ -39,6 +45,9 @@
       "status_text": "Successful",
       "programme_id": "4",
       "programme_name": "Extra Value Gift Card",
+      "basic_amount": 8,
+      "bonus_amount": 2,
+      "excess_amount": 0,
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     },
@@ -53,6 +62,9 @@
       "status_text": "Successful",
       "programme_id": "4",
       "programme_name": "Extra Value Gift Card",
+      "basic_amount": 20,
+      "bonus_amount": 0,
+      "excess_amount": 0,
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     },
@@ -67,6 +79,9 @@
       "status_text": "Pending",
       "programme_id": "4",
       "programme_name": "Extra Value Gift Card",
+      "basic_amount": 50,
+      "bonus_amount": 5,
+      "excess_amount": 0,
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     },
@@ -81,6 +96,9 @@
       "status_text": "Successful",
       "programme_id": "3",
       "programme_name": "Cashback Gift Card",
+      "basic_amount": 100,
+      "bonus_amount": 0,
+      "excess_amount": 0,
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     },
@@ -95,6 +113,9 @@
       "status_text": "Pending",
       "programme_id": "3",
       "programme_name": "Cashback Gift Card",
+      "basic_amount": 30,
+      "bonus_amount": 3,
+      "excess_amount": 0,
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     },
@@ -109,6 +130,9 @@
       "status_text": "Successful",
       "programme_id": "4",
       "programme_name": "$50 Gift Card",
+      "basic_amount": 50,
+      "bonus_amount": 0,
+      "excess_amount": 0,
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     }
