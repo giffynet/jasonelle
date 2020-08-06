@@ -67,7 +67,6 @@
               },{
                 "type": "textfield",
                 "name": "amount",
-                "focus": "true",
                 "placeholder": "e.g. 1500.00",
                 "keyboard": "number",
                 "style": {
