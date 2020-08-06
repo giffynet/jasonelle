@@ -103,6 +103,9 @@
         "$foreground": {
           "type": "$reload"
         },
+        "$show": {
+          "type": "$reload"
+        },
         "$vision.ready": {
           "type": "$vision.scan"
         },
