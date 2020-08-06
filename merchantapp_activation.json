@@ -17,6 +17,15 @@
               "header" : {
                 "Authorization" : "Bearer {{$global.jwt_token}}"
               }
+            },
+            "success": {
+              "type": "$render"
+            },
+            "error": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Unable to retrieve session token. Please check your internet connection."
+              }
             }
           }
         },
