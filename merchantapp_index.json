@@ -52,6 +52,18 @@
                 }
               },{
                 "text": "Batch Total"
+                "action": {
+                  "type": "$href",
+                  "options": {
+                    "url": "{{$global.jason_url}}/merchantapp_batchsummary.json",
+                    "transition": "push"
+                  }
+                },
+                "success": {
+                  "type": "$render"
+                },
+                "error": {
+                }
               }]
             }
           }
