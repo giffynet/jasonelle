@@ -66,8 +66,8 @@
                   "size": "18"
                 }
               },{
-                "type": "Redeem",
-                "text": "Date/Time: {{$jason.transaction_datetime}}",
+                "type": "label",
+                "text": "Redeem",
                 "style": {
                   "size": "18"
                 }
