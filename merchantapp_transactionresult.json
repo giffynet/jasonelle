@@ -105,10 +105,10 @@
                   "options": {
                     "title": "Confirm to void?",
                     "description": "Please note that you will not be able to undo the void.  Confirm this operation by entering Device PIN to proceed.",
-                    "form": {
+                    "form": [{
                       "name": "device_pin",
                       "placeholder": "Enter Device PIN"
-                    }
+                    }]
                   },
                   "success": {
                     "type": "$network.request",
