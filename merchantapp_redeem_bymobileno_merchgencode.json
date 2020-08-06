@@ -8,7 +8,9 @@
           "type": "$set",
           "options": {
             "dynamic_pin2": "",
-            "mobile_number2": ""
+            "mobile_number2": "",
+            "expiry2": "",
+            "expiry": ""
           },
           "success": {
             "type": "$render"
@@ -39,7 +41,7 @@
                 "options": {
                   "items": [{
                     "type": "text",
-                    "text": "Please enter PIN: {{$get.dynamic_pin2}} to redeem {{$params.currency}} {{$params.amount}} from your gift card, which is registered under mobile number +{{$get.mobile_number2}}. Thank you for your support."
+                    "text": "Please enter PIN: {{$get.dynamic_pin2}} by {{$get.expiry}} to redeem {{$params.currency}} {{$params.amount}} from your gift card, which is registered under mobile number +{{$get.mobile_number2}}. Thank you for your support."
                   }]
                 }
               }
@@ -112,11 +114,20 @@
                   "height": "20"
                 }
               },{
-                "type": "label",
-                "text": "{{$get.dynamic_pin2}}",
-                "style": {
-                  "size": "18"
-                }
+                "type": "horizontal",
+                "components": [{
+                  "type": "label",
+                  "text": "{{$get.dynamic_pin2}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "{{$get.expiry2}}",
+                  "style": {
+                    "size": "18"
+                  }
+                }]
               },{
                 "type": "space",
                 "style": {
@@ -150,7 +161,9 @@
                   "success": {
                     "type": "$set",
                     "options": {
-                      "dynamic_pin2": "{{$jason.dynamic_pin}}"
+                      "dynamic_pin2": "{{$jason.dynamic_pin}}",
+                      "expiry": "{{$jason.expiry}}",
+                      "expiry2": "Exp: {{$jason.expiry}}"
                     },
                     "success": {
                       "type": "$render"
