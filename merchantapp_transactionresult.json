@@ -130,7 +130,7 @@
                     }
                   },
                   "error": {
-                    "type": "util.toast",
+                    "type": "$util.toast",
                     "options": {
                       "text": "Void is cancelled"
                     }
