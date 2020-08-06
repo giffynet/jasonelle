@@ -26,7 +26,10 @@
         },
         "$foreground": {
           "type": "$reload"
-        }
+        },
+        "$pull": {
+          "type": "$reload"
+        },
       },
       "templates": {
         "body": {
