@@ -55,7 +55,7 @@
           },
           "components": [{
             "type": "image",
-            "url": "{{$global.jason_url}}/giffy_circle_small.png",
+            "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png",
             "style": {
               "width": "100",
               "height": "100"
