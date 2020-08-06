@@ -1,0 +1,7 @@
+{
+  "transaction_id": "1",
+  "transaction_type": "sales (void)",
+  "transaction_datetime": "01-08-2020 23:00:00",
+  "status_code": 0,
+  "status_text": "successful"
+}
