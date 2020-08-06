@@ -1,0 +1,29 @@
+{
+  "batch_id": "1",
+  "currency": "SGD",
+  "sales_summary": {
+    "transaction_count": 5,
+    "total_transaction_amount": 500,
+    "total_basic_amount": 500,
+    "total_bonus_amount": 10,
+    "void_count": 0,
+    "void_amount": 0
+  },
+  "topup_summary": {
+    "transaction_count": 10,
+    "total_transaction_amount": 500,
+    "total_basic_amount": 500,
+    "total_bonus_amount": 5,
+    "void_count": 1,
+    "void_amount": 500
+  },
+  "redeem_summary": {
+    "transaction_count": 2,
+    "total_transaction_amount": 100,
+    "total_basic_amount": 80,
+    "total_bonus_amount": 4,
+    "total_excess_amount": 20,
+    "void_count": 0,
+    "void_amount": 0
+  }
+}
