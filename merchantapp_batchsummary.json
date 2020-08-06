@@ -88,7 +88,8 @@
                 "action": {
                   "type": "$util.alert",
                   "options": {
-                    "title": "Confirm to close batch?"
+                    "title": "Confirm to close batch?",
+                    "description": "This  operation will close the current batch and open new one."
                   },
                   "success": {
                     "type": "$network.request",
