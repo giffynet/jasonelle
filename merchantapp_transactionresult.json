@@ -93,6 +93,56 @@
                 }
               },{
                 "type": "button",
+                "text": "Void",
+                "style": {
+                  "background": "#d9d9d9",
+                  "color": "#000000",
+                  "height": "80",
+                  "size": "24"
+                },
+                "action": {
+                  "type": "$util.alert",
+                  "options": {
+                    "title": "Confirm to void this transaction?",
+                    "description": "Please note that you will not be able to undo the void.  Please confirm this operation to proceed."
+                  },
+                  "success": {
+                    "type": "$network.request",
+                    "options": {
+                      "url": "{{$global.jason_url}}/transactionvoid.json",
+                      "method": "get",
+                      "data": {
+                        "id": "{{$params.transaction_id}}"
+                      },
+                      "head" : {
+                        "Authorization": "Bearer {{$global.jwt_token}}"
+                      }
+                    },
+                    "success": {
+                      "type": "$reload"
+                    },
+                    "error": {
+                      "type": "$util.toast",
+                      "options": {
+                        "type": "warning",
+                        "text": "Unable to  fetch transaction details from server. Please check your internet connection."
+                      }
+                    }
+                  }
+                  "error": {
+                    "type": "util.toast",
+                    "options": {
+                      "text": "Void is not performed"
+                    }
+                  }
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "button",
                 "text": "Back",
                 "style": {
                   "background": "#d9d9d9",
