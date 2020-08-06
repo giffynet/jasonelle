@@ -9,7 +9,8 @@
           "options": {
             "dynamic_pin2": "",
             "mobile_number2": "",
-            "expiry": ""
+            "expiry2": "",
+            "expiry": "",
           },
           "success": {
             "type": "$render"
@@ -40,7 +41,7 @@
                 "options": {
                   "items": [{
                     "type": "text",
-                    "text": "Please enter PIN: {{$get.dynamic_pin2}} to topup {{$params.currency}} {{$params.amount}} to your gift card, which is registered under mobile number +{{$get.mobile_number2}}. Thank you for your support."
+                    "text": "Please enter PIN: {{$get.dynamic_pin2}} by {{$get.expiry}} to topup {{$params.currency}} {{$params.amount}} to your gift card, which is registered under mobile number +{{$get.mobile_number2}}. Thank you for your support."
                   }]
                 }
               }
@@ -122,7 +123,7 @@
                   }
                 },{
                   "type": "label",
-                  "text": "{{$get.expiry}}",
+                  "text": "{{$get.expiry2}}",
                   "style": {
                     "size": "18"
                   }
@@ -161,7 +162,8 @@
                     "type": "$set",
                     "options": {
                       "dynamic_pin2": "{{$jason.dynamic_pin}}",
-                      "expiry": "Exp: {{$jason.expiry}}"
+                      "expiry": "{{$jason.expiry}}",
+                      "expiry2": "Exp: {{$jason.expiry}}"
                     },
                     "success": {
                       "type": "$render"
