@@ -10,6 +10,9 @@
             "jwt_token": "MySessionToken",
             "default_currency": "SGD",
             "jason_url": "https://giffynet.github.io/jasonelle"
+          },
+          "success": {
+            "type": "$render"
           }
         }
       }
