@@ -114,20 +114,17 @@
                   "height": "20"
                 }
               },{
-                "type": "horizontal",
-                "components": [{
-                  "type": "label",
-                  "text": "{{$get.dynamic_pin2}}",
-                  "style": {
-                    "size": "18"
-                  }
-                },{
-                  "type": "label",
-                  "text": "{{$get.expiry2}}",
-                  "style": {
-                    "size": "18"
-                  }
-                }]
+                "type": "label",
+                "text": "{{$get.dynamic_pin2}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "{{$get.expiry2}}",
+                "style": {
+                  "size": "12"
+                }
               },{
                 "type": "space",
                 "style": {
@@ -163,7 +160,7 @@
                     "options": {
                       "dynamic_pin2": "{{$jason.dynamic_pin}}",
                       "expiry": "{{$jason.expiry}}",
-                      "expiry2": "Exp: {{$jason.expiry}}"
+                      "expiry2": "Expired by: {{$jason.expiry}}"
                     },
                     "success": {
                       "type": "$render"
