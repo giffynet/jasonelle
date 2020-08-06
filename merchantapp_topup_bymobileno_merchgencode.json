@@ -161,7 +161,7 @@
                     "type": "$set",
                     "options": {
                       "dynamic_pin2": "{{$jason.dynamic_pin}}",
-                      "expiry": "{{$jason.expiry}}"
+                      "expiry": "Exp: {{$jason.expiry}}"
                     },
                     "success": {
                       "type": "$render"
