@@ -57,19 +57,19 @@
                 "type": "label",
                 "text": "Sales:",
                 "style": {
-                  "size": "18"
+                  "size": "24"
                 }
               },{
                 "type": "label",
                 "text": "Topup:",
                 "style": {
-                  "size": "18"
+                  "size": "24"
                 }
               },{
                 "type": "label",
-                "text": "Redeem",
+                "text": "Redeem:",
                 "style": {
-                  "size": "18"
+                  "size": "24"
                 }
               },{
                 "type": "space",
