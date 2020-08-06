@@ -8,9 +8,12 @@
           "type": "$network.request",
           "options": {
             "url": "https://ptsv2.com/t/giffynet/post",
-            "method": "get",
+            "method": "post",
             "header" : {
               "Authorization" : "Bearer {{$global.jwt_token}}"
+            },
+            "data": {
+              "dummy": "test"
             }
           },
           "success": {
@@ -19,7 +22,7 @@
           "error": {
             "type": "$util.toast",
             "options": {
-              "text": "Unable to retrieve session token. Please check your internet connection."
+              "text": "Unable to validate session token. Please activate this device."
             }
           }
         }
