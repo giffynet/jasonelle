@@ -128,11 +128,11 @@
                         "text": "Unable to  fetch transaction details from server. Please check your internet connection."
                       }
                     }
-                  }
+                  },
                   "error": {
                     "type": "util.toast",
                     "options": {
-                      "text": "Void is not performed"
+                      "text": "Void is cancelled"
                     }
                   }
                 }
