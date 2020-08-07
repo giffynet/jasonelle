@@ -1,0 +1,105 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy Consumer - Index",
+      "description": "This app enable consumer to buy and store digital gift card powered by Giffy",
+      "actions": {
+        "$load": {
+          "type": "$global.set",
+          "options": {
+            "jason_url": "https://giffynet.github.io/jasonelle"
+          },
+          "success": {
+            "type": "$network.request",
+            "options": {
+              "url": "{{$global.jason_url}}/consumercards.json",
+              "method": "get",
+              "header" : {
+                "Authorization" : "Bearer {{$global.jwt_token}}"
+              }
+            },
+            "success": {
+              "type": "$render"
+            },
+            "error": {
+              "type": "$util.toast",
+              "options": {
+                "type": "warning",
+                "text": "Unable to  fetch consumer cards list from server. Please check your internet connection."
+              }
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "background": "#f3f3f3",
+          "header": {
+            "title": {
+              "type": "image",
+              "url": "{{$global.jason_url}}/giffy_circle_small.png"
+            },
+            "style": {
+              "background": "#BC845C"
+            },
+            "search": {
+              "name": "query_text",
+              "placeholder": "Enter Keywords",
+              "style": {
+                "background": "#f3f3f3"
+              }
+            }
+          },
+          "sections": [{
+            "items": {
+              "{{#each $jason.consumercards}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "20",
+                  "distribution": "equalspacing"
+                },
+                "components": [{
+                  "type": "label",
+                  "text": "{{programme_name}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "Currency: {{currency}}, Balance: {{total_balance}} (Basic: {{basic_balance}}, Bonus: {{bonus_balance}}). Valid until: {{expiry_date}}",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "button",
+                  "url": "{{image_url}}",
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
+                    "transition": "push",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "customer_id": "{{customer_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                },{
+                  "type": "button",
+                  "text": "Terms and Conditions",
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_terms.json",
+                    "transition": "modal",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                }]
+              }
+            }
+          }]
+        }
+      }
+    }
+  }
+}
