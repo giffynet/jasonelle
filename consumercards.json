@@ -2,6 +2,7 @@
   "consumercards": [
     {
       "card_id": "1",
+      "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
       "status": "1",
       "status_text": "Pending Activation",
       "consumer_id": "1",
@@ -14,6 +15,7 @@
       "expiry_date": "01-08-2025"
     },{
       "card_id": "2",
+      "image_url": "https://giffynet.github.io/jasonelle/giftcard1.png",
       "status": "2",
       "status_text": "Active",
       "consumer_id": "1",
@@ -26,6 +28,7 @@
       "expiry_date": "01-08-2025"
     },{
       "card_id": "3",
+      "image_url": "https://giffynet.github.io/jasonelle/giftcard3.png",
       "status": "2",
       "status_text": "Active",
       "consumer_id": "1",
@@ -38,6 +41,7 @@
       "expiry_date": "01-08-2025"
     },{
       "card_id": "4",
+      "image_url": "https://giffynet.github.io/jasonelle/giftcard1.png",
       "status": "2",
       "status_text": "Active",
       "consumer_id": "1",
@@ -50,6 +54,7 @@
       "expiry_date": "01-08-2025"
     },{
       "card_id": "5",
+      "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
       "status": "4",
       "status_text": "Closed",
       "consumer_id": "1",
@@ -62,6 +67,7 @@
       "expiry_date": "01-08-2025"
     },{
       "card_id": "6",
+      "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
       "status": "4",
       "status_text": "Expired",
       "consumer_id": "1",
