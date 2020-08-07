@@ -91,7 +91,7 @@
                   }
                 },{
                   "type": "button",
-                  "text": "Terms and Conditions",
+                  "text": "Terms and Conditions*",
                   "href": {
                     "url": "{{$global.jason_url}}/consumerapp_terms.json",
                     "transition": "modal",
