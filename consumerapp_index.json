@@ -75,7 +75,7 @@
                   "type": "label",
                   "text": [
                     {
-                      "{{#if establishment_name=='{{establishment_name}}'}}": ""
+                      "{{#if establishment_name=='ALL'}}": "ALL"
                     },
                     {
                       "{{#else}}": "[{{establishment_name}}]"
