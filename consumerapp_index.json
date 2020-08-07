@@ -61,7 +61,7 @@
                 },
                 "components": [{
                   "type": "label",
-                  "text": "{{programme_name}} from {{corporation_name}} [{{establishment_name}}]",
+                  "text": "{{programme_name}} from {{issuer_name}}",
                   "style": {
                     "size": "18"
                   }
