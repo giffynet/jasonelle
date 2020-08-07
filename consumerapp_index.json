@@ -79,7 +79,7 @@
                     "transition": "push",
                     "options": {
                       "card_id": "{{card_id}}",
-                      "customer_id": "{{customer_id}}",
+                      "consumer_id": "{{consumer_id}}",
                       "programme_id": "{{programme_id}}"
                     }
                   }
