@@ -73,14 +73,7 @@
                   }
                 },{
                   "type": "label",
-                  "text": [
-                    {
-                      "{{#if establishment_name=='ALL'}}": "ALL"
-                    },
-                    {
-                      "{{#else}}": "[{{establishment_name}}]"
-                    }
-                  ],
+                  "text": "[{{establishment_name}}]",
                   "style": {
                     "size": "18"
                   }
