@@ -54,10 +54,9 @@
             "type": "image",
             "url": "{{$global.jason_url}}/floating_plus.png",
             "style": {
-              "bottom": "100",
-              "right": "100",
-              "width": "100",
-              "height": "100",
+              "bottom": "50",
+              "right": "50",
+              "width": "50"
               "corner_radius": "50"
             }
           }],
