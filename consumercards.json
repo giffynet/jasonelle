@@ -11,9 +11,9 @@
       "corporation_name": "Marvel",
       "establishment_name": "Avenger",
       "currency": "SGD",
-      "total_balance": 10,
-      "basic_balance": 10,
-      "bonus_balance": 0,
+      "total_balance": 10.00,
+      "basic_balance": 10.00,
+      "bonus_balance": 0.00,
       "expiry_date": "01-08-2025"
     },{
       "card_id": "2",
