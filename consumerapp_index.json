@@ -73,7 +73,8 @@
                   }
                 },{
                   "type": "label",
-                  "text": "Balance: {{total_balance}} (Basic: {{basic_balance}}, Bonus: {{bonus_balance}}). Valid until: {{expiry_date}}",
+                  "text": "Balance: "+"{{total_balance}}",
+                  "text": "Basic: "+"{{basic_balance}}"+", Bonus: "+"{{bonus_balance}})"+". Valid until: "+"{{expiry_date}}",
                   "style": {
                     "size": "12"
                   }
