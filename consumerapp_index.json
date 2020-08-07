@@ -59,6 +59,76 @@
               "width": "60"
               "corner_radius": "50"
             }
+          }],
+          "sections": [{
+            "items": {
+              "{{#each $jason.consumercards}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "20",
+                  "distribution": "equalspacing"
+                },
+                "components": [{
+                  "type": "label",
+                  "text": "{{programme_name}} from {{issuer_name}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "Status: {{status_text}}, Currency: {{currency}}",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "label",
+                  "text": "Balance: {{total_balance}} - Valid until: {{expiry_date}}",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "label",
+                  "text": "[Basic: {{basic_balance}}, Bonus: {{bonus_balance}}]",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "button",
+                  "url": "{{image_url}}",
+                  "href": {
+                    "url": [
+                      {
+                        "{{#if status=='P'}}": "{{$global.jason_url}}/consumerapp_cardactivation.json"
+                      },
+                      {
+                        "{{#elseif status=='A'}}": "{{$global.jason_url}}/consumerapp_byqrcode.json"
+                      },
+                      {
+                        "{{#else}}": "{{$global.jason_url}}/consumerapp_cardinactive.json"
+                      }
+                     ],
+                    "transition": "push",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "consumer_id": "{{consumer_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                },{
+                  "type": "button",
+                  "text": "Terms and Conditions*",
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_terms.json",
+                    "transition": "modal",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                }]
+              }
+            }
           }]
         }
       }
