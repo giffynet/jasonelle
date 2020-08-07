@@ -52,7 +52,7 @@
           },
           "layers": [{
             "type": "image",
-            "url": "{{$global.jason_url}}/floating_plus_button.png",
+            "url": "{{$global.jason_url}}/add_button.png",
             "style": {
               "bottom": "20",
               "right": "20",
