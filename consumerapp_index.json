@@ -95,7 +95,7 @@
                         "{{#elseif status=='A'}}": "{{$global.jason_url}}/consumerapp_byqrcode.json"
                       },
                       {
-                        "{{#else}}": ""
+                        "{{#else}}": "{{$global.jason_url}}/consumerapp_cardinactive.json"
                       }
                      ],
                     "transition": "push",
