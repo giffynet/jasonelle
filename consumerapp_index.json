@@ -87,7 +87,17 @@
                   "type": "button",
                   "url": "{{image_url}}",
                   "href": {
-                    "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
+                    "url": [
+                      {
+                        "{{#if status=='P'}}": "{{$global.jason_url}}/consumerapp_cardactivation.json"
+                      },
+                      {
+                        "{{#elseif status=='A'}}": "{{$global.jason_url}}/consumerapp_byqrcode.json"
+                      },
+                      {
+                        "{{#else}}": ""
+                      }
+                     ],
                     "transition": "push",
                     "options": {
                       "card_id": "{{card_id}}",
