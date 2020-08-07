@@ -60,7 +60,7 @@
               "height": "100",
               "corner_radius": "50"
             }
-          ],
+          }],
           "sections": [{
             "items": {
               "{{#each $jason.consumercards}}": {
