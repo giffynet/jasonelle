@@ -64,7 +64,7 @@
                 },
                 "components": [{
                   "type": "label",
-                  "text": "{{transaction_datetime}} / {{$root.consumer_name}}",
+                  "text": "{{transaction_datetime}} / {{$jason.consumer_name}}",
                   "style": {
                     "size": "12"
                   }
@@ -82,7 +82,7 @@
                   }
                 },{
                   "type": "label",
-                  "text": "{{$root.programme_name}}",
+                  "text": "{{$jason.programme_name}}",
                   "style": {
                     "size": "12"
                   }
