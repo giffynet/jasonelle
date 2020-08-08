@@ -1,0 +1,18 @@
+{
+  "card_id": "1",
+  "programme_id": "3",
+  "programme_name": "Cashback Gift Card",
+  "consumer_id": "1",
+  "consumer_name": "Optimus Prime",
+  "total_balance": "505",
+  "basic_balance": "500",
+  "bonus_balance": "5",
+  "status_code": "A",
+  "status_text": "Active",
+  "transactions": [
+    {
+      "transaction_id": "1",
+      "transaction_datetime": "01-08-2020 17:00:00",
+      
+  ]
+}
