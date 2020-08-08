@@ -64,19 +64,25 @@
                 },
                 "components": [{
                   "type": "label",
-                  "text": "{{transaction_datetime}} / {{$root.jason.consumer_name}}",
+                  "text": "{{transaction_datetime}} / {{$root.consumer_name}}",
                   "style": {
                     "size": "12"
                   }
                 },{
                   "type": "label",
-                  "text": "{{transaction_type}} {{transaction_currency}} {{transaction_amount}} [{{status_text}}]",
+                  "text": "{{transaction_type}} {{transaction_currency}} {{transaction_amount}}",
                   "style": {
                     "size": "18"
                   }
                 },{
                   "type": "label",
-                  "text": "{{$root.jason.programme_name}}",
+                  "text": "[Basic: {{basic_amount}}, Bonus: {{bonus_amount}}]",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "{{$root.programme_name}}",
                   "style": {
                     "size": "12"
                   }
