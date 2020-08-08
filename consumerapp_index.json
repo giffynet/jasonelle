@@ -58,6 +58,31 @@
               "right": "20",
               "width": "60",
               "corner_radius": "50"
+            },
+            "action": {
+              "type": "$util.picker",
+              "options": {
+                "items": [
+                  {
+                    "text": "Buy Gift Card",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_addcard_byqrcode.json",
+                        "transition": "push"
+                      }
+                    }
+                  },{
+                    "text": "Enter Promo Code",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_addcard_bypromocode.json",
+                        "transition": "push"
+                      }
+                    }
+                ]
+              }
             }
           }],
           "sections": [{
