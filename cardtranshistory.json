@@ -8,9 +8,9 @@
   "consumer_id": "1",
   "consumer_name": "Optimus Prime",
   "issuer_name": "Marvel - Avenger",
-  "total_balance": "505",
-  "basic_balance": "500",
-  "bonus_balance": "5",
+  "total_balance": "112",
+  "basic_balance": "112",
+  "bonus_balance": "0",
   "currency": "SGD",
   "expiry_date": "01-08-2025",
   "transactions": [
