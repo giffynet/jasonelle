@@ -143,6 +143,24 @@
                   }
                 },{
                   "type": "button",
+                  "text": "Transaction History",
+                  "style": {
+                    "background": "#d9d9d9",
+                    "color": "#000000",
+                    "height": "30",
+                    "size": "18"
+                  },
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_transactionhistory.json",
+                    "transition": "push",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "consumer_id": "{{consumer_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                },{
+                  "type": "button",
                   "text": "Terms and Conditions*",
                   "href": {
                     "url": "{{$global.jason_url}}/consumerapp_terms.json",
