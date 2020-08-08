@@ -51,7 +51,7 @@
                 "error": {
                 }
               },{
-                "text": "Batch Total"
+                "text": "Batch Total",
                 "action": {
                   "type": "$href",
                   "options": {
