@@ -64,7 +64,7 @@
                 },
                 "components": [{
                   "type": "label",
-                  "text": "{{transaction_datetime}} / {{consumer_name}}",
+                  "text": "{{transaction_datetime}} / {{$root.jason.consumer_name}}",
                   "style": {
                     "size": "12"
                   }
@@ -73,17 +73,10 @@
                   "text": "{{transaction_type}} {{transaction_currency}} {{transaction_amount}} [{{status_text}}]",
                   "style": {
                     "size": "18"
-                  },
-                  "href": {
-                    "url": "{{$global.jason_url}}/merchantapp_transactionresult.json",
-                    "transition": "push",
-                    "options": {
-                      "transaction_id": "{{transaction_id}}"
-                    }
                   }
                 },{
                   "type": "label",
-                  "text": "{{programme_name}}",
+                  "text": "{{$root.jason.programme_name}}",
                   "style": {
                     "size": "12"
                   }
@@ -99,21 +92,30 @@
                 "color": "#84522D"
               },
               "items": [{
-                "text": "CURRENT BATCH",
+                "text": "Trans History",
                 "style": {
                   "height": "21"
                 },
                 "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_batchdetails.json",
+                  "url": "{{$global.jason_url}}/consumerapp_cardtranshistory.json",
                   "transition": "replace"
                 }
               }, {
-                "text": "PREV BATCH",
+                "text": "Topup",
                 "style": {
                   "height": "21"
                 },
                 "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_batchdetails_prev.json",
+                  "url": "{{$global.jason_url}}/consumerapp_topup.json",
+                  "transition": "replace"
+                }
+              }, {
+                "text": "Redeem",
+                "style": {
+                  "height": "21"
+                },
+                "href": {
+                  "url": "{{$global.jason_url}}/consumerapp_redeem.json",
                   "transition": "replace"
                 }
               }]
