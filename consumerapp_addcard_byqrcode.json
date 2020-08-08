@@ -65,7 +65,7 @@
                   "height": "20"
                 }
               },{
-                "type": "$image",
+                "type": "image",
                 "url": "{{$jason.barcode_image_url}}",
                 "style": {
                   "width": "300"
