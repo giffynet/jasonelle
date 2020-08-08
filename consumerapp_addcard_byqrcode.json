@@ -68,7 +68,7 @@
                 "type": "image",
                 "url": "{{$jason.barcode_image_url}}",
                 "style": {
-                  "width": "300"
+                  "width": "100"
                 }
               },{
                 "type": "space",
@@ -79,7 +79,7 @@
                 "type": "image",
                 "url": "{{$jason.qr_image_url}}",
                 "style": {
-                  "width": "300"
+                  "width": "100"
                 }
               },{
                 "type": "space",
