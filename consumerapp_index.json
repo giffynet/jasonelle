@@ -142,7 +142,10 @@
                     }
                   }
                 },{
-                  "type": "space"
+                  "type": "space",
+                  "style": {
+                    "height": "10"
+                  }
                 },{
                   "type": "button",
                   "text": "Transaction History",
@@ -160,6 +163,11 @@
                       "consumer_id": "{{consumer_id}}",
                       "programme_id": "{{programme_id}}"
                     }
+                  }
+                },{
+                  "type": "space",
+                  "style": {
+                    "height": "10"
                   }
                 },{
                   "type": "button",
