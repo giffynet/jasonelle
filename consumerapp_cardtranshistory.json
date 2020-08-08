@@ -98,7 +98,7 @@
                 "color": "#84522D"
               },
               "items": [{
-                "text": "Trans History",
+                "text": "HISTORY",
                 "style": {
                   "height": "21"
                 },
@@ -107,7 +107,7 @@
                   "transition": "replace"
                 }
               }, {
-                "text": "Topup",
+                "text": "TOPUP",
                 "style": {
                   "height": "21"
                 },
@@ -116,7 +116,7 @@
                   "transition": "replace"
                 }
               }, {
-                "text": "Redeem",
+                "text": "REDEEM",
                 "style": {
                   "height": "21"
                 },
