@@ -25,10 +25,16 @@
               "type": "$util.toast",
               "options": {
                 "type": "warning",
-                "text": "Unable to  fetch consumer cards list from server. Please check your internet connection."
+                "text": "Unable to fetch consumer cards list from server. Please check your internet connection."
               }
             }
           }
+        },
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$reload"
         }
       },
       "templates": {
