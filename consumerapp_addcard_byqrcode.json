@@ -55,7 +55,7 @@
                 }
               },{
                 "type": "label",
-                "text": "Scan this QR Code",
+                "text": "Please present this for scanning",
                 "style": {
                   "size": "18"
                 }
@@ -65,7 +65,18 @@
                   "height": "20"
                 }
               },{
-                "type": "image",
+                "type": "$image",
+                "url": "{{$jason.barcode_image_url}}",
+                "style": {
+                  "width": "300"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "$image",
                 "url": "{{$jason.qr_image_url}}",
                 "style": {
                   "width": "300"
