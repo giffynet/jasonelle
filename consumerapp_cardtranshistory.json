@@ -54,34 +54,43 @@
             }
           },
           "sections": [{
-            "items": {
-              "type": "label",
-              "text": "{{$jason.programme_name}} from {{$jason.issuer_name}}",
+            "items": [{
+              "type": "vertical",
               "style": {
-                "size": "18"
+                "align": "center",
+                "padding": "20",
+                "distribution": "equalspacing"
+              },
+              "components": [{
+                "type": "label",
+                "text": "{{$jason.programme_name}} from {{$jason.issuer_name}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "Status: {{$jason.status_text}}, Currency: {{$jason.currency}}",
+                "style": {
+                  "size": "12"
+                }
+              },{
+                "type": "label",
+                "text": "Balance: {{$jason.total_balance}} - Valid until: {{$jason.expiry_date}}",
+                "style": {
+                  "size": "12"
+                }
+              },{
+                "type": "label",
+                "text": "[Basic: {{$jason.basic_balance}}, Bonus: {{$jason.bonus_balance}}]",
+                "style": {
+                  "size": "12"
+                }
+              },{
+                "type": "image",
+                "url": "{{$jason.image_url}}",
               }
-            },{
-              "type": "label",
-              "text": "Status: {{$jason.status_text}}, Currency: {{$jason.currency}}",
-              "style": {
-                "size": "12"
-              }
-            },{
-              "type": "label",
-              "text": "Balance: {{$jason.total_balance}} - Valid until: {{$jason.expiry_date}}",
-              "style": {
-                "size": "12"
-              }
-            },{
-              "type": "label",
-              "text": "[Basic: {{$jason.basic_balance}}, Bonus: {{$jason.bonus_balance}}]",
-              "style": {
-                "size": "12"
-              }
-            },{
-              "type": "image",
-              "url": "{{$jason.image_url}}",
-            },{
+            }]
+          },{
             "items": {
               "{{#each $jason.transactions}}": {
                 "type": "vertical",
