@@ -30,21 +30,6 @@
             },
             "style": {
               "background": "#BC845C"
-            },
-            "menu": {
-              "text": "SHARE",
-              "style": {
-                "color": "#FFFFFF"
-              },
-              "action": {
-                "type": "$util.share",
-                "options": {
-                  "items": [{
-                    "type": "text",
-                    "text": "Please enter PIN: {{$get.dynamic_pin2}} by {{$get.expiry}} to proceed."
-                  }]
-                }
-              }
             }
           },
           "sections": [{
