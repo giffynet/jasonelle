@@ -148,10 +148,12 @@
                   "value": "false",
                   "action": {
                     "type": "$href",
-                    "url": "{{$global.jason_url}}/consumerapp_bymerchpincode.json",
-                    "transition": "replace",
                     "options": {
-                      "card_id": "{{$params.card_id}}"
+                      "url": "{{$global.jason_url}}/consumerapp_bymerchpincode.json",
+                      "transition": "replace",
+                      "options": {
+                        "card_id": "{{$params.card_id}}"
+                      }
                     }
                   }
                 }]
