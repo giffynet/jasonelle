@@ -129,6 +129,26 @@
                     }
                   }
                 }
+              },{
+                "type": "horizontal",
+                "components": [{
+                  "type": "label",
+                  "text": "Merchant PIN Mode",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "switch",
+                  "name": "bymerchpincode",
+                  "value": "false",
+                  "action": {
+                    "type": "$href",
+                    "url": "{{$global.jason_url}}/consumerapp_bymerchpincode.json",
+                    "options": {
+                      "card_id": "{{$params.card_id}}"
+                    }
+                  }
+                }]
               }]
             }]
           }],
