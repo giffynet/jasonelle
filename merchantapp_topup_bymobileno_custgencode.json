@@ -169,7 +169,7 @@
                   }
                 }
               }, {
-                "text": "CUST CODE",
+                "text": "CUST PIN CODE",
                 "style": {
                   "height": "21"
                 },
@@ -182,7 +182,7 @@
                   }
                 }
               }, {
-                "text": "MERCH CODE",
+                "text": "MERCH PIN CODE",
                 "style": {
                   "height": "21"
                 },
