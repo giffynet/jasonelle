@@ -112,7 +112,7 @@
                   "height": "21"
                 },
                 "href": {
-                  "url": "{{$global.jason_url}}/consumerapp_topup.json",
+                  "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
                   "transition": "replace"
                 }
               }, {
@@ -121,7 +121,7 @@
                   "height": "21"
                 },
                 "href": {
-                  "url": "{{$global.jason_url}}/consumerapp_redeem.json",
+                  "url": "{{$global.jason_url}}/consumerapp_bypincode.json",
                   "transition": "replace"
                 }
               }]
