@@ -91,7 +91,53 @@
                 }
               }]
             }]
-          }]
+          }],
+          "footer": {
+            "tabs": {
+              "style": {
+                "background": "#BC845C",
+                "color:disabled": "#FFFFFF",
+                "color": "#84522D"
+              },
+              "items": [{
+                "text": "HISTORY",
+                "style": {
+                  "height": "21"
+                },
+                "href": {
+                  "url": "{{$global.jason_url}}/consumerapp_cardtranshistory.json",
+                  "transition": "replace",
+                  "options": {
+                    "card_id": "{{$params.card_id}}"
+                  }
+                }
+              }, {
+                "text": "QR CODE",
+                "style": {
+                  "height": "21"
+                },
+                "href": {
+                  "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
+                  "transition": "replace",
+                  "options": {
+                    "card_id": "{{$params.card_id}}"
+                  }
+                }
+              }, {
+                "text": "PIN CODE",
+                "style": {
+                  "height": "21"
+                },
+                "href": {
+                  "url": "{{$global.jason_url}}/consumerapp_bypincode.json",
+                  "transition": "replace",
+                  "options": {
+                    "card_id": "{{$params.card_id}}"
+                  }
+                }
+              }]
+            }
+          }
         }
       }
     }
