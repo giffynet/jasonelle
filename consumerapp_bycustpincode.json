@@ -134,29 +134,6 @@
                 "style": {
                   "height": "20"
                 }
-              },{
-                "type": "horizontal",
-                "components": [{
-                  "type": "label",
-                  "text": "Use Merchant PIN",
-                  "style": {
-                    "size": "18"
-                  }
-                },{
-                  "type": "switch",
-                  "name": "bymerchpincode",
-                  "value": "false",
-                  "action": {
-                    "type": "$href",
-                    "options": {
-                      "url": "{{$global.jason_url}}/consumerapp_bymerchpincode.json",
-                      "transition": "replace",
-                      "options": {
-                        "card_id": "{{$params.card_id}}"
-                      }
-                    }
-                  }
-                }]
               }]
             }]
           }],
