@@ -107,7 +107,7 @@
                   "transition": "replace"
                 }
               }, {
-                "text": "TOPUP",
+                "text": "QR CODE",
                 "style": {
                   "height": "21"
                 },
@@ -116,7 +116,7 @@
                   "transition": "replace"
                 }
               }, {
-                "text": "REDEEM",
+                "text": "PIN CODE",
                 "style": {
                   "height": "21"
                 },
