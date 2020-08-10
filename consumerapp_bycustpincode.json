@@ -138,7 +138,7 @@
                 "type": "horizontal",
                 "components": [{
                   "type": "label",
-                  "text": "Merch PIN Mode",
+                  "text": "Use Merchant PIN",
                   "style": {
                     "size": "18"
                   }
