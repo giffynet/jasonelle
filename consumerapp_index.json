@@ -114,18 +114,6 @@
                     "size": "12"
                   }
                 },{
-                  "type": "label",
-                  "text": "Balance: {{total_balance}} - Valid until: {{expiry_date}}",
-                  "style": {
-                    "size": "12"
-                  }
-                },{
-                  "type": "label",
-                  "text": "[Basic: {{basic_balance}}, Bonus: {{bonus_balance}}]",
-                  "style": {
-                    "size": "12"
-                  }
-                },{
                   "type": "button",
                   "url": "{{image_url}}",
                   "href": {
@@ -146,6 +134,18 @@
                       "consumer_id": "{{consumer_id}}",
                       "programme_id": "{{programme_id}}"
                     }
+                  }
+                },{
+                  "type": "label",
+                  "text": "Balance: {{total_balance}} - Valid until: {{expiry_date}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "[Basic: {{basic_balance}}, Bonus: {{bonus_balance}}]",
+                  "style": {
+                    "size": "12"
                   }
                 },{
                   "type": "space",
