@@ -62,7 +62,7 @@
                 }
               },{
                 "type": "label",
-                "text": "Your Dynamic PIN:",
+                "text": "My Dynamic PIN:",
                 "style": {
                   "size": "18"
                 }
@@ -157,7 +157,7 @@
                   }
                 }
               }, {
-                "text": "PIN CODE",
+                "text": "MY PIN",
                 "style": {
                   "height": "21"
                 },
