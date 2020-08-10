@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Giffy Merchant - Card Transaction History",
+      "title": "Giffy - Card Transaction History",
       "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
       "actions": {
         "$load": {
