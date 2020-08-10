@@ -89,6 +89,11 @@
                 "type": "image",
                 "url": "{{$jason.image_url}}"
               },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
                 "type": "button",
                 "text": "Topup/Redeem",
                 "style": {
