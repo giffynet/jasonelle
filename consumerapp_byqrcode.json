@@ -129,7 +129,7 @@
                   "height": "21"
                 },
                 "href": {
-                  "url": "{{$global.jason_url}}/consumerapp_bypincode.json",
+                  "url": "{{$global.jason_url}}/consumerapp_bycustpincode.json",
                   "transition": "replace",
                   "options": {
                     "card_id": "{{$params.card_id}}"
