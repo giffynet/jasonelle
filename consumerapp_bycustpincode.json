@@ -73,20 +73,9 @@
                 }
               },{
                 "type": "label",
-                "text": "Dynamic PIN",
-                "style": {
-                  "size": "24"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
-                "type": "label",
                 "text": "{{$get.dynamic_pin2}}",
                 "style": {
-                  "size": "18"
+                  "size": "24"
                 }
               },{
                 "type": "label",
@@ -151,42 +140,39 @@
                 "color": "#84522D"
               },
               "items": [{
-                "text": "BY QR CODE",
+                "text": "HISTORY",
                 "style": {
                   "height": "21"
                 },
                 "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_redeem_byqrcode.json",
+                  "url": "{{$global.jason_url}}/consumerapp_cardtranshistory.json",
                   "transition": "replace",
                   "options": {
-                    "amount": "{{$params.amount}}",
-                    "currency": "{{$params.currency}}"
+                    "card_id": "{{$params.card_id}}"
                   }
                 }
               }, {
-                "text": "CUST PIN",
+                "text": "QR CODE",
                 "style": {
                   "height": "21"
                 },
                 "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_redeem_bymobileno_custgencode.json",
+                  "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
                   "transition": "replace",
                   "options": {
-                    "currency": "{{$params.currency}}",
-                    "amount": "{{$params.amount}}"
+                    "card_id": "{{$params.card_id}}"
                   }
                 }
               }, {
-                "text": "MERCH PIN",
+                "text": "PIN CODE",
                 "style": {
                   "height": "21"
                 },
                 "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_redeem_bymobileno_merchgencode.json",
+                  "url": "{{$global.jason_url}}/consumerapp_bycustpincode.json",
                   "transition": "replace",
                   "options": {
-                    "currency": "{{$params.currency}}",
-                    "amount": "{{$params.amount}}"
+                    "card_id": "{{$params.card_id}}"
                   }
                 }
               }]
