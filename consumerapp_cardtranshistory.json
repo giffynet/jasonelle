@@ -55,6 +55,34 @@
           },
           "sections": [{
             "items": {
+              "type": "label",
+              "text": "{{programme_name}} from {{issuer_name}}",
+              "style": {
+                "size": "18"
+              }
+            },{
+              "type": "label",
+              "text": "Status: {{status_text}}, Currency: {{currency}}",
+              "style": {
+                "size": "12"
+              }
+            },{
+              "type": "label",
+              "text": "Balance: {{total_balance}} - Valid until: {{expiry_date}}",
+              "style": {
+                "size": "12"
+              }
+            },{
+              "type": "label",
+              "text": "[Basic: {{basic_balance}}, Bonus: {{bonus_balance}}]",
+              "style": {
+                "size": "12"
+              }
+            },{
+              "type": "image",
+              "url": "{{image_url}}",
+            },{
+            "items": {
               "{{#each $jason.transactions}}": {
                 "type": "vertical",
                 "style": {
@@ -64,7 +92,7 @@
                 },
                 "components": [{
                   "type": "label",
-                  "text": "{{transaction_datetime}} / {{$jason.consumer_name}}",
+                  "text": "{{transaction_datetime}}",
                   "style": {
                     "size": "12"
                   }
