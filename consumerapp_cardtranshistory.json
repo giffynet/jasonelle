@@ -104,7 +104,10 @@
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_cardtranshistory.json",
-                  "transition": "replace"
+                  "transition": "replace",
+                  "options": {
+                    "card_id": "{{$params.card_id}}"
+                  }
                 }
               }, {
                 "text": "QR CODE",
@@ -113,7 +116,10 @@
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
-                  "transition": "replace"
+                  "transition": "replace",
+                  "options": {
+                    "card_id": "{{$params.card_id}}"
+                  }
                 }
               }, {
                 "text": "PIN CODE",
@@ -122,7 +128,10 @@
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_bypincode.json",
-                  "transition": "replace"
+                  "transition": "replace",
+                  "options": {
+                    "card_id": "{{$params.card_id}}"
+                  }
                 }
               }]
             }
