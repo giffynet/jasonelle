@@ -87,7 +87,7 @@
                 }
               },{
                 "type": "image",
-                "url": "{{$jason.image_url}}",
+                "url": "{{$jason.image_url}}"
               }
             }]
           },{
