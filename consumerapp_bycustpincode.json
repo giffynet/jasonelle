@@ -130,10 +130,15 @@
                   }
                 }
               },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
                 "type": "horizontal",
                 "components": [{
                   "type": "label",
-                  "text": "Merchant PIN Mode",
+                  "text": "Merch PIN Mode",
                   "style": {
                     "size": "18"
                   }
@@ -144,6 +149,7 @@
                   "action": {
                     "type": "$href",
                     "url": "{{$global.jason_url}}/consumerapp_bymerchpincode.json",
+                    "transition": "replace",
                     "options": {
                       "card_id": "{{$params.card_id}}"
                     }
