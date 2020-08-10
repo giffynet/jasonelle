@@ -56,31 +56,31 @@
           "sections": [{
             "items": {
               "type": "label",
-              "text": "{{programme_name}} from {{issuer_name}}",
+              "text": "{{$jason.programme_name}} from {{$jason.issuer_name}}",
               "style": {
                 "size": "18"
               }
             },{
               "type": "label",
-              "text": "Status: {{status_text}}, Currency: {{currency}}",
+              "text": "Status: {{$jason.status_text}}, Currency: {{$jason.currency}}",
               "style": {
                 "size": "12"
               }
             },{
               "type": "label",
-              "text": "Balance: {{total_balance}} - Valid until: {{expiry_date}}",
+              "text": "Balance: {{$jason.total_balance}} - Valid until: {{$jason.expiry_date}}",
               "style": {
                 "size": "12"
               }
             },{
               "type": "label",
-              "text": "[Basic: {{basic_balance}}, Bonus: {{bonus_balance}}]",
+              "text": "[Basic: {{$jason.basic_balance}}, Bonus: {{$jason.bonus_balance}}]",
               "style": {
                 "size": "12"
               }
             },{
               "type": "image",
-              "url": "{{image_url}}",
+              "url": "{{$jason.image_url}}",
             },{
             "items": {
               "{{#each $jason.transactions}}": {
@@ -110,7 +110,7 @@
                   }
                 },{
                   "type": "label",
-                  "text": "{{$jason.programme_name}}",
+                  "text": "{{$jason.outlet_name}}",
                   "style": {
                     "size": "12"
                   }
