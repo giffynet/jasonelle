@@ -74,10 +74,13 @@
                   "size": "12"
                 }
               },{
+                "type": "image",
+                "url": "{{$jason.image_url}}"
+              },{
                 "type": "label",
                 "text": "Balance: {{$jason.total_balance}} - Valid until: {{$jason.expiry_date}}",
                 "style": {
-                  "size": "12"
+                  "size": "18"
                 }
               },{
                 "type": "label",
@@ -85,9 +88,6 @@
                 "style": {
                   "size": "12"
                 }
-              },{
-                "type": "image",
-                "url": "{{$jason.image_url}}"
               },{
                 "type": "space",
                 "style": {
