@@ -153,11 +153,6 @@
                     "height": "10"
                   }
                 },{
-                  "type": "space",
-                  "style": {
-                    "height": "10"
-                  }
-                },{
                   "type": "button",
                   "text": "Terms and Conditions*",
                   "href": {
