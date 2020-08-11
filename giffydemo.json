@@ -16,49 +16,49 @@
         "$foreground": {
           "type": "$reload"
         }
-      },
-      "body": {
-        "background": "#f3f3f3",
-        "header": {
-          "title": {
-            "type": "image",
-            "url": "{{$global.jason_url}}/giffy_circle_small.png"
-          },
-          "style": {
-            "background": "#BC845C"
-          }
+      }
+    },
+    "body": {
+      "background": "#f3f3f3",
+      "header": {
+        "title": {
+          "type": "image",
+          "url": "{{$global.jason_url}}/giffy_circle_small.png"
         },
-        "sections": [{
-          "items": [{
-            "type": "vertical",
+        "style": {
+          "background": "#BC845C"
+        }
+      },
+      "sections": [{
+        "items": [{
+          "type": "vertical",
+          "style": {
+            "align": "center",
+            "padding": "20",
+            "distribution": "equalspacing"
+          },
+          "components": [{
+            "type": "button",
+            "text": "Merchant App",
+            "href": {
+              "url": "{{$global.jason_url}}/merchantapp_index.json",
+              "transition": "push"
+            }
+          },{
+            "type": "space",
             "style": {
-              "align": "center",
-              "padding": "20",
-              "distribution": "equalspacing"
-            },
-            "components": [{
-              "type": "button",
-              "text": "Merchant App",
-              "href": {
-                "url": "{{$global.jason_url}}/merchantapp_index.json",
-                "transition": "push"
-              }
-            },{
-              "type": "space",
-              "style": {
-                "height": "20"
-              }
-            },{
-              "type": "button",
-              "text": "Consumer App",
-              "href": {
-                "url": "{{$global.jason_url}}/consumerapp_index.json",
-                "transition": "push"
-              }
-            }]
+              "height": "20"
+            }
+          },{
+            "type": "button",
+            "text": "Consumer App",
+            "href": {
+              "url": "{{$global.jason_url}}/consumerapp_index.json",
+              "transition": "push"
+            }
           }]
         }]
-      }
+      }]
     }
   }
 }
