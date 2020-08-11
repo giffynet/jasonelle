@@ -41,13 +41,6 @@
             },
             "style": {
               "background": "#BC845C"
-            },
-            "search": {
-              "name": "query_text",
-              "placeholder": "Enter Keywords",
-              "style": {
-                "background": "#f3f3f3"
-              }
             }
           },
           "sections": [{
