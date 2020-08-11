@@ -50,9 +50,6 @@
             },
             "menu": {
               "text": "PROFILE",
-              "badge": {
-                "text": "TEST"
-              },
               "style": {
                 "color": "#FFFFFF"
               },
