@@ -48,11 +48,14 @@
             "style": {
               "background": "#BC845C"
             },
-            "search": {
-              "name": "query_text",
-              "placeholder": "Enter Keywords",
-              "style": {
-                "background": "#f3f3f3"
+            "menu": {
+              "text": "PROFILE",
+              "badge: {
+                "text": "TEST"
+              },
+              "href": {
+                "url": "{{$global.jason_url}}/consumerapp_custprofile.json",
+                "transition": "push"
               }
             }
           },
