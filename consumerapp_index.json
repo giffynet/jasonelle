@@ -50,7 +50,7 @@
             },
             "menu": {
               "text": "PROFILE",
-              "badge: {
+              "badge": {
                 "text": "TEST"
               },
               "href": {
