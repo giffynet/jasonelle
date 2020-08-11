@@ -109,15 +109,11 @@
                       "content_type": "json"
                     },
                     "data": {
-                      "promo_code": "{{$get.promo_code}}"
+                      "card_id": "{{$params.card_id}}"
                     }
                   },
                   "success": {
-                    "type": "$util.toast",
-                    "options": {
-                      "text": "Transaction is successful",
-                      "type": "success"
-                    }
+                    "type": "$reload"
                   },
                   "error": {
                     "type": "$util.toast",
