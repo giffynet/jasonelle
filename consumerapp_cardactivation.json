@@ -108,12 +108,14 @@
                   "type": "$util.toast",
                   "options": {
                     "text": "Card activation is successful",
+                    "type": "success"
                   }
                 },
                 "error": {
                   "type": "$util.toast",
                   "options": {
                     "text": "Card activation is not successful",
+                    "type": "warning"
                   }
                 }
               }]
