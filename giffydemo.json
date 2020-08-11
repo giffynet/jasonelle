@@ -44,6 +44,11 @@
                 "transition": "push"
               }
             },{
+              "type": "space",
+              "style": {
+                "height": "20"
+              }
+            },{
               "type": "button",
               "text": "Consumer App",
               "href": {
