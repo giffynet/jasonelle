@@ -53,6 +53,9 @@
               "badge": {
                 "text": "TEST"
               },
+              "style": {
+                "color": "#FFFFFF"
+              },
               "href": {
                 "url": "{{$global.jason_url}}/consumerapp_custprofile.json",
                 "transition": "push"
