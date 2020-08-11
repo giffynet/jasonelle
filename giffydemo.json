@@ -40,6 +40,12 @@
           "components": [{
             "type": "button",
             "text": "Merchant App",
+            "style": {
+              "background": "#d9d9d9",
+              "color": "#000000",
+              "height": "80",
+              "size": "24"
+            },
             "href": {
               "url": "{{$global.jason_url}}/merchantapp_index.json",
               "transition": "push"
@@ -52,6 +58,12 @@
           },{
             "type": "button",
             "text": "Consumer App",
+            "style": {
+              "background": "#d9d9d9",
+              "color": "#000000",
+              "height": "80",
+              "size": "24"
+            },
             "href": {
               "url": "{{$global.jason_url}}/consumerapp_index.json",
               "transition": "push"
