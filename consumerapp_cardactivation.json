@@ -29,10 +29,7 @@
         },
         "$foreground": {
           "type": "$reload"
-        },
-        "$pull": {
-          "type": "$reload"
-        },
+        }
       },
       "templates": {
         "body": {
@@ -76,6 +73,18 @@
               },{
                 "type": "image",
                 "url": "{{$jason.image_url}}"
+              },{
+                "type": "label",
+                "text": "Balance: {{$jason.total_balance}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "[Basic: {{$jason.basic_balance}}, Bonus: {{$jason.bonus_balance}}]",
+                "style": {
+                  "size": "12"
+                }
               },{
                 "type": "space",
                 "style": {
