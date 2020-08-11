@@ -1,0 +1,134 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy - Card Transaction History",
+      "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "{{$global.jason_url}}/cardtranshistory.json",
+            "method": "get",
+            "header" : {
+              "Authorization" : "Bearer {{$global.jwt_token}}"
+            },
+            "data": {
+              "card_id": "{{$params.card_id}}"
+            }
+          },
+          "success": {
+            "type": "$render"
+          },
+          "error": {
+            "type": "$util.toast",
+            "options": {
+              "type": "warning",
+              "text": "Unable to  fetch transaction list from server. Please check your internet connection."
+            }
+          }
+        },
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$reload"
+        },
+      },
+      "templates": {
+        "body": {
+          "background": "#f3f3f3",
+          "header": {
+            "title": {
+              "type": "image",
+              "url": "{{$global.jason_url}}/giffy_circle_small.png"
+            },
+            "style": {
+              "background": "#BC845C"
+            },
+            "search": {
+              "name": "query_text",
+              "placeholder": "Enter Keywords",
+              "style": {
+                "background": "#f3f3f3"
+              }
+            }
+          },
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "align": "center",
+                "padding": "20",
+                "distribution": "equalspacing"
+              },
+              "components": [{
+                "type": "label",
+                "text": "{{$jason.programme_name}} from {{$jason.issuer_name}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "Status: {{$jason.status_text}}, Currency: {{$jason.currency}}",
+                "style": {
+                  "size": "12"
+                }
+              },{
+                "type": "image",
+                "url": "{{$jason.image_url}}"
+              },{
+                "type": "label",
+                "text": "Balance: {{$jason.total_balance}} - Valid until: {{$jason.expiry_date}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "[Basic: {{$jason.basic_balance}}, Bonus: {{$jason.bonus_balance}}]",
+                "style": {
+                  "size": "12"
+                }
+              }]
+            }]
+          },{
+            "items": {
+              "{{#each $jason.transactions}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "20",
+                  "distribution": "equalspacing"
+                },
+                "components": [{
+                  "type": "label",
+                  "text": "{{transaction_datetime}}",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "label",
+                  "text": "{{transaction_type}} {{transaction_currency}} {{transaction_amount}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "[Basic: {{basic_amount}}, Bonus: {{bonus_amount}}]",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "{{outlet_name}}",
+                  "style": {
+                    "size": "12"
+                  }
+                }]
+              }
+            }
+          }]
+        }
+      }
+    }
+  }
+}
