@@ -13,6 +13,7 @@
   "bonus_balance": "0",
   "currency": "SGD",
   "expiry_date": "01-08-2025",
+  "terms": "<ul><li>Valid Mon - Sun 11:00am - 10.30pm.</li><li>Valid for dine-in only for lunch and dinner.</li><li>Minimum 2 vouchers purchased (2 people) to dine-in.</li><li>Set will be combined and served on a single plate.</li><li>Additional $2 per person for Friday - Sunday, eve of public holidays, public holidays and special occasions.</li><li>Not valid for other discounts or promotions.</li><li>Voucher is non-cancellable.</li></ul>",
   "transactions": [
     {
       "batch_id": "1",
