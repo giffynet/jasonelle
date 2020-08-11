@@ -1,0 +1,59 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy - Demo",
+      "description": "This app enable merchant to offer, and consumer to buy and use digital gift card powered by Giffy",
+      "actions": {
+        "$load": {
+          "type": "$global.set",
+          "options": {
+            "jason_url": "https://giffynet.github.io/jasonelle"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "$foreground": {
+          "type": "$reload"
+        }
+      },
+      "body": {
+        "background": "#f3f3f3",
+        "header": {
+          "title": {
+            "type": "image",
+            "url": "{{$global.jason_url}}/giffy_circle_small.png"
+          },
+          "style": {
+            "background": "#BC845C"
+          }
+        },
+        "sections": [{
+          "items": [{
+            "type": "vertical",
+            "style": {
+              "align": "center",
+              "padding": "20",
+              "distribution": "equalspacing"
+            },
+            "components": [{
+              "type": "button",
+              "text": "Merchant App",
+              "href": {
+                "url": "{{$global.jason_url}}/merchantapp_index.json",
+                "transition": "push"
+              }
+            },{
+              "type": "button",
+              "text": "Consumer App",
+              "href": {
+                "url": "{{$global.jason_url}}/consumerapp_index.json",
+                "transition": "push"
+              }
+            }]
+          }]
+        }]
+      }
+    }
+  }
+}
