@@ -156,7 +156,7 @@
                   "type": "button",
                   "text": "Terms and Conditions*",
                   "href": {
-                    "url": "{{$global.jason_url}}/consumerapp_terms.json",
+                    "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
                     "transition": "modal",
                     "options": {
                       "card_id": "{{card_id}}",
