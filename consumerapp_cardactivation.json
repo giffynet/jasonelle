@@ -93,29 +93,29 @@
                 "action": {
                   "type": "$network.request",
                   "options": {
-                    "url": "{{$global.jason_url}}/activate.json",
-                    "method": "post",
+                    "url": "{{$global.jason_url}}/promocode.json",
+                    "method": "get",
                     "header" : {
-                      "Authorization" : "Bearer {{$global.jwt_token}}",
+                      "Authorization": "Bearer {{$global.jwt_token}}",
                       "content_type": "json"
                     },
                     "data": {
-                      "card_id": "{{$params.card_id}}"
+                      "promo_code": "{{$get.promo_code}}"
                     }
-                  }
-                },
-                "success": {
-                  "type": "$util.toast",
-                  "options": {
-                    "text": "Card activation is successful",
-                    "type": "success"
-                  }
-                },
-                "error": {
-                  "type": "$util.toast",
-                  "options": {
-                    "text": "Card activation is not successful",
-                    "type": "warning"
+                  },
+                  "success": {
+                    "type": "$util.toast",
+                    "options": {
+                      "text": "Transaction is successful",
+                      "type": "success"
+                    }
+                  },
+                  "error": {
+                    "type": "$util.toast",
+                    "options": {
+                      "text": "Transaction is not successful",
+                      "type": "warning"
+                    }
                   }
                 }
               }]
