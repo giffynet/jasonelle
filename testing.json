@@ -11,10 +11,10 @@
             "method": "get"
           },
           "success": {
-            "type": "$util.alert",
+            "type": "$util.toast",
             "options": {
-              "title": "test",
-              "description": "{{$jason.subsonic-response}}"
+              "type": "success",
+              "text": "{{$jason.subsonic-response.status}}"
             }
           },
           "error": {
