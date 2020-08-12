@@ -77,7 +77,7 @@
               },{
                 "type": "textfield",
                 "name": "name",
-                "value": "{{$get.consumer_name}}",
+                "value": "{{$get.name}}",
                 "placeholder": "John Doe",
                 "style": {
                   "size": "18"
