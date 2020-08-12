@@ -14,7 +14,13 @@
             }
           },
           "success": {
-            "type": "$render"
+            "type": "$set",
+            "options": {
+              "consumer_name": "{{$jason.consumer_name}}"
+            },
+            "success": {
+              "type": "$render"
+            }
           },
           "error": {
             "type": "$util.toast",
@@ -71,7 +77,6 @@
               },{
                 "type": "textfield",
                 "name": "consumer_name",
-                "value": "{{$jason.consumer_name}}",
                 "placeholder": "John Doe",
                 "style": {
                   "size": "18"
