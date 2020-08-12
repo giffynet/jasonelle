@@ -11,10 +11,13 @@
             "method": "get"
           },
           "success": {
-            "type": "$util.toast",
-            "options": {
-              "type": "success",
-              "text": "{{$root.jason.subsonic-response.status}}"
+            "type": "$render",
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "type": "success",
+                "text": "{{$root.jason.subsonic-response.status}}"
+              }
             }
           },
           "error": {
