@@ -1,0 +1,107 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy - Consumer Profile",
+      "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "{{$global.jason_url}}/consumerprofile.json",
+            "method": "get",
+            "header" : {
+              "Authorization" : "Bearer {{$global.jwt_token}}"
+            }
+          },
+          "success": {
+            "type": "$render"
+          },
+          "error": {
+            "type": "$util.toast",
+            "options": {
+              "type": "warning",
+              "text": "Unable to fetch data from server. Please check your internet connection."
+            }
+          }
+        },
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$reload"
+        },
+      },
+      "templates": {
+        "body": {
+          "background": "#f3f3f3",
+          "header": {
+            "title": {
+              "type": "image",
+              "url": "{{$global.jason_url}}/giffy_circle_small.png"
+            },
+            "style": {
+              "background": "#BC845C"
+            }
+          },
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "align": "center",
+                "padding": "20",
+                "distribution": "equalspacing"
+              },
+              "components": [{
+                "type": "label",
+                "text": "Your privacy is important to us, and it is totally optional for you to provide us with your personal information. However, we need data in order to link you with some promotions that may be designed to target certain demographic of consumers. If you wish to receive such promotions, please update the profile section below as much as feels comfortable. Thank you very much.",
+                "style": {
+                  "size": "12"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "label",
+                "text": "Name",
+                "style": {
+                  "size": "12"
+                }
+              },{
+                "type": "textfield",
+                "name": "consumer_name",
+                "value": "{{$jason.consumer_name}}",
+                "placeholder": "John Doe",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "button",
+                "text": "Update",
+                "style": {
+                  "background": "#d9d9d9",
+                  "color": "#000000",
+                  "height": "80",
+                  "size": "24"
+                },
+                "action": {
+                  "type": "$util.toast",
+                  "options": {
+                    "type": "success",
+                    "text": "{{$get.consumer_name}}"
+                  }
+                }
+              }]
+            }]
+          }]
+        }
+      }
+    }
+  }
+}
