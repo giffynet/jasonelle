@@ -16,7 +16,7 @@
           "success": {
             "type": "$set",
             "options": {
-              "name": "{{$jason.consumer_name}}"
+              "c_name": "{{$jason.consumer_name}}"
             },
             "success": {
               "type": "$render"
@@ -76,8 +76,8 @@
                 }
               },{
                 "type": "textfield",
-                "name": "name",
-                "value": "{{$get.name}}",
+                "name": "c_name",
+                "value": "{{$get.c_name}}",
                 "placeholder": "John Doe",
                 "style": {
                   "size": "18"
@@ -100,7 +100,7 @@
                   "type": "$util.toast",
                   "options": {
                     "type": "success",
-                    "text": "{{$get.name}}"
+                    "text": "{{$get.c_name}}"
                   }
                 }
               }]
