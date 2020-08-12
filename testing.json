@@ -11,7 +11,11 @@
             "method": "get"
           },
           "success": {
-            "type": "$render"
+            "type": "$util.toast",
+            "options": {
+              "type": "success",
+              "text": "{{$jason.subsonicresponse.status}}"
+            }
           },
           "error": {
             "type": "$util.toast",
