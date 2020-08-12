@@ -14,7 +14,7 @@
             "type": "$util.toast",
             "options": {
               "type": "success",
-              "text": "{{$jason.subsonic-response.status}}"
+              "text": "{{$root.jason.subsonic-response.status}}"
             }
           },
           "error": {
