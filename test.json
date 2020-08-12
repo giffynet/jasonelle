@@ -1,5 +1,5 @@
 {
-   "subsonicresponse" : {
+   "subsonic-response" : {
       "status" : "failed",
       "version" : "1.15.0",
       "error" : {
