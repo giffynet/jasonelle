@@ -16,7 +16,7 @@
               "type": "$util.toast",
               "options": {
                 "type": "success",
-                "text": "{{$root.jason.subsonic-response.status}}"
+                "text": "{{$jason.subsonic-response.status}}"
               }
             }
           },
@@ -44,10 +44,8 @@
                 "distribution": "equalspacing"
               },
               "components": [{
-                "type": "space",
-                "style": {
-                "height": "20"
-                }
+                "type": "label",
+                "text": "{{$jason.subsonic-response.status}}"
               },{
                 "type": "button",
                 "text": "Back",
