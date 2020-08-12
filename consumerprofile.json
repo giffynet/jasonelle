@@ -1,0 +1,17 @@
+{
+  "consumer_id": "1",
+  "consumer_mobileno": "6599999999",
+  "consumer_name": "Iron Man",
+  "consumer_gender": "Male",
+  "consumer_age": "20-30",
+  "consumer_race": "Caucasian",
+  "consumer_birthdate": "12/8",
+  "consumer_city": "New York",
+  "consumer_state": "N/A",
+  "consumer_country": "USA",
+  "consumer_zipcode": "123456",
+  "consumer_incomelevel": "High Income",
+  "consumer_occupancy": "Professional",
+  "consumer_maritalstatus": "Single",
+  "consumer_transportmode": "Private Car"
+}
