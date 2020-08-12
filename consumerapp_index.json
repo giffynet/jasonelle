@@ -54,7 +54,7 @@
                 "color": "#FFFFFF"
               },
               "href": {
-                "url": "{{$global.jason_url}}/consumerapp_custprofile.json",
+                "url": "{{$global.jason_url}}/consumerapp_profile.json",
                 "transition": "push"
               }
             }
