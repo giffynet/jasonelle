@@ -38,7 +38,7 @@
               },
               "components": [{
                 "type": "label",
-                "text": "{{$jason.subsonic-response.status}}"
+                "text": "{{$jason.subsonicresponse.status}}"
               },{
                 "type": "button",
                 "text": "Back",
