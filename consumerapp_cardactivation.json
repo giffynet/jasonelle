@@ -143,7 +143,7 @@
                   "type": "$util.alert",
                   "options": {
                     "title": "Do you want to send this card to your contact?",
-                    "description": "This action will reassign the ownership of this card to your contact and this gift card will be removed from your list. Please enter phone number, including country and area code."
+                    "description": "This action will reassign the ownership of this card to your contact and this gift card will be removed from your list. Please enter phone number, including country and area code.",
                     "form": [{
                       "name": "mobile_no",
                       "placeholder": "6599991111"
