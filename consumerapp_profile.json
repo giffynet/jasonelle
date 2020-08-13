@@ -16,7 +16,7 @@
           "success": {
             "type": "$set",
             "options": {
-              "c_name": "{{$jason.consumer_name}}"
+              "c_name": ""
             },
             "success": {
               "type": "$render"
@@ -73,7 +73,7 @@
                 }
               },{
                 "type": "textfield",
-                "name": "cust_name",
+                "name": "c_name",
                 "value": "{{$get.c_name}}",
                 "placeholder": "John Doe",
                 "style": {
@@ -97,7 +97,7 @@
                   "type": "$util.toast",
                   "options": {
                     "type": "success",
-                    "text": "{{$get.cust_name}}"
+                    "text": "{{$get.c_name}}"
                   }
                 }
               }]
