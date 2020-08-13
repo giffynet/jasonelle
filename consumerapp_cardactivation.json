@@ -149,10 +149,7 @@
                   "options": {
                     "items": [{
                       "type": "text",
-                      "text": "Please open the following URL to activate this gift card:"
-                    },{
-                      "type": "text",
-                      "text": "https://admin.giffynet.com/consumer/card/activate/{{$params.card_id}}"
+                      "text": "Please open the following URL to activate this gift card: https://admin.giffynet.com/consumer/card/activate/{{$params.card_id}}"
                     }]
                   }
                 }
