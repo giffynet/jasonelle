@@ -131,6 +131,11 @@
                   }
                 }
               },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
                 "type": "button",
                 "text": "Send to Contact",
                 "style": {
