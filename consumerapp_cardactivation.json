@@ -145,46 +145,15 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$util.alert",
+                  "type": "$util.share",
                   "options": {
-                    "title": "Do you want to send this card to your contact?",
-                    "description": "This action will reassign the ownership of this card to your contact and this gift card will be removed from your list. Please enter phone number, including country and area code.",
-                    "form": [{
-                      "name": "mobile_no",
-                      "placeholder": "6599991111"
+                    "items": [{
+                      "type": "text",
+                      "text": "Please open the following URL to activate this gift card:"
+                    },{
+                      "type": "text",
+                      "text": "https://admin.giffynet.com/consumer/card/activate/{{$params.card_id}}"
                     }]
-                  },
-                  "success": {
-                    "type": "$network.request",
-                    "options": {
-                      "url": "{{$global.jason_url}}/cardsendtocontact.json",
-                      "method": "get",
-                      "header" : {
-                        "Authorization" : "Bearer {{$global.jwt_token}}",
-                        "content_type": "json"
-                      },
-                      "data": {
-                        "card_id": "{{$params.card_id}}",
-                        "mobile_no": "{{$jason.mobile_no}}"
-                      }
-                    },
-                    "success": {
-                      "type": "$back"
-                    },
-                    "error": {
-                      "type": "$util.toast",
-                      "options": {
-                        "type": "warning",
-                        "text": "Transaction is not successful"
-                      }
-                    }
-                  },
-                  "error": {
-                    "type": "$util.toast",
-                    "options": {
-                      "type": "warning",
-                      "text": "Transaction is not successful"
-                    }
                   }
                 }
               }]
