@@ -130,6 +130,49 @@
                     }
                   }
                 }
+              },{
+                "type": "button",
+                "text": "Send to Contact",
+                "style": {
+                  "background": "#d9d9d9",
+                  "color": "#000000",
+                  "height": "80",
+                  "size": "24"
+                },
+                "action": {
+                  "type": "$util.addressbook",
+                  "success": {
+                    "type": "$util.picker",
+                    "options": {
+                      "items": {
+                        "{{#each $jason}}": {
+                          "text": "{{name}} / {{JSON.stringify(phone)}}",
+                          "action": {
+                            "type": "$set",
+                            "options": {
+                              "phoneno": "{{JSON.stringify(phone)}}",
+                              "name": "{{name}}"
+                            },
+                            "success": {
+                              "type": "$util.toast",
+                              "options": {
+                                "type": "success",
+                                "text": "{{name}} / {{JSON.stringify(phone)}}"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "error": {
+                    "type": "$util.toast",
+                    "options": {
+                      "type": "warning",
+                      "text": "Transaction is not successful"
+                    }
+                  }
+                }
               }]
             }]
           }]
