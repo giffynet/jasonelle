@@ -91,7 +91,6 @@
               },{
                 "type": "textfield",
                 "name": "mobile_number2",
-                "value": "{{$get.mobile_number2}}",
                 "placeholder": "e.g. 6221811198111",
                 "keyboard": "phone",
                 "style": {
