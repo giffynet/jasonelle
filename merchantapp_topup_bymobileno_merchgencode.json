@@ -9,7 +9,7 @@
           "options": {
             "dynamic_pin2": "",
             "expiry2": "",
-            "expiry": "",
+            "expiry": ""
           },
           "success": {
             "type": "$render"
