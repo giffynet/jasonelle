@@ -14,13 +14,7 @@
             }
           },
           "success": {
-            "type": "$set",
-            "options": {
-              "c_name": ""
-            },
-            "success": {
-              "type": "$render"
-            }
+            "type": "$render"
           },
           "error": {
             "type": "$util.toast",
