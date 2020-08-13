@@ -76,7 +76,7 @@
                 }
               },{
                 "type": "textfield",
-                "name": "c_name",
+                "name": "cust_name",
                 "value": "{{$get.c_name}}",
                 "placeholder": "John Doe",
                 "style": {
@@ -100,7 +100,7 @@
                   "type": "$util.toast",
                   "options": {
                     "type": "success",
-                    "text": "{{$get.c_name}}"
+                    "text": "{{$get.cust_name}}"
                   }
                 }
               }]
