@@ -163,7 +163,11 @@
                       "expiry2": "Expired by: {{$jason.expiry}}"
                     },
                     "success": {
-                      "type": "$render"
+                    "type": "$util.toast",
+                    "options": {
+                      "text": "{{$get.mobile_number2}}",
+                      "type": "warning"
+                    }
                     }
                   },
                   "error": {
