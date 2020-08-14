@@ -4,6 +4,7 @@
       "title": "Giffy Consumer - Index",
       "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
       "icon": "{{$global.jason_url}}/giffy_circle_small.png",
+      "offline": "true",
       "actions": {
         "$load": {
           "type": "$global.set",
