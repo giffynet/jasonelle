@@ -51,7 +51,7 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "align": "center",
+                "align": "left",
                 "padding": "20",
                 "distribution": "equalspacing"
               },
@@ -81,7 +81,7 @@
                 "type": "button",
                 "text": "Name",
                 "style": {
-                  "size": "12"
+                  "size": "18"
                 },
                 "action": {
                   "type": "$util.alert",
@@ -90,7 +90,7 @@
                     "description": "Please enter your name",
                     "form": [{
                       "name": "cs_name",
-                      "value": "${{get.c_name}}",
+                      "value": "{{$get.c_name}}",
                       "placeholder": "Enter Your Name"
                     }]
                   },
@@ -106,7 +106,7 @@
                 }
               },{
                 "type": "label",
-                "value": "{{$get.c_name}}",
+                "text": "{{$get.c_name}}",
                 "style": {
                   "size": "18"
                 }
@@ -117,9 +117,9 @@
                 }
               },{
                 "type": "button",
-                "text": "Name",
+                "text": "Gender",
                 "style": {
-                  "size": "12"
+                  "size": "18"
                 },
                 "action": {
                   "type": "$util.picker",
@@ -152,7 +152,7 @@
                 }
               },{
                 "type": "label",
-                "value": "{{$get.c_gender}}",
+                "text": "{{$get.c_gender}}",
                 "style": {
                   "size": "18"
                 }
