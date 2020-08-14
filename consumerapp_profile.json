@@ -14,7 +14,14 @@
             }
           },
           "success": {
-            "type": "$render"
+            "type": "$set",
+            "options": {
+              "c_name": "{{$jason.consumer_name}}",
+              "c_gender": "{{$jason.consumer_gender}}"
+            },
+            "success": {
+              "type": "$render"
+            }
           },
           "error": {
             "type": "$util.toast",
@@ -50,7 +57,7 @@
               },
               "components": [{
                 "type": "label",
-                "text": "If you wish to receive such promotions, please update the profile section below as much as feels comfortable. Thank you very much.",
+                "text": "We value your privacy and this section is absolutely optional. However, if you wish to receive promotions that relevant to your profile, please update the profile section below as much as feels comfortable. Thank you very much.",
                 "style": {
                   "size": "12"
                 }
@@ -61,15 +68,93 @@
                 }
               },{
                 "type": "label",
-                "text": "Name",
+                "text": "*Tap on the label that you would like to change",
                 "style": {
                   "size": "12"
                 }
               },{
-                "type": "textfield",
-                "name": "c_name",
-                "value": "{{$jason.consumer_name}}",
-                "placeholder": "John Doe",
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "button",
+                "text": "Name",
+                "style": {
+                  "size": "12"
+                },
+                "action": {
+                  "type": "$util.alert",
+                  "options": {
+                    "title": "Name",
+                    "description": "Please enter your name",
+                    "form": [{
+                      "name": "cs_name",
+                      "value": "${{get.c_name}}",
+                      "placeholder": "Enter Your Name"
+                    }]
+                  },
+                  "success": {
+                    "type": "$set",
+                    "options": {
+                      "c_name": "{{$jason.cs_name}}"
+                    },
+                    "success": {
+                      "type": "$render"
+                    }
+                  }
+                }
+              },{
+                "type": "label",
+                "value": "{{$get.c_name}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "button",
+                "text": "Name",
+                "style": {
+                  "size": "12"
+                },
+                "action": {
+                  "type": "$util.picker",
+                  "options": {
+                    "title": "Gender",
+                    "items": [{
+                      "text": "Male",
+                      "action": {
+                        "type": "$set",
+                        "options": {
+                          "c_gender": "Male"
+                        }
+                      },
+                      "success": {
+                        "type": "$render"
+                      }
+                    },{
+                    "title": "Gender",
+                    "items": [{
+                      "text": "Female",
+                      "action": {
+                        "type": "$set",
+                        "options": {
+                          "c_gender": "Female"
+                        }
+                      },
+                      "success": {
+                        "type": "$render"
+                      }
+                    }]
+                  }
+                }
+              },{
+                "type": "label",
+                "value": "{{$get.c_gender}}",
                 "style": {
                   "size": "18"
                 }
@@ -91,7 +176,7 @@
                   "type": "$util.toast",
                   "options": {
                     "type": "success",
-                    "text": "{{$get.c_name}}"
+                    "text": "{{$get.c_name}} {{$get.c_gender}}"
                   }
                 }
               }]
