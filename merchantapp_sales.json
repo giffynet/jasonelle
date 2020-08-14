@@ -3,6 +3,8 @@
     "head": {
       "title": "Giffy Merchant - Sales",
       "description": "This app enable merchant to  accept digital gift card powered by Giffy",
+      "icon": "{{$global.jason_url}}/giffy_circle_small.png",
+      "offline": "true",
       "actions": {
         "$load": {
           "type": "$network.request",
