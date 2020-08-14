@@ -131,10 +131,10 @@
                         "type": "$set",
                         "options": {
                           "c_gender": "Male"
+                        },
+                        "success": {
+                          "type": "$render"
                         }
-                      },
-                      "success": {
-                        "type": "$render"
                       }
                     },{
                       "text": "Female",
@@ -142,10 +142,10 @@
                         "type": "$set",
                         "options": {
                           "c_gender": "Female"
+                        },
+                        "success": {
+                          "type": "$render"
                         }
-                      },
-                      "success": {
-                        "type": "$render"
                       }
                     }]
                   }
