@@ -25,6 +25,9 @@
               "text": "Unable to  fetch programmes from server. Please check your internet connection."
             }
           }
+        },
+        "$pull": {
+          "type": "$reload"
         }
       },
       "templates": {
