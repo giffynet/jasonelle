@@ -7,7 +7,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "{{$global.jason_url}}/consumerprofile.json",
+            "url": "https://giffynet.github.io/jasonelle/consumerprofile.json",
             "method": "get",
             "header" : {
               "Authorization" : "Bearer {{$global.jwt_token}}"
@@ -34,7 +34,7 @@
           "header": {
             "title": {
               "type": "image",
-              "url": "{{$global.jason_url}}/giffy_circle_small.png"
+              "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png"
             },
             "style": {
               "background": "#BC845C"
@@ -50,7 +50,7 @@
               },
               "components": [{
                 "type": "label",
-                "text": "Your privacy is important to us, and it is totally optional for you to provide us with your personal information. However, we need data in order to link you with some promotions that may be designed to target certain demographic of consumers. If you wish to receive such promotions, please update the profile section below as much as feels comfortable. Thank you very much.",
+                "text": "If you wish to receive such promotions, please update the profile section below as much as feels comfortable. Thank you very much.",
                 "style": {
                   "size": "12"
                 }
@@ -68,7 +68,7 @@
               },{
                 "type": "textfield",
                 "name": "c_name",
-                "value": "{{$get.c_name}}",
+                "value": "{{$jason.consumer_name}}",
                 "placeholder": "John Doe",
                 "style": {
                   "size": "18"
