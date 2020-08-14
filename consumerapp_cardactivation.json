@@ -145,12 +145,32 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$util.share",
+                  "type": "$network.request",
                   "options": {
-                    "items": [{
-                      "type": "text",
-                      "text": "Please open the following URL to activate this gift card: https://admin.giffynet.com/consumer/card/activate/{{$params.card_id}}"
-                    }]
+                    "url": "{{$global.jason_url}}/sendcardtocontact.json",
+                    "method": "get",
+                    "header" : {
+                      "Authorization" : "Bearer {{$global.jwt_token}}"
+                    },
+                    "data": {
+                      "card_id": "{{$params.card_id}}"
+                    }
+                  },
+                  "success": {
+                    "type": "$util.share",
+                    "options": {
+                      "items": [{
+                        "type": "text",
+                        "text": "Please open the following URL to activate this gift card: https://admin.giffynet.com/gift/activate/{{$jason.send_id}}/"
+                      }]
+                    }
+                  },
+                  "error": {
+                    "type": "$util.toast",
+                    "options": {
+                      "type": "warning",
+                      "text": "Unable to process the request. Please check your internet connection."
+                    }
                   }
                 }
               }]
