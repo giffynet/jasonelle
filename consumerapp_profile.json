@@ -84,7 +84,8 @@
                   "text": "Name",
                   "style": {
                     "size": "18",
-                    "align": "left"
+                    "align": "left",
+                    "color": "#0000FF"
                   },
                   "action": {
                     "type": "$util.alert",
@@ -126,7 +127,8 @@
                   "text": "Gender",
                   "style": {
                     "size": "18",
-                    "align": "left"
+                    "align": "left",
+                    "color": "#0000FF"
                   },
                   "action": {
                     "type": "$util.picker",
