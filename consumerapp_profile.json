@@ -51,7 +51,7 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "align": "left",
+                "align": "center",
                 "padding": "20",
                 "distribution": "equalspacing"
               },
@@ -78,84 +78,92 @@
                   "height": "20"
                 }
               },{
-                "type": "button",
-                "text": "Name",
-                "style": {
-                  "size": "18"
-                },
-                "action": {
-                  "type": "$util.alert",
-                  "options": {
-                    "title": "Name",
-                    "description": "Please enter your name",
-                    "form": [{
-                      "name": "cs_name",
-                      "value": "{{$get.c_name}}",
-                      "placeholder": "Enter Your Name"
-                    }]
+                "type": "horizontal",
+                "components": [{
+                  "type": "button",
+                  "text": "Name",
+                  "style": {
+                    "size": "18",
+                    "align": "left"
                   },
-                  "success": {
-                    "type": "$set",
+                  "action": {
+                    "type": "$util.alert",
                     "options": {
-                      "c_name": "{{$jason.cs_name}}"
+                      "title": "Name",
+                      "description": "Please enter your name",
+                      "form": [{
+                        "name": "cs_name",
+                        "value": "{{$get.c_name}}",
+                        "placeholder": "Enter Your Name"
+                      }]
                     },
                     "success": {
-                      "type": "$render"
+                      "type": "$set",
+                      "options": {
+                        "c_name": "{{$jason.cs_name}}"
+                      },
+                      "success": {
+                        "type": "$render"
+                      }
                     }
                   }
-                }
-              },{
-                "type": "label",
-                "text": "{{$get.c_name}}",
-                "style": {
-                  "size": "18"
-                }
+                },{
+                  "type": "label",
+                  "text": "{{$get.c_name}}",
+                  "style": {
+                    "size": "18"
+                  }
+                }]
               },{
                 "type": "space",
                 "style": {
                   "height": "20"
                 }
               },{
-                "type": "button",
-                "text": "Gender",
-                "style": {
-                  "size": "18"
-                },
-                "action": {
-                  "type": "$util.picker",
-                  "options": {
-                    "title": "Gender",
-                    "items": [{
-                      "text": "Male",
-                      "action": {
-                        "type": "$set",
-                        "options": {
-                          "c_gender": "Male"
-                        },
-                        "success": {
-                          "type": "$render"
+                "type": "horizontal",
+                "components": [{
+                  "type": "button",
+                  "text": "Gender",
+                  "style": {
+                    "size": "18",
+                    "align": "left"
+                  },
+                  "action": {
+                    "type": "$util.picker",
+                    "options": {
+                      "title": "Gender",
+                      "items": [{
+                        "text": "Male",
+                        "action": {
+                          "type": "$set",
+                          "options": {
+                            "c_gender": "Male"
+                          },
+                          "success": {
+                            "type": "$render"
+                          }
                         }
-                      }
-                    },{
-                      "text": "Female",
-                      "action": {
-                        "type": "$set",
-                        "options": {
-                          "c_gender": "Female"
-                        },
-                        "success": {
-                          "type": "$render"
+                      },{
+                        "text": "Female",
+                        "action": {
+                          "type": "$set",
+                          "options": {
+                            "c_gender": "Female"
+                          },
+                          "success": {
+                            "type": "$render"
+                          }
                         }
-                      }
-                    }]
+                      }]
+                    }
                   }
-                }
-              },{
-                "type": "label",
-                "text": "{{$get.c_gender}}",
-                "style": {
-                  "size": "18"
-                }
+                },{
+                  "type": "label",
+                  "text": "{{$get.c_gender}}",
+                  "style": {
+                    "size": "18"
+                  }
+                }]
               },{
                 "type": "space",
                 "style": {
