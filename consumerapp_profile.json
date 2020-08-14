@@ -137,8 +137,6 @@
                         "type": "$render"
                       }
                     },{
-                    "title": "Gender",
-                    "items": [{
                       "text": "Female",
                       "action": {
                         "type": "$set",
