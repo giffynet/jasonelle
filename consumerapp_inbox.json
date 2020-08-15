@@ -64,7 +64,7 @@
                   "text": "{{message_datetime}}",
                   "style": {
                     "size": "12",
-                    "color" [
+                    "color": [
                       {
                         "{{#if status=='NEW'}}": "#0000FF"
                       },
@@ -78,7 +78,7 @@
                   "text": "{{title}}",
                   "style": {
                     "size": "18",
-                    "color" [
+                    "color": [
                       {
                         "{{#if status=='NEW'}}": "#0000FF"
                       },
@@ -92,7 +92,7 @@
                   "text": "{{message}}",
                   "style": {
                     "size": "18",
-                    "color" [
+                    "color": [
                       {
                         "{{#if status=='NEW'}}": "#0000FF"
                       },
