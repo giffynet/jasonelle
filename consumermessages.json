@@ -1,0 +1,20 @@
+{
+  "messages": [
+    {
+      "message_datetime": "01-08-2020 15:00:00",
+      "title": "You receive a new gift card",
+      "message": "Hi Iron Man, Thor sends you $10 Gift Card from Wakanda.",
+      "status": "NEW"
+    },{
+      "message_datetime": "01-08-2020 15:00:00",
+      "title": "You receive a new gift card",
+      "message": "Hi Iron Man, Wakanda sends you a free $10 Gift Card.",
+      "status": "READ"
+    },{
+      "message_datetime": "01-08-2020 15:00:00",
+      "title": "Promotion: gift card from Wakanda",
+      "message": "Hi Iron Man, good news! Wakanda has just issue a limitted number of reloadable gift card that giving you 10% bonus for every topup of a minimum $20. Get yours now!",
+      "status": "READ"
+    }
+  ]
+}
