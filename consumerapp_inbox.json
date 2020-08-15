@@ -92,7 +92,7 @@
                   "type": "label",
                   "text": "{{message}}",
                   "style": {
-                    "size": "12",
+                    "size": "18",
                     "color": [
                       {
                         "{{#if status=='NEW'}}": "#FF0000"
