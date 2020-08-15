@@ -49,13 +49,33 @@
               "background": "#BC845C"
             },
             "menu": {
-              "text": "PROFILE",
+              "text": "MENU",
               "style": {
                 "color": "#FFFFFF"
               },
-              "href": {
-                "url": "{{$global.jason_url}}/consumerapp_profile.json",
-                "transition": "push"
+              "action": {
+                "type": "$util.picker",
+                "options": {
+                  "items": [{
+                    "text": "My Profile",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_profile.json",
+                        "transition": "push"
+                      }
+                    }
+                  },{
+                    "text": "My Inbox",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_inbox.json",
+                        "transition": "push"
+                      }
+                    }
+                  ]}
+                }
               }
             }
           },
