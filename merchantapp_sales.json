@@ -30,7 +30,7 @@
       },
       "templates": {
         "body": {
-          "background": "#f3f3f3",
+          "background": "#ffffff",
           "header": {
             "title": {
               "type": "image",
