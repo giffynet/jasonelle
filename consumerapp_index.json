@@ -130,7 +130,8 @@
                 "type": "label",
                 "text": "Pending Activation",
                 "style": {
-                  "size": "20"
+                  "size": "20",
+                  "background": "#f3f3f3"
                 }
               }]
             }]
@@ -199,7 +200,8 @@
                 "type": "label",
                 "text": "Active",
                 "style": {
-                  "size": "20"
+                  "size": "20",
+                  "background": "#f3f3f3"
                 }
               }]
             }]
@@ -268,7 +270,8 @@
                 "type": "label",
                 "text": "Others",
                 "style": {
-                  "size": "20"
+                  "size": "20",
+                  "background": "#f3f3f3"
                 }
               }]
             }]
