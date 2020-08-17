@@ -90,7 +90,7 @@
                   "background": "#d9d9d9",
                   "color": "#000000",
                   "height": "50",
-                  "size": "24"
+                  "size": "20"
                 },
                 "action": {
                   "type": "$util.alert",
@@ -142,7 +142,7 @@
                   "background": "#d9d9d9",
                   "color": "#000000",
                   "height": "50",
-                  "size": "24"
+                  "size": "20"
                 },
                 "action": {
                   "type": "$network.request",
