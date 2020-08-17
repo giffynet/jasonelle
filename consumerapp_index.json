@@ -79,7 +79,7 @@
                     "action": {
                       "type": "$util.toast",
                       "options": {
-                        "text": "{{$jason.consumercards}}"
+                        "text": "{{$jason.consumercards.pending}}"
                       }
                     }
                   }]
