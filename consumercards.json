@@ -1,5 +1,5 @@
 {
-  "consumercards": [{
+  "consumercards": {
     "pending": [
       {
         "card_id": "1",
@@ -95,5 +95,5 @@
         "expiry_date": "01-08-2020"
       }
     ]
-  }]
+  }
 }
