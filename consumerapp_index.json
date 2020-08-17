@@ -131,7 +131,7 @@
                 "text": "Pending Activation",
                 "style": {
                   "size": "20",
-                  "background": "#f3f3f3"
+                  "background": "#d9d9d9"
                 }
               }]
             }]
@@ -201,7 +201,7 @@
                 "text": "Active",
                 "style": {
                   "size": "20",
-                  "background": "#f3f3f3"
+                  "background": "#d9d9d9"
                 }
               }]
             }]
@@ -271,7 +271,7 @@
                 "text": "Others",
                 "style": {
                   "size": "20",
-                  "background": "#f3f3f3"
+                  "background": "#d9d9d9"
                 }
               }]
             }]
