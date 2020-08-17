@@ -117,7 +117,7 @@
           }],
           "sections": [{
             "items": {
-              "{{#each $jason.consumercards,pending}}": {
+              "{{#each $jason.consumercards.pending}}": {
                 "type": "vertical",
                 "style": {
                   "align": "center",
