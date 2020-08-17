@@ -124,13 +124,16 @@
             }
           }],
           "sections": [{
-            "items": {
-              "type": "label",
-              "text": "Pending Activation",
-              "style": {
-                "size": "20"
-              }
-            }
+            "items": [{
+              "type": "vertical",
+              "components": [{
+                "type": "label",
+                "text": "Pending Activation",
+                "style": {
+                  "size": "20"
+                }
+              }]
+            }]
           },{
             "items": {
               "{{#each $jason.consumercards.pending}}": {
@@ -190,13 +193,16 @@
               }
             }
           },{
-            "items": {
-              "type": "label",
-              "text": "Active",
-              "style": {
-                "size": "20"
-              }
-            }
+            "items": [{
+              "type": "vertical",
+              "components": [{
+                "type": "label",
+                "text": "Active",
+                "style": {
+                  "size": "20"
+                }
+              }]
+            }]
           },{
             "items": {
               "{{#each $jason.consumercards.active}}": {
@@ -256,13 +262,16 @@
               }
             }
           },{
-            "items": {
-              "type": "label",
-              "text": "Active",
-              "style": {
-                "size": "20"
-              }
-            }
+            "items": [{
+              "type": "vertical",
+              "components": [{
+                "type": "label",
+                "text": "Others",
+                "style": {
+                  "size": "20"
+                }
+              }]
+            }]
           },{
             "items": {
               "{{#each $jason.consumercards.others}}": {
