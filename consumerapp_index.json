@@ -127,7 +127,7 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "background": "#d9d9d9"
+                "background": "#e6e6e6"
               },
               "components": [{
                 "type": "label",
@@ -199,7 +199,7 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "background": "#d9d9d9"
+                "background": "#e6e6e6"
               },
               "components": [{
                 "type": "label",
@@ -271,7 +271,7 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "background": "#d9d9d9"
+                "background": "#e6e6e6"
               },
               "components": [{
                 "type": "label",
