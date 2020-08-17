@@ -16,8 +16,7 @@
         "bonus_balance": "0",
         "expiry_date": "01-08-2025"
       }
-    ]
-  },{
+    ],
     "active": [
       {
         "card_id": "2",
@@ -62,8 +61,7 @@
         "bonus_balance": "0",
         "expiry_date": "01-08-2025"
       }
-    ]
-  },{
+    ],
     "others": [
       {
         "card_id": "5",
