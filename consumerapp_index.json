@@ -166,7 +166,7 @@
                   }
                 },{
                   "type": "label",
-                  "text": "Balance: {{currency}} {{total_balance}} - Valid until: {{expiry_date}}",
+                  "text": "Balance: {{currency}} {{total_balance}}",
                   "style": {
                     "size": "18"
                   }
