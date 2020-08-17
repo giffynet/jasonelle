@@ -127,13 +127,14 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "background": "#d9d9d9"
+                "background": "#5c94bc"
               },
               "components": [{
                 "type": "label",
                 "text": "Pending Activation",
                 "style": {
-                  "size": "20"
+                  "size": "20",
+                  "color": "#ffffff"
                 }
               }]
             }]
@@ -199,13 +200,14 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "background": "#d9d9d9"
+                "background": "#5c94bc"
               },
               "components": [{
                 "type": "label",
                 "text": "Active",
                 "style": {
-                  "size": "20"
+                  "size": "20",
+                  "color": "#ffffff"
                 }
               }]
             }]
@@ -271,13 +273,14 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "background": "#d9d9d9"
+                "background": "#5c94bc"
               },
               "components": [{
                 "type": "label",
                 "text": "Others",
                 "style": {
-                  "size": "20"
+                  "size": "20",
+                  "color": "#ffffff"
                 }
               }]
             }]
