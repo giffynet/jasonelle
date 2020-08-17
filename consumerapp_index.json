@@ -74,14 +74,6 @@
                         "transition": "push"
                       }
                     }
-                  },{
-                    "text": "JASON",
-                    "action": {
-                      "type": "$util.toast",
-                      "options": {
-                        "text": "{{$jason.consumercards.pending}}"
-                      }
-                    }
                   }]
                 }
               }
