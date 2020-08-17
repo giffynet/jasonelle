@@ -125,6 +125,14 @@
           }],
           "sections": [{
             "items": {
+              "type": "label",
+              "text": "Pending Activation",
+              "style": {
+                "size": "20"
+              }
+            }
+          },{
+            "items": {
               "{{#each $jason.consumercards.pending}}": {
                 "type": "vertical",
                 "style": {
@@ -137,12 +145,6 @@
                   "text": "{{programme_name}} from {{issuer_name}}",
                   "style": {
                     "size": "18"
-                  }
-                },{
-                  "type": "label",
-                  "text": "Status: {{status_text}}, Currency: {{currency}}",
-                  "style": {
-                    "size": "12"
                   }
                 },{
                   "type": "button",
@@ -158,7 +160,7 @@
                   }
                 },{
                   "type": "label",
-                  "text": "Balance: {{total_balance}} - Valid until: {{expiry_date}}",
+                  "text": "Balance: {{currency}} {{total_balance}} - Valid until: {{expiry_date}}",
                   "style": {
                     "size": "18"
                   }
@@ -189,6 +191,14 @@
             }
           },{
             "items": {
+              "type": "label",
+              "text": "Active",
+              "style": {
+                "size": "20"
+              }
+            }
+          },{
+            "items": {
               "{{#each $jason.consumercards.active}}": {
                 "type": "vertical",
                 "style": {
@@ -201,12 +211,6 @@
                   "text": "{{programme_name}} from {{issuer_name}}",
                   "style": {
                     "size": "18"
-                  }
-                },{
-                  "type": "label",
-                  "text": "Status: {{status_text}}, Currency: {{currency}}",
-                  "style": {
-                    "size": "12"
                   }
                 },{
                   "type": "button",
@@ -222,7 +226,7 @@
                   }
                 },{
                   "type": "label",
-                  "text": "Balance: {{total_balance}} - Valid until: {{expiry_date}}",
+                  "text": "Balance: {{currency}} {{total_balance}} - Valid until: {{expiry_date}}",
                   "style": {
                     "size": "18"
                   }
@@ -249,6 +253,14 @@
                     }
                   }
                 }]
+              }
+            }
+          },{
+            "items": {
+              "type": "label",
+              "text": "Active",
+              "style": {
+                "size": "20"
               }
             }
           },{
@@ -268,7 +280,7 @@
                   }
                 },{
                   "type": "label",
-                  "text": "Status: {{status_text}}, Currency: {{currency}}",
+                  "text": "Status: {{status_text}}",
                   "style": {
                     "size": "12"
                   }
@@ -286,7 +298,7 @@
                   }
                 },{
                   "type": "label",
-                  "text": "Balance: {{total_balance}} - Valid until: {{expiry_date}}",
+                  "text": "Balance: {{currency}} {{total_balance}} - Valid until: {{expiry_date}}",
                   "style": {
                     "size": "18"
                   }
