@@ -35,6 +35,15 @@
         },
         "$pull": {
           "type": "$reload"
+        },
+        "$show": {
+          "type": "$push.register"
+        },
+        "$push.onregister": {
+          "type": "$util.alert",
+          "options": {
+            "text": "{{$jason.token}}"
+          }
         }
       },
       "templates": {
