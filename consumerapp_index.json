@@ -170,6 +170,10 @@
                 },{
                   "type": "button",
                   "text": "Terms and Conditions*",
+                  "style": {
+                    "size": "12",
+                    "align": "left"
+                  },
                   "href": {
                     "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
                     "transition": "modal",
@@ -243,7 +247,8 @@
                   "type": "button",
                   "text": "Terms and Conditions*",
                   "style": {
-                    "size": "12"
+                    "size": "12",
+                    "align": "left"
                   },
                   "href": {
                     "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
@@ -272,70 +277,26 @@
             }]
           },{
             "items": {
-              "{{#each $jason.consumercards.others}}": {
-                "type": "vertical",
+              "type": "vertical",
+              "style": {
+                "align": "center",
+                "padding": "20",
+                "distribution": "equalspacing"
+              },
+              "components": [{
+                "type": "button",
+                "text": "Show All",
                 "style": {
-                  "align": "center",
-                  "padding": "20",
-                  "distribution": "equalspacing"
+                  "background": "#d9d9d9",
+                  "color": "#000000",
+                  "height": "50",
+                  "size": "20"
                 },
-                "components": [{
-                  "type": "label",
-                  "text": "{{programme_name}} from {{issuer_name}}",
-                  "style": {
-                    "size": "18"
-                  }
-                },{
-                  "type": "label",
-                  "text": "Status: {{status_text}}",
-                  "style": {
-                    "size": "12"
-                  }
-                },{
-                  "type": "button",
-                  "url": "{{image_url}}",
-                  "href": {
-                    "url": "{{$global.jason_url}}/consumerapp_cardinactive.json",
-                    "transition": "push",
-                    "options": {
-                      "card_id": "{{card_id}}",
-                      "consumer_id": "{{consumer_id}}",
-                      "programme_id": "{{programme_id}}"
-                    }
-                  }
-                },{
-                  "type": "label",
-                  "text": "Balance: {{currency}} {{total_balance}}",
-                  "style": {
-                    "size": "18"
-                  }
-                },{
-                  "type": "label",
-                  "text": "Valid until: {{expiry_date}}",
-                  "style": {
-                    "size": "12"
-                  }
-                },{
-                  "type": "space",
-                  "style": {
-                    "height": "10"
-                  }
-                },{
-                  "type": "button",
-                  "text": "Terms and Conditions*",
-                  "style": {
-                    "size": "12"
-                  },
-                  "href": {
-                    "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
-                    "transition": "modal",
-                    "options": {
-                      "card_id": "{{card_id}}",
-                      "programme_id": "{{programme_id}}"
-                    }
-                  }
-                }]
-              }
+                "href": {
+                  "url": "{{$global.jason_url}}/consumerapp_index2.json",
+                  "transition": "replace"
+                }
+              }]
             }
           }]
         }
