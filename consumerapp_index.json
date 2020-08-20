@@ -79,7 +79,7 @@
                     "action": {
                       "type": "$href",
                       "options": {
-                        "url": "{{$global.jason_url}}/consumerapp_inactive.json",
+                        "url": "{{$global.jason_url}}/consumerapp_inactivecards.json",
                         "transition": "push"
                       }
                     }
