@@ -9,6 +9,7 @@
           "options": {
             "jwt_token": "MySessionToken",
             "default_currency": "SGD",
+            "default_dialingcode": "65",
             "jason_url": "https://giffynet.github.io/jasonelle"
           },
           "success": {
