@@ -276,7 +276,7 @@
               },
               "components": [{
                 "type": "label",
-                "text": "Others",
+                "text": "Inactive",
                 "style": {
                   "size": "20"
                 }
