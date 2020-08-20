@@ -1,0 +1,345 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy Consumer - Index",
+      "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
+      "actions": {
+        "$load": {
+          "type": "$global.set",
+          "options": {
+            "jason_url": "https://giffynet.github.io/jasonelle"
+          },
+          "success": {
+            "type": "$network.request",
+            "options": {
+              "url": "{{$global.jason_url}}/consumercardsall.json",
+              "method": "get",
+              "header" : {
+                "Authorization" : "Bearer {{$global.jwt_token}}"
+              }
+            },
+            "success": {
+              "type": "$render"
+            },
+            "error": {
+              "type": "$util.toast",
+              "options": {
+                "type": "warning",
+                "text": "Unable to fetch consumer cards list from server. Please check your internet connection."
+              }
+            }
+          }
+        },
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "background": "#ffffff",
+          "header": {
+            "title": {
+              "type": "image",
+              "url": "{{$global.jason_url}}/giffy_circle_small.png"
+            },
+            "style": {
+              "background": "#BC845C"
+            },
+            "menu": {
+              "text": "MORE",
+              "style": {
+                "color": "#FFFFFF"
+              },
+              "action": {
+                "type": "$util.picker",
+                "options": {
+                  "items": [{
+                    "text": "My Profile",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_profile.json",
+                        "transition": "push"
+                      }
+                    }
+                  },{
+                    "text": "My Inbox",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_inbox.json",
+                        "transition": "push"
+                      }
+                    }
+                  }]
+                }
+              }
+            }
+          },
+          "layers": [{
+            "type": "image",
+            "url": "{{$global.jason_url}}/plus_floating.png",
+            "style": {
+              "bottom": "20",
+              "right": "20",
+              "width": "60",
+              "corner_radius": "50"
+            },
+            "action": {
+              "type": "$util.picker",
+              "options": {
+                "items": [
+                  {
+                    "text": "Buy Gift Card",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_addcard_byqrcode.json",
+                        "transition": "push"
+                      }
+                    }
+                  },{
+                    "text": "Enter Promo Code",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_addcard_bypromocode.json",
+                        "transition": "push"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }],
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "background": "#e6e6e6"
+              },
+              "components": [{
+                "type": "label",
+                "text": "Pending Activation",
+                "style": {
+                  "size": "20"
+                }
+              }]
+            }]
+          },{
+            "items": {
+              "{{#each $jason.consumercards.pending}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "20",
+                  "distribution": "equalspacing"
+                },
+                "components": [{
+                  "type": "label",
+                  "text": "{{programme_name}} from {{issuer_name}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "button",
+                  "url": "{{image_url}}",
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_cardactivation.json",
+                    "transition": "push",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "consumer_id": "{{consumer_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                },{
+                  "type": "label",
+                  "text": "Balance: {{currency}} {{total_balance}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "space",
+                  "style": {
+                    "height": "10"
+                  }
+                },{
+                  "type": "button",
+                  "text": "Terms and Conditions*",
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
+                    "transition": "modal",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                }]
+              }
+            }
+          },{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "background": "#e6e6e6"
+              },
+              "components": [{
+                "type": "label",
+                "text": "Active",
+                "style": {
+                  "size": "20"
+                }
+              }]
+            }]
+          },{
+            "items": {
+              "{{#each $jason.consumercards.active}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "20",
+                  "distribution": "equalspacing"
+                },
+                "components": [{
+                  "type": "label",
+                  "text": "{{programme_name}} from {{issuer_name}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "button",
+                  "url": "{{image_url}}",
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_cardtranshistory.json",
+                    "transition": "push",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "consumer_id": "{{consumer_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                },{
+                  "type": "label",
+                  "text": "Balance: {{currency}} {{total_balance}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "Valid until: {{expiry_date}}",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "space",
+                  "style": {
+                    "height": "10"
+                  }
+                },{
+                  "type": "button",
+                  "text": "Terms and Conditions*",
+                  "style": {
+                    "size": "12"
+                  },
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
+                    "transition": "modal",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                }]
+              }
+            }
+          },{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "background": "#e6e6e6"
+              },
+              "components": [{
+                "type": "label",
+                "text": "Others",
+                "style": {
+                  "size": "20"
+                }
+              }]
+            }]
+          },{
+            "items": {
+              "{{#each $jason.consumercards.others}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "20",
+                  "distribution": "equalspacing"
+                },
+                "components": [{
+                  "type": "label",
+                  "text": "{{programme_name}} from {{issuer_name}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "Status: {{status_text}}",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "button",
+                  "url": "{{image_url}}",
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_cardinactive.json",
+                    "transition": "push",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "consumer_id": "{{consumer_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                },{
+                  "type": "label",
+                  "text": "Balance: {{currency}} {{total_balance}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "Valid until: {{expiry_date}}",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "space",
+                  "style": {
+                    "height": "10"
+                  }
+                },{
+                  "type": "button",
+                  "text": "Terms and Conditions*",
+                  "style": {
+                    "size": "12"
+                  },
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
+                    "transition": "modal",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                }]
+              }
+            }
+          }]
+        }
+      }
+    }
+  }
+}
