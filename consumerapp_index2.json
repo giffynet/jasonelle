@@ -74,6 +74,15 @@
                         "transition": "push"
                       }
                     }
+                  },{
+                    "text": "My Inactive Cards",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_inactivecards.json",
+                        "transition": "push"
+                      }
+                    }
                   }]
                 }
               }
