@@ -1,0 +1,18 @@
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+<script>
+var isNumeric = function(data, sync) {
+  var result;
+  if (isNaN(data) || data < 1) {
+    result = false;
+  } else {
+    result = true;
+  }
+  if (result) {
+    $agent.response(result);
+  } else {
+    $agent.trigger("invalidInput");
+  }
+}
+</script>
+</html>
