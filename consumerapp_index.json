@@ -171,8 +171,7 @@
                   "type": "button",
                   "text": "Terms and Conditions*",
                   "style": {
-                    "size": "12",
-                    "align": "left"
+                    "size": "12"
                   },
                   "href": {
                     "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
@@ -247,8 +246,7 @@
                   "type": "button",
                   "text": "Terms and Conditions*",
                   "style": {
-                    "size": "12",
-                    "align": "left"
+                    "size": "12"
                   },
                   "href": {
                     "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
@@ -263,20 +261,6 @@
             }
           },{
             "items": [{
-              "type": "vertical",
-              "style": {
-                "background": "#e6e6e6"
-              },
-              "components": [{
-                "type": "label",
-                "text": "Others",
-                "style": {
-                  "size": "20"
-                }
-              }]
-            }]
-          },{
-            "items": {
               "type": "vertical",
               "style": {
                 "align": "center",
@@ -297,7 +281,7 @@
                   "transition": "replace"
                 }
               }]
-            }
+            }]
           }]
         }
       }
