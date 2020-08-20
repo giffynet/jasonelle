@@ -3,24 +3,12 @@
     "head": {
       "title": "Giffy Merchant - Get Amount",
       "description": "This app enable merchant to  accept digital gift card powered by Giffy",
-      "agents": {
-        "validate": {
-          "url": "{{$global.jason_url}}/validate.html"
-        }
-      },
       "actions": {
         "$load": {
           "type": "$render"
         },
         "$foreground": {
           "type": "$reload"
-        },
-        "$invalidInput": {
-          "type": "$util.alert",
-          "options": {
-            "type": "warning",
-            "text": "Invalid input"
-          }
         }
       },
       "templates": {
@@ -98,25 +86,14 @@
                   "height": "80",
                   "size": "24"
                 },
-                "action": {
-                  "type": "$agents.request",
+                "$href": {
+                  "url": "{{$params.next_url}}",
+                  "transition": "replace",
                   "options": {
-                    "id": "validate",
-                    "method": "isNumeric",
-                    "params": "{{$get.amount}}"
-                  },
-                  "success": {
-                    "type": "$href",
-                    "options": {
-                      "url": "{{$params.next_url}}",
-                      "transition": "replace",
-                      "options": {
-                        "amount": "{{$get.amount}}",
-                        "programme_id": "{{$params.programme_id}}",
-                        "programme_name": "{{$params.programme_name}}",
-                        "currency": "{{$params.currency}}"
-                      }
-                    }
+                    "amount": "{{$get.amount}}",
+                    "programme_id": "{{$params.programme_id}}",
+                    "programme_name": "{{$params.programme_name}}",
+                    "currency": "{{$params.currency}}"
                   }
                 }
               }]
