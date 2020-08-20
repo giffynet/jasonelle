@@ -1,0 +1,97 @@
+{
+  "consumercards": {
+    "pending": [
+      {
+        "card_id": "1",
+        "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
+        "status": "P",
+        "status_text": "Pending Activation",
+        "consumer_id": "1",
+        "programme_id": "2",
+        "programme_name": "$10 Gift Card",
+        "issuer_name": "Marvel - Avenger",
+        "currency": "SGD",
+        "total_balance": "10",
+        "basic_balance": "10",
+        "bonus_balance": "0",
+        "expiry_date": "01-08-2025"
+      }
+    ],
+    "active": [
+      {
+        "card_id": "2",
+        "image_url": "https://giffynet.github.io/jasonelle/giftcard1.png",
+        "status": "A",
+        "status_text": "Active",
+        "consumer_id": "1",
+        "programme_id": "1",
+        "programme_name": "$50 Gift Card",
+        "issuer_name": "Marvel - Avenger",
+        "currency": "SGD",
+        "total_balance": "50",
+        "basic_balance": "50",
+        "bonus_balance": "0",
+        "expiry_date": "01-08-2025"
+      },{
+        "card_id": "3",
+        "image_url": "https://giffynet.github.io/jasonelle/giftcard3.png",
+        "status": "A",
+        "status_text": "Active",
+        "consumer_id": "1",
+        "programme_id": "3",
+        "programme_name": "Cashback Gift Card",
+        "issuer_name": "Marvel",
+        "currency": "SGD",
+        "total_balance": "505",
+        "basic_balance": "500",
+        "bonus_balance": "5",
+        "expiry_date": "01-08-2025"
+      },{
+        "card_id": "4",
+        "image_url": "https://giffynet.github.io/jasonelle/giftcard1.png",
+        "status": "A",
+        "status_text": "Active",
+        "consumer_id": "1",
+        "programme_id": "1",
+        "programme_name": "$50 Gift Card",
+        "issuer_name": "Marvel - Thor",
+        "currency": "SGD",
+        "total_balance": "50",
+        "basic_balance": "50",
+        "bonus_balance": "0",
+        "expiry_date": "01-08-2025"
+      }
+    ],
+    "others": [
+      {
+        "card_id": "5",
+        "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
+        "status": "I",
+        "status_text": "Inactive",
+        "consumer_id": "1",
+        "programme_id": "2",
+        "programme_name": "$10 Gift Card",
+        "issuer_name": "Marvel - Ironman",
+        "currency": "SGD",
+        "total_balance": "1",
+        "basic_balance": "1",
+        "bonus_balance": "0",
+        "expiry_date": "01-08-2026"
+      },{
+        "card_id": "6",
+        "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
+        "status": "E",
+        "status_text": "Expired",
+        "consumer_id": "1",
+        "programme_id": "2",
+        "programme_name": "$10 Gift Card",
+        "issuer_name": "Marvel - Spiderman",
+        "currency": "SGD",
+        "total_balance": "10",
+        "basic_balance": "10",
+        "bonus_balance": "0",
+        "expiry_date": "01-08-2020"
+      }
+    ]
+  }
+}
