@@ -163,12 +163,6 @@
                     "size": "18"
                   }
                 },{
-                  "type": "label",
-                  "text": "[Basic: {{basic_balance}}, Bonus: {{bonus_balance}}]",
-                  "style": {
-                    "size": "12"
-                  }
-                },{
                   "type": "space",
                   "style": {
                     "height": "10"
@@ -248,6 +242,9 @@
                 },{
                   "type": "button",
                   "text": "Terms and Conditions*",
+                  "style": {
+                    "size": "12"
+                  },
                   "href": {
                     "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
                     "transition": "modal",
@@ -308,13 +305,13 @@
                   }
                 },{
                   "type": "label",
-                  "text": "Balance: {{currency}} {{total_balance}} - Valid until: {{expiry_date}}",
+                  "text": "Balance: {{currency}} {{total_balance}}",
                   "style": {
                     "size": "18"
                   }
                 },{
                   "type": "label",
-                  "text": "[Basic: {{basic_balance}}, Bonus: {{bonus_balance}}]",
+                  "text": "Valid until: {{expiry_date}}",
                   "style": {
                     "size": "12"
                   }
@@ -326,6 +323,9 @@
                 },{
                   "type": "button",
                   "text": "Terms and Conditions*",
+                  "style": {
+                    "size": "12"
+                  },
                   "href": {
                     "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
                     "transition": "modal",
