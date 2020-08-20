@@ -16,7 +16,7 @@
           "type": "$reload"
         },
         "$invalidInput": {
-          "type": "util.alert",
+          "type": "$util.alert",
           "options": {
             "type": "warning",
             "text": "Invalid input"
