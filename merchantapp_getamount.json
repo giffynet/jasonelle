@@ -86,7 +86,7 @@
                   "height": "80",
                   "size": "24"
                 },
-                "$href": {
+                "href": {
                   "url": "{{$params.next_url}}",
                   "transition": "replace",
                   "options": {
