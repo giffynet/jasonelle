@@ -99,7 +99,7 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$agent.request",
+                  "type": "$agents.request",
                   "options": {
                     "id": "validate",
                     "method": "isNumeric",
