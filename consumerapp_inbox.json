@@ -81,7 +81,7 @@
                     "color": 
                     [
                       {
-                        "{{#if status=='NEW'}}": "#FF0000"
+                        "{{#if status=='NEW'}}": "#BC845C"
                       },
                       {
                         "{{#else}}": "#707070"
@@ -95,7 +95,7 @@
                     "size": "12",
                     "color": [
                       {
-                        "{{#if status=='NEW'}}": "#FF0000"
+                        "{{#if status=='NEW'}}": "#BC845C"
                       },
                       {
                         "{{#else}}": "#707070"
