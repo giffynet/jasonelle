@@ -35,12 +35,6 @@
         },
         "$pull": {
           "type": "$reload"
-        },
-        "$push.onregister": {
-          "type": "$util.alert",
-          "options": {
-            "text": "{{$jason.token}}"
-          }
         }
       },
       "templates": {
@@ -79,11 +73,6 @@
                         "url": "{{$global.jason_url}}/consumerapp_inbox.json",
                         "transition": "push"
                       }
-                    }
-                  },{
-                    "text": "Push Token",
-                    "action": {
-                      "type": "$push.register"
                     }
                   }]
                 }
