@@ -140,7 +140,7 @@
               },
               "items": [{
                 "text": "BY MOBILE NO",
-                "image": "{{$global.jason_url}}/keypad_icon.png",
+                "image": "{{$global.jason_url}}/phone_icon.png",
                 "style": {
                   "height": "30"
                 },
