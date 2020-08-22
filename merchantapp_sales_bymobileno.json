@@ -136,11 +136,11 @@
               "style": {
                 "background": "#BC845C",
                 "color:disabled": "#FFFFFF",
-                "color": "#84522D"
+                "color": "#FFFFFF"
               },
               "items": [{
                 "text": "BY MOBILE NO",
-                "image": "{{$global.jason_url}}/phone_icon.png",
+                "image": "{{$global.jason_url}}/dialing_icon.png",
                 "style": {
                   "height": "30"
                 },
