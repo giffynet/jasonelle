@@ -140,8 +140,9 @@
               },
               "items": [{
                 "text": "BY MOBILE NO",
+                "image": "{{$global.jason_url}}/keypad_icon.png",
                 "style": {
-                  "height": "21"
+                  "height": "30"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/merchantapp_sales_bymobileno.json",
@@ -154,9 +155,10 @@
                   }
                 }
               }, {
-                "text": "BY QR CODE",
+                "text": "SCAN QR",
+                "image": "{{$global.jason_url}}/scanqr_icon.png",
                 "style": {
-                  "height": "21"
+                  "height": "30"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/merchantapp_sales_byqrcode.json",
