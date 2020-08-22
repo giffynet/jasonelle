@@ -103,7 +103,7 @@
                 "text": "QR CODE",
                 "image": "{{$global.jason_url}}/qrcode_icon.png",
                 "style": {
-                  "height": "100"
+                  "height": "30"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
@@ -116,7 +116,7 @@
                 "text": "MY PIN",
                 "image": "{{$global.jason_url}}/showpin_icon.png",
                 "style": {
-                  "height": "100"
+                  "height": "30"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_bycustpincode.json",
@@ -129,7 +129,7 @@
                 "text": "MERCH PIN",
                 "image": "{{$global.jason_url}}/pinentry_icon.png",
                 "style": {
-                  "height": "100"
+                  "height": "30"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_bymerchpincode.json",
