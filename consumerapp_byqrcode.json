@@ -103,7 +103,7 @@
                 "text": "QR CODE",
                 "image": "{{$global.jason_url}}/qrcode_icon.png",
                 "style": {
-                  "height": "30"
+                  "height": "50"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
@@ -116,7 +116,7 @@
                 "text": "MY PIN",
                 "image": "{{$global.jason_url}}/showpin_icon.png",
                 "style": {
-                  "height": "30"
+                  "height": "50"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_bycustpincode.json",
