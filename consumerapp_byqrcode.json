@@ -97,7 +97,7 @@
               "style": {
                 "background": "#FFFFFF",
                 "color:disabled": "#707070",
-                "color": "#84522D"
+                "color": "#000000"
               },
               "items": [{
                 "text": "QR CODE",
