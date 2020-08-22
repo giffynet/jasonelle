@@ -114,53 +114,7 @@
                 }
               }]
             }]
-          }],
-          "footer": {
-            "tabs": {
-              "style": {
-                "background": "#BC845C",
-                "color:disabled": "#FFFFFF",
-                "color": "#84522D"
-              },
-              "items": [{
-                "text": "QR CODE",
-                "style": {
-                  "height": "21"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
-                  "transition": "replace",
-                  "options": {
-                    "card_id": "{{$params.card_id}}"
-                  }
-                }
-              }, {
-                "text": "MY PIN",
-                "style": {
-                  "height": "21"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/consumerapp_bycustpincode.json",
-                  "transition": "replace",
-                  "options": {
-                    "card_id": "{{$params.card_id}}"
-                  }
-                }
-              }, {
-                "text": "MERCH PIN",
-                "style": {
-                  "height": "21"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/consumerapp_bymerchpincode.json",
-                  "transition": "replace",
-                  "options": {
-                    "card_id": "{{$params.card_id}}"
-                  }
-                }
-              }]
-            }
-          }
+          }]
         }
       }
     }
