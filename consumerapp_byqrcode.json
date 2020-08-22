@@ -95,8 +95,8 @@
           "footer": {
             "tabs": {
               "style": {
-                "background": "#BC845C",
-                "color:disabled": "#FFFFFF",
+                "background": "#FFFFFF",
+                "color:disabled": "#707070",
                 "color": "#84522D"
               },
               "items": [{
