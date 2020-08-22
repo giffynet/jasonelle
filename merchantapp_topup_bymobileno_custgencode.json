@@ -148,56 +148,7 @@
                 }
               }]
             }]
-          }],
-          "footer": {
-            "tabs": {
-              "style": {
-                "background": "#BC845C",
-                "color:disabled": "#FFFFFF",
-                "color": "#84522D"
-              },
-              "items": [{
-                "text": "BY QR CODE",
-                "style": {
-                  "height": "21"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_topup_byqrcode.json",
-                  "transition": "replace",
-                  "options": {
-                    "amount": "{{$params.amount}}",
-                    "currency": "{{$params.currency}}"
-                  }
-                }
-              }, {
-                "text": "CUST PIN",
-                "style": {
-                  "height": "21"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_custgencode.json",
-                  "transition": "replace",
-                  "options": {
-                    "currency": "{{$params.currency}}",
-                    "amount": "{{$params.amount}}"
-                  }
-                }
-              }, {
-                "text": "MERCH PIN",
-                "style": {
-                  "height": "21"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_merchgencode.json",
-                  "transition": "replace",
-                  "options": {
-                    "currency": "{{$params.currency}}",
-                    "amount": "{{$params.amount}}"
-                  }
-                }
-              }]
-            }
-          }
+          }]
         }
       }
     }
