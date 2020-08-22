@@ -53,47 +53,7 @@
               "size": "18",
               "align": "center"
             }
-          }],
-          "footer": {
-            "tabs": {
-              "style": {
-                "background": "#BC845C",
-                "color:disabled": "#FFFFFF",
-                "color": "#84522D"
-              },
-              "items": [{
-                "text": "BY MOBILE NO",
-                "style": {
-                  "height": "21"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_sales_bymobileno.json",
-                  "transition": "replace",
-                  "options": {
-                    "amount": "{{$params.amount}}",
-                    "programme_id": "{{$params.programme_id}}",
-                    "programme_name": "{{$params.programme_name}}",
-                    "currency": "{{$params.currency}}"
-                  }
-                }
-              }, {
-                "text": "BY QR CODE",
-                "style": {
-                  "height": "21"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_sales_byqrcode.json",
-                  "transition": "replace",
-                  "options": {
-                    "amount": "{{$params.amount}}",
-                    "programme_id": "{{$params.programme_id}}",
-                    "programme_name": "{{$params.programme_name}}",
-                    "currency": "{{$params.currency}}"
-                  }
-                }
-              }]
-            }
-          }
+          }]
         }
       },
       "actions": {
