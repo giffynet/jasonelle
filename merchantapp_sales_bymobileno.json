@@ -135,7 +135,7 @@
             "tabs": {
               "style": {
                 "background": "#BC845C",
-                "color:disabled": "#707070",
+                "color:disabled": "#d9d9d9",
                 "color": "#FFFFFF"
               },
               "items": [{
