@@ -51,9 +51,10 @@
                 "color": "#84522D"
               },
               "items": [{
-                "text": "BY QR CODE",
+                "text": "SCAN QR",
+                "image": "{{$global.jason_url}}/scanqr_icon.png",
                 "style": {
-                  "height": "21"
+                  "height": "30"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/merchantapp_topup_byqrcode.json",
@@ -65,8 +66,9 @@
                 }
               }, {
                 "text": "CUST PIN",
+                "image": "{{$global.jason_url}}/pinentry_icon.png",
                 "style": {
-                  "height": "21"
+                  "height": "30"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_custgencode.json",
@@ -78,8 +80,9 @@
                 }
               }, {
                 "text": "MERCH PIN",
+                "image": "{{$global.jason_url}}/showpin_icon.png",
                 "style": {
-                  "height": "21"
+                  "height": "30"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_merchgencode.json",
