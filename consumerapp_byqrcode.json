@@ -129,7 +129,7 @@
                 "text": "MERCH PIN",
                 "image": "{{$global.jason_url}}/pinentry_icon.png",
                 "style": {
-                  "height": "30"
+                  "height": "50"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_bymerchpincode.json",
