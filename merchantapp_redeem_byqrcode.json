@@ -47,8 +47,8 @@
             "tabs": {
               "style": {
                 "background": "#ffffff",
-                "color:disabled": "#eeeeee",
-                "color": "#00eb75"
+                "color:disabled": "#707070",
+                "color": "#009f4f"
               },
               "items": [{
                 "text": "SCAN QR",
