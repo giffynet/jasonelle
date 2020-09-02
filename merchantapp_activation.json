@@ -59,9 +59,9 @@
             }
           },{
             "type": "textfield",
-            "name": "nonce",
+            "name": "device_id",
             "value": "",
-            "placeholder": "Enter Nonce Value"
+            "placeholder": "Enter Device ID"
           },{
             "type": "textfield",
             "name": "activation_code",
@@ -90,7 +90,7 @@
                   "content_type": "json"
                 },
                 "data": {
-                  "nonce": "{{$get.nonce}}",
+                  "device_id": "{{$get.device_id}}",
                   "activation_code": "{{$get.activation_code}}"
                 }
               },
