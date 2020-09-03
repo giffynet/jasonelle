@@ -71,6 +71,10 @@
                 },{
                   "type": "button",
                   "url": "{{image_url}}",
+                  "style": {
+                    "height": "312",
+                    "width": "820"
+                  },
                   "href": {
                     "url": [
                       {
