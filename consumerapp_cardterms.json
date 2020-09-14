@@ -99,10 +99,11 @@
                 }
               },{
                 "type": "button",
-                "text": "Back",
+                "text": "Close",
                 "style": {
-                  "background": "#d9d9d9",
-                  "color": "#000000",
+                  "background": "#5c84bc",
+                  "color": "#ffffff",
+                  "corner_radius": "10",
                   "height": "50",
                   "size": "20"
                 },
