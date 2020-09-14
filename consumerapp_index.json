@@ -282,7 +282,7 @@
                 "style": {
                   "background": "#ffffff",
                   "color": "#BC845C",
-                  "size": "12"
+                  "size": "14"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_index2.json",
