@@ -141,7 +141,6 @@
                 "text": "Send to Contact",
                 "style": {
                   "background": "#f9aa33",
-                  "color": "#000000",
                   "corner_radius": "10",
                   "height": "50",
                   "size": "20"
