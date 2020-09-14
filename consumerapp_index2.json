@@ -118,15 +118,12 @@
           "sections": [{
             "items": [{
               "type": "vertical",
-              "style": {
-                "background": "#BC845C"
-              },
               "components": [{
                 "type": "label",
                 "text": "Pending Activation",
                 "style": {
                   "size": "20",
-                  "color": "#ffffff"
+                  "color": "#BC845C"
                 }
               }]
             }]
@@ -188,15 +185,12 @@
           },{
             "items": [{
               "type": "vertical",
-              "style": {
-                "background": "#BC845C"
-              },
               "components": [{
                 "type": "label",
                 "text": "Active",
                 "style": {
                   "size": "20",
-                  "color": "#ffffff"
+                  "color": "#BC845C"
                 }
               }]
             }]
@@ -264,15 +258,12 @@
           },{
             "items": [{
               "type": "vertical",
-              "style": {
-                "background": "#BC845C"
-              },
               "components": [{
                 "type": "label",
                 "text": "Expired",
                 "style": {
                   "size": "20",
-                  "color": "#ffffff"
+                  "color": "#BC845C"
                 }
               }]
             }]
