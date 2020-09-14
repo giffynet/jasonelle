@@ -48,7 +48,7 @@
               "style": {
                 "background": "#ffffff",
                 "color:disabled": "#707070",
-                "color": "#009f4f"
+                "color": "#f4511e"
               },
               "items": [{
                 "text": "SCAN QR",
