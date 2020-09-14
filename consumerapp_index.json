@@ -172,7 +172,7 @@
                     "size": "12"
                   },
                   "href": {
-                    "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
+                    "url": "{{$global.jason_url}}/consumerapp_cardtermsandconditions.json",
                     "transition": "modal",
                     "options": {
                       "card_id": "{{card_id}}",
@@ -245,7 +245,7 @@
                     "size": "12"
                   },
                   "href": {
-                    "url": "{{$global.jason_url}}/consumerapp_cardterms.json",
+                    "url": "{{$global.jason_url}}/consumerapp_cardtermsandconditions.json",
                     "transition": "modal",
                     "options": {
                       "card_id": "{{card_id}}",
