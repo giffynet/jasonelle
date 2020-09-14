@@ -74,15 +74,6 @@
                         "transition": "push"
                       }
                     }
-                  },{
-                    "text": "My Inactive Cards",
-                    "action": {
-                      "type": "$href",
-                      "options": {
-                        "url": "{{$global.jason_url}}/consumerapp_inactivecards.json",
-                        "transition": "push"
-                      }
-                    }
                   }]
                 }
               }
@@ -128,13 +119,14 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "background": "#e6e6e6"
+                "background": "#BC845C"
               },
               "components": [{
                 "type": "label",
                 "text": "Pending Activation",
                 "style": {
-                  "size": "20"
+                  "size": "20",
+                  "color": "#ffffff"
                 }
               }]
             }]
@@ -197,13 +189,14 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "background": "#e6e6e6"
+                "background": "#BC845C"
               },
               "components": [{
                 "type": "label",
                 "text": "Active",
                 "style": {
-                  "size": "20"
+                  "size": "20",
+                  "color": "#ffffff"
                 }
               }]
             }]
@@ -272,13 +265,14 @@
             "items": [{
               "type": "vertical",
               "style": {
-                "background": "#e6e6e6"
+                "background": "#BC845C"
               },
               "components": [{
                 "type": "label",
                 "text": "Expired",
                 "style": {
-                  "size": "20"
+                  "size": "20",
+                  "color": "#ffffff"
                 }
               }]
             }]
