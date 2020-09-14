@@ -90,7 +90,7 @@
                 "type": "html",
                 "text": "{{$jason.terms}}",
                 "style": {
-                  "height": "300"
+                  "height": "250"
                 }
               },{
                 "type": "space",
