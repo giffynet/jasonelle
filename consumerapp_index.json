@@ -281,8 +281,8 @@
                 "text": "View expired cards",
                 "style": {
                   "background": "#ffffff",
-                  "color": "#0000ff",
-                  "size": "14"
+                  "color": "#BC845C",
+                  "size": "12"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_index2.json",
