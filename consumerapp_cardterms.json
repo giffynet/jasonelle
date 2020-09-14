@@ -90,25 +90,7 @@
                 "type": "html",
                 "text": "{{$jason.terms}}",
                 "style": {
-                  "height": "250"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
-                "type": "button",
-                "text": "Close",
-                "style": {
-                  "background": "#5c84bc",
-                  "color": "#ffffff",
-                  "corner_radius": "10",
-                  "height": "50",
-                  "size": "20"
-                },
-                "action": {
-                  "type": "$back"
+                  "height": "500"
                 }
               }]
             }]
