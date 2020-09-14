@@ -46,9 +46,9 @@
           "footer": {
             "tabs": {
               "style": {
-                "background": "#BC845C",
-                "color:disabled": "#FFFFFF",
-                "color": "#84522D"
+                "background": "#ffffff",
+                "color:disabled": "#707070",
+                "color": "#f4511e"
               },
               "items": [{
                 "text": "SCAN QR",
