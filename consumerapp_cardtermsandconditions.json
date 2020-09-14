@@ -38,7 +38,7 @@
         "body": {
           "background": {
             "type": "html",
-            "text": "<html>....</html>",
+            "text": "{{$jason.terms}}",
             "action": {
               "type": "$default"
             }
