@@ -276,7 +276,7 @@
               },
               "components": [{
                 "type": "label",
-                "text": "Inactive",
+                "text": "Expired",
                 "style": {
                   "size": "20"
                 }
