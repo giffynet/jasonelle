@@ -7,7 +7,7 @@
         "$load": {
           "type": "$network.request",
           "options": {
-            "url": "{{$global.jason_url}}/cardtranshistory.json",
+            "url": "{{$global.jason_url}}/cardterms.json",
             "method": "get",
             "header" : {
               "Authorization" : "Bearer {{$global.jwt_token}}"
