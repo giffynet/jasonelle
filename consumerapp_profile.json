@@ -85,7 +85,7 @@
                   "style": {
                     "size": "18",
                     "align": "left",
-                    "color": "#0000FF"
+                    "color": "#6200ee"
                   },
                   "action": {
                     "type": "$util.alert",
@@ -128,7 +128,7 @@
                   "style": {
                     "size": "18",
                     "align": "left",
-                    "color": "#0000FF"
+                    "color": "#6200ee"
                   },
                   "action": {
                     "type": "$util.picker",
