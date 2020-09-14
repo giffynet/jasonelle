@@ -134,9 +134,9 @@
           "footer": {
             "tabs": {
               "style": {
-                "background": "#BC845C",
+                "background": "#ffffff",
                 "color:disabled": "#EEEEEE",
-                "color": "#FFFFFF"
+                "color": "#f4511e"
               },
               "items": [{
                 "text": "BY MOBILE NO",
