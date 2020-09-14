@@ -3,9 +3,6 @@
     "head": {
       "title": "Giffy Consumer - Index",
       "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
-      "style": {
-        "color": "#ff0000"
-      },
       "actions": {
         "$load": {
           "type": "$global.set",
