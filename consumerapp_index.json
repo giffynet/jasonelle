@@ -282,9 +282,9 @@
                 "style": {
                   "background": "#ffffff",
                   "corner_radius": "25",
-                  "color": "#000000",
+                  "color": "#BC845C",
                   "height": "50",
-                  "size": "20"
+                  "size": "14"
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/consumerapp_index2.json",
