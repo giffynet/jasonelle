@@ -268,7 +268,7 @@
                 "text": "View expired cards",
                 "style": {
                   "background": "#ffffff",
-                  "color": "#BC845C",
+                  "color": "#6200ee",
                   "size": "14"
                 },
                 "href": {
