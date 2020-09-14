@@ -89,7 +89,7 @@
                 "style": {
                   "background": "#5c84bc",
                   "color": "#ffffff",
-                  "corner_radius": "15",
+                  "corner_radius": "10",
                   "height": "50",
                   "size": "20"
                 },
