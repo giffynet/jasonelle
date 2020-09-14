@@ -46,13 +46,10 @@
               "url": "{{$global.jason_url}}/giffy_circle_small.png"
             },
             "style": {
-              "background": "#BC845C"
+              "background": "#ffffff"
             },
             "menu": {
               "text": "MORE",
-              "style": {
-                "color": "#FFFFFF"
-              },
               "action": {
                 "type": "$util.picker",
                 "options": {
