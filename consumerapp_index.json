@@ -278,11 +278,10 @@
               },
               "components": [{
                 "type": "button",
-                "text": "Show All",
+                "text": "View expired cards",
                 "style": {
                   "background": "#ffffff",
-                  "corner_radius": "25",
-                  "color": "#BC845C",
+                  "color": "#0000ff",
                   "size": "14"
                 },
                 "href": {
