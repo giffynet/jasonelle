@@ -123,7 +123,7 @@
                 "text": "Pending Activation",
                 "style": {
                   "size": "20",
-                  "color": "#e98437"
+                  "color": "#e67620"
                 }
               }]
             }]
@@ -190,7 +190,7 @@
                 "text": "Active",
                 "style": {
                   "size": "20",
-                  "color": "#e98437"
+                  "color": "#e67620"
                 }
               }]
             }]
