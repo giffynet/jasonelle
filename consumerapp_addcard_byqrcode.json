@@ -90,7 +90,7 @@
                 "type": "button",
                 "text": "Close",
                 "style": {
-                  "background": "#5c84bc",
+                  "background": "#379ce9",
                   "color": "#ffffff",
                   "corner_radius": "10",
                   "height": "50",
