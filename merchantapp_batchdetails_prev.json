@@ -87,35 +87,7 @@
                 }]
               }
             }
-          }],
-          "footer": {
-            "tabs": {
-              "style": {
-                "background": "#e98437",
-                "color:disabled": "#FFFFFF",
-                "color": "#84522D"
-              },
-              "items": [{
-                "text": "CURRENT BATCH",
-                "style": {
-                  "height": "21"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_batchdetails.json",
-                  "transition": "replace"
-                }
-              }, {
-                "text": "PREV BATCH",
-                "style": {
-                  "height": "21"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_batchdetails_prev.json",
-                  "transition": "replace"
-                }
-              }]
-            }
-          }
+          }]
         }
       }
     }
