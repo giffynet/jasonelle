@@ -76,7 +76,7 @@
             "type": "button",
             "text": "Activate",
             "style": {
-              "background": "#d9d9d9",
+              "background": "#379ce9",
               "color": "#000000",
               "height": "50",
               "size": "18"
