@@ -77,7 +77,7 @@
             "text": "Activate",
             "style": {
               "background": "#379ce9",
-              "color": "#000000",
+              "color": "#379ce9",
               "height": "50",
               "size": "18"
             },

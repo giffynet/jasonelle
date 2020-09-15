@@ -88,7 +88,7 @@
             "text": "Sales",
             "style": {
               "background": "#379ce9",
-              "color": "#000000",
+              "color": "#379ce9",
               "height": "80",
               "size": "24"
             },
@@ -106,7 +106,7 @@
             "text": "Topup",
             "style": {
               "background": "#379ce9",
-              "color": "#000000",
+              "color": "#379ce9",
               "height": "80",
               "size": "24"
             },
@@ -129,7 +129,7 @@
             "text": "Redeem",
             "style": {
               "background": "#379ce9",
-              "color": "#000000",
+              "color": "#379ce9",
               "height": "80",
               "size": "24"
             },
