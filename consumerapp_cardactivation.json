@@ -140,7 +140,7 @@
                 "type": "button",
                 "text": "Send to Contact",
                 "style": {
-                  "background": "#f9aa33",
+                  "background": "#37e984",
                   "color": "#000000",
                   "corner_radius": "10",
                   "height": "50",
