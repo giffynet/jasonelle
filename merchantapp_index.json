@@ -23,7 +23,7 @@
       "header": {
         "title": {
           "type": "image",
-          "url": "https://giffynet.github.io/jasonelle/giffy_circle_small.png"
+          "url": "{{$global.jason_url}}/giffy_circle_small.png"
         },
         "style": {
           "background": "#e98437"
