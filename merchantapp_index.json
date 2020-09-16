@@ -16,8 +16,8 @@
             "type": "$render"
           }
         }
-      }
-    },
+      },
+      "templates": {
     "body": {
       "background": "#ffffff",
       "header": {
@@ -145,6 +145,8 @@
           }]
         }]
       }]
+    }
+      }
     }
   }
 }
