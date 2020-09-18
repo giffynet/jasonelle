@@ -46,8 +46,7 @@
               "url": "{{$global.jason_url}}/giffy_circle_small.png"
             },
             "style": {
-              "background": "#e98437",
-              "theme": false
+              "background": "#e98437"
             },
             "menu": {
               "text": "MORE",
