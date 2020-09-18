@@ -142,8 +142,7 @@
                 "style": {
                   "background": "#ffffff",
                   "border_width": "1",
-                  "border_color": "#37e984",
-                  "color": "#000000",
+                  "border_color": "#379ce9",
                   "corner_radius": "10",
                   "height": "50",
                   "size": "20"
