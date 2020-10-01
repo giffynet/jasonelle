@@ -62,7 +62,7 @@
                 "placeholder": "e.g. 123456",
                 "keyboard": "number",
                 "style": {
-                  "size": "24"
+                  "size": "48"
                 }
               },{
                 "type": "space",
