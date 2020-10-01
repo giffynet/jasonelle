@@ -104,7 +104,7 @@
                     "border_width": "5",
                     "border_color": "#ffffff",
                     "corner_radius": "10",
-                    "height": "50",
+                    "height": "60",
                     "size": "20"
                   },
                   "action": {
@@ -126,7 +126,7 @@
                     "border_width": "5",
                     "border_color": "#ffffff",
                     "corner_radius": "10",
-                    "height": "50",
+                    "height": "60",
                     "size": "20"
                   },
                   "action": {
