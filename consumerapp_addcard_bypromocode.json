@@ -83,10 +83,13 @@
                     }
                   },
                   "success": {
-                    "type": "$util.toast",
+                    "type": "$href",
                     "options": {
-                      "text": "Transaction is successful",
-                      "type": "success"
+                      "url": "{{$global.jason_url}}/consumerapp_transactionresult.json",
+                      "transition": "replace",
+                      "options": {
+                        "transaction_id": "{{$jason.transaction_id}}"
+                      }
                     }
                   },
                   "error": {
