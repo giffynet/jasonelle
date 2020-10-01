@@ -61,7 +61,7 @@
                 "options": {
                   "items": [{
                     "type": "text",
-                    "text": "Please enter PIN: {{$get.dynamic_pin2}} by {{$get.expiry}} to proceed."
+                    "text": "Please enter PIN Code {{$get.dynamic_pin2}} by {{$get.expiry}}."
                   }]
                 }
               }
@@ -95,7 +95,7 @@
                 "type": "label",
                 "text": "{{$get.dynamic_pin2}}",
                 "style": {
-                  "size": "24"
+                  "size": "36"
                 }
               },{
                 "type": "label",
