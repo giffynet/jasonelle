@@ -103,7 +103,8 @@
                     "color": "#ffffff",
                     "corner_radius": "10",
                     "height": "50",
-                    "size": "20"
+                    "size": "20",
+                    "padding": "5"
                   },
                   "action": {
                     "type": "$href",
@@ -123,7 +124,8 @@
                     "color": "#ffffff",
                     "corner_radius": "10",
                     "height": "50",
-                    "size": "20"
+                    "size": "20",
+                    "padding": "5"
                   },
                   "action": {
                     "type": "$href",
