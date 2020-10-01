@@ -109,9 +109,18 @@
                   "height": "20"
                 }
               },{
-                "type": "space",
+              },{
+                "type": "button",
+                "text": "Close",
                 "style": {
-                  "height": "20"
+                  "background": "#379ce9",
+                  "color": "#ffffff",
+                  "corner_radius": "10",
+                  "height": "50",
+                  "size": "20"
+                },
+                "action": {
+                  "type": "$back"
                 }
               }]
             }]
