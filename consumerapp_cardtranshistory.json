@@ -102,6 +102,7 @@
                     "background": "#379ce9",
                     "color": "#ffffff",
                     "border_width": "5",
+                    "border_color": "#ffffff",
                     "corner_radius": "10",
                     "height": "50",
                     "size": "20"
@@ -123,6 +124,7 @@
                     "background": "#379ce9",
                     "color": "#ffffff",
                     "border_width": "5",
+                    "border_color": "#ffffff",
                     "corner_radius": "10",
                     "height": "50",
                     "size": "20"
