@@ -95,7 +95,7 @@
                 "type": "label",
                 "text": "{{$get.dynamic_pin2}}",
                 "style": {
-                  "size": "36"
+                  "size": "48"
                 }
               },{
                 "type": "label",
