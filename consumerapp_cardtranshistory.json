@@ -94,25 +94,48 @@
                   "height": "20"
                 }
               },{
-                "type": "button",
-                "text": "Topup/Redeem",
-                "style": {
-                  "background": "#379ce9",
-                  "color": "#ffffff",
-                  "corner_radius": "10",
-                  "height": "50",
-                  "size": "20"
-                },
-                "action": {
-                  "type": "$href",
-                  "options": {
-                    "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
-                    "transition": "push",
+                "type": "horizontal",
+                "components": [{
+                  "type": "button",
+                  "text": "My QR Code",
+                  "style": {
+                    "background": "#379ce9",
+                    "color": "#ffffff",
+                    "corner_radius": "10",
+                    "height": "50",
+                    "size": "20"
+                  },
+                  "action": {
+                    "type": "$href",
                     "options": {
-                      "card_id": "{{$params.card_id}}"
+                      "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
+                      "transition": "push",
+                      "options": {
+                        "card_id": "{{$params.card_id}}"
+                      }
                     }
                   }
-                }
+                },{
+                  "type": "button",
+                  "text": "PIN Code",
+                  "style": {
+                    "background": "#379ce9",
+                    "color": "#ffffff",
+                    "corner_radius": "10",
+                    "height": "50",
+                    "size": "20"
+                  },
+                  "action": {
+                    "type": "$href",
+                    "options": {
+                      "url": "{{$global.jason_url}}/consumerapp_byqrcode.json",
+                      "transition": "push",
+                      "options": {
+                        "card_id": "{{$params.card_id}}"
+                      }
+                    }
+                  }
+                }]
               }]
             }]
           },{
