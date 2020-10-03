@@ -33,7 +33,7 @@
                 "type": "$href",
                 "options": {
                   "url": "{{$global.jason_url}}/merchantapp_index.json",
-                  "transition": "push"
+                  "transition": "replace"
                 }
               }
             },
