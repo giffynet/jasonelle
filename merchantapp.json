@@ -10,6 +10,15 @@
             "jason_url": "https://giffynet.github.io/jasonelle"
           },
           "success": {
+             "type": "$render"
+          }
+        },
+        "$show": {
+          "type": "$global.set",
+          "options": {
+            "jason_url": "https://giffynet.github.io/jasonelle"
+          },
+          "success": {
             "type": "$network.request",
             "options": {
               "url": "{{$global.jason_url}}/verifymerchanttoken.json",
