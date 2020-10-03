@@ -97,8 +97,8 @@
                 "style": {
                   "background": "#379ce9",
                   "color": "#ffffff",
-                  "height": "80",
-                  "size": "24"
+                  "height": "50",
+                  "size": "20"
                 },
                 "action": {
                   "type": "$back"
