@@ -3,31 +3,6 @@
     "head": {
       "title": "Giffy Merchant",
       "description": "This app enable merchant to  accept digital gift card powered by Giffy",
-      "actions": {
-        "$load": {
-          "type": "$network.request",
-          "options": {
-            "url": "https://ptsv2.com/t/giffynet/post",
-            "method": "post",
-            "header" : {
-              "Authorization" : "Bearer {{$global.jwt_token}}",
-              "content_type": "json"
-            },
-            "data": {
-              "dummy": "test"
-            }
-          },
-          "success": {
-            "type": "$render"
-          },
-          "error": {
-            "type": "$util.toast",
-            "options": {
-              "text": "Unable to validate session token. Please activate this device."
-            }
-          }
-        }
-      }
     },
     "body": {
       "background": "#ffffff",
