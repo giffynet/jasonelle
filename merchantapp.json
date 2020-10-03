@@ -79,38 +79,9 @@
                   "height": "20"
                 }
               },{
-                "type": "button",
-                "text": "Name",
+                "type": "space",
                 "style": {
-                  "size": "18",
-                  "align": "left",
-                  "color": "#6200ee"
-                },
-                "action": {
-                  "type": "$util.alert",
-                  "options": {
-                    "title": "Name",
-                    "description": "Please enter your name",
-                    "form": [{
-                      "name": "cashiername",
-                      "placeholder": "Enter Your Name"
-                    }]
-                  },
-                  "success": {
-                    "type": "$global.set",
-                    "options": {
-                      "cashiername": "{{$jason.cashiername}}"
-                    },
-                    "success": {
-                      "type": "$render"
-                    }
-                  }
-                }
-              },{
-                "type": "label",
-                "text": "{{$global.cashiername}}",
-                "style": {
-                  "size": "18"
+                  "height": "20"
                 }
               },{
                 "type": "space",
