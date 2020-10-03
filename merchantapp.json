@@ -87,6 +87,9 @@
                   "url": "{{$global.jason_url}}/merchantapp_index.json",
                   "transition": "replace"
                 }
+              }]
+            }]
+          }]
         }
       }
     }
