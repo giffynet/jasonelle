@@ -74,12 +74,26 @@
                 "options": {
                   "jwt_token": "{{$jason.jwt_token}}",
                   "default_currency": "{{$jason.default_currency}}"
+                  "default_dialingcode": "{{$jason.default_dialingcode}}"
+                },
+                "success": {
+                  "type": "$href",
+                  "options": {
+                    "url": "{{$global.jason_url}}/merchantapp_index.json",
+                    "transition": "replace"
+                  }
                 }
               },
               "error": {
                 "type": "$global.reset",
                 "options": {
                   "items": ["jwt_token"]
+                },
+                "success": {
+                  "type": "$util.toast",
+                  "options": {
+                    "text": "Failed to activate this device. Please try again."
+                  }
                 }
               }
             }
