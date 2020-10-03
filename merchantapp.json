@@ -48,6 +48,23 @@
         },
         "$foreground": {
           "type": "$reload"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "background": "#ffffff",
+          "header": {
+            "title": {
+              "type": "image",
+              "url": "{{$global.jason_url}}/giffy_circle_small.png"
+            },
+            "style": {
+              "background": "#e98437"
+            }
+          }
         }
       }
     }
