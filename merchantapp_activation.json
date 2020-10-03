@@ -53,8 +53,8 @@
             "style": {
               "background": "#379ce9",
               "color": "#ffffff",
-              "height": "50",
-              "size": "18"
+              "height": "80",
+              "size": "24"
             },
             "action" : {
               "type": "$network.request",
