@@ -73,6 +73,21 @@
             "style": {
               "background": "#e98437"
             }
+          },
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "align": "center",
+                "padding": "20",
+                "border": "none"
+              },
+              "components": [{
+                "type": "label",
+                "text": "Initializing..."
+                }
+              }]
+            }]
           }
         }
       }
