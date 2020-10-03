@@ -59,8 +59,8 @@
             "action" : {
               "type": "$network.request",
               "options": {
-                "url": "https://ptsv2.com/t/giffynet/post",
-                "method": "post",
+                "url": "{{$global.jason_url}}/getmerchanttoken.json",
+                "method": "get",
                 "header" : {
                   "content_type": "json"
                 },
