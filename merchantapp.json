@@ -53,12 +53,9 @@
         "body": {
           "background": "#ffffff",
           "header": {
-            "title": {
-              "type": "image",
-              "url": "{{$global.jason_url}}/giffy_circle_small.png"
-            },
+            "title": "Giffy Merchant",
             "style": {
-              "background": "#e98437"
+              "size": "18"
             }
           },
           "sections": [{
