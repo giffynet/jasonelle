@@ -30,11 +30,7 @@
                 "default_dialingcode": "{{$jason.default_dialingcode}}"
               },
               "success": {
-                "type": "$href",
-                "options": {
-                  "url": "{{$global.jason_url}}/merchantapp_index.json",
-                  "transition": "replace"
-                }
+                "type": "$render"
               }
             },
             "error": {
@@ -64,7 +60,33 @@
             "style": {
               "background": "#e98437"
             }
-          }
+          },
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "align": "center",
+                "padding": "20",
+                "border": "none"
+              },
+              "components": [{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "button",
+                "text": "Start",
+                "style": {
+                  "background": "#379ce9",
+                  "color": "#ffffff",
+                  "height": "80",
+                  "size": "24"
+                },
+                "href": {
+                  "url": "{{$global.jason_url}}/merchantapp_index.json",
+                  "transition": "replace"
+                }
         }
       }
     }
