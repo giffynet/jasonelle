@@ -45,6 +45,9 @@
               }
             }
           }
+        },
+        "$foreground": {
+          "type": "$reload"
         }
       }
     }
