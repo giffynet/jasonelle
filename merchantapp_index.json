@@ -5,16 +5,7 @@
       "description": "This app enable merchant to  accept digital gift card powered by Giffy",
       "actions": {
         "$load": {
-          "type": "$global.set",
-          "options": {
-            "jwt_token": "MySessionToken",
-            "default_currency": "SGD",
-            "default_dialingcode": "",
-            "jason_url": "https://giffynet.github.io/jasonelle"
-          },
-          "success": {
-            "type": "$render"
-          }
+          "type": "$render"
         }
       },
       "templates": {
