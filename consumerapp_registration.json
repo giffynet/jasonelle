@@ -58,6 +58,34 @@
               "height": "20"
             }
           },{
+            "type": "horizontal",
+            "components": [{
+              "type": "button",
+              "text": "Term of Services",
+              "action": {
+                "type": "$href",
+                "options": {
+                  "url": "{{$global.jason_url}}/consumerapp_termofservices.json",
+                  "transition": "modal",
+                }
+              }
+            },{
+              "type": "button",
+              "text": "Privacy Policy",
+              "action": {
+                "type": "$href",
+                "options": {
+                  "url": "{{$global.jason_url}}/consumerapp_privacypolicy.json",
+                  "transition": "modal",
+                }
+              }
+            }]
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
             "type": "button",
             "text": "Create Account",
             "style": {
