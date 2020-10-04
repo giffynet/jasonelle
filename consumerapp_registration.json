@@ -36,7 +36,17 @@
           },{
             "type": "space",
             "style": {
-              "height": "25"
+              "height": "20"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
             }
           },{
             "type": "label",
@@ -70,9 +80,7 @@
             }
           },{
             "type": "label",
-            "options": {
-              "text": "By signing up, you agree to our Terms of Services and Privacy Policy."
-            }
+            "text": "By signing up, you agree to our Terms of Services and Privacy Policy."
           },{
             "type": "space",
             "style": {
@@ -84,8 +92,7 @@
               "type": "button",
               "text": "Term of Services",
               "style": {
-                "align": "center",
-                "height": "20"
+                "align": "center"
               },
               "action": {
                 "type": "$href",
@@ -98,8 +105,7 @@
               "type": "button",
               "text": "Privacy Policy",
               "style": {
-                "align": "center",
-                "height": "20"
+                "align": "center"
               },
               "action": {
                 "type": "$href",
