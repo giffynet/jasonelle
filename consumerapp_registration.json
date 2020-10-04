@@ -1,0 +1,107 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy",
+      "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
+      "actions": {
+        "$load": {
+          "type": "$render"
+        }
+      },
+      "templates": {
+
+    "body": {
+      "background": "#ffffff",
+      "header": {
+        "title": "Giffy Merchant",
+        "style": {
+          "size": "18"
+        }
+      },
+      "sections": [{
+        "items": [{
+          "type": "vertical",
+          "style": {
+            "align": "center",
+            "padding": "20",
+            "border": "none"
+          },
+          "components": [{
+            "type": "image",
+            "url": "{{$global.jason_url}}/giffy_circle_small.png",
+            "style": {
+              "width": "100",
+              "height": "100"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "25"
+            }
+          },{
+            "type": "textfield",
+            "name": "mobile_no",
+            "placeholder": "Enter Mobile Number"
+          },{
+            "type": "space",
+            "style": {
+              "height": "25"
+            }
+          },{
+            "type": "button",
+            "text": "Activate",
+            "style": {
+              "background": "#379ce9",
+              "color": "#ffffff",
+              "height": "50",
+              "size": "18"
+            },
+            "action" : {
+              "type": "$network.request",
+              "options": {
+                "url": "{{$global.jason_url}}/getmerchanttoken.json",
+                "method": "get",
+                "header" : {
+                  "content_type": "json"
+                },
+                "data": {
+                  "device_id": "{{$get.device_id}}",
+                  "activation_code": "{{$get.activation_code}}"
+                }
+              },
+              "success": {
+                "type": "$global.set",
+                "options": {
+                  "jwt_token": "{{$jason.jwt_token}}",
+                  "default_currency": "{{$jason.default_currency}}",
+                  "default_dialingcode": "{{$jason.default_dialingcode}}"
+                },
+                "success": {
+                  "type": "$href",
+                  "options": {
+                    "url": "{{$global.jason_url}}/merchantapp.json",
+                    "transition": "replace"
+                  }
+                }
+              },
+              "error": {
+                "type": "$global.reset",
+                "options": {
+                  "items": ["jwt_token"]
+                },
+                "success": {
+                  "type": "$util.toast",
+                  "options": {
+                    "text": "Failed to activate this device. Please try again."
+                  }
+                }
+              }
+            }
+          }]
+        }]
+      }]
+    }
+      }
+    }
+  }
+}
