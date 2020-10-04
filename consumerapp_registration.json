@@ -79,17 +79,6 @@
               "height": "20"
             }
           },{
-            "type": "label",
-            "style": {
-              "size": "12"
-            },
-            "text": "By signing up, you agree to our Terms of Services and Privacy Policy."
-          },{
-            "type": "space",
-            "style": {
-              "height": "20"
-            }
-          },{
             "type": "horizontal",
             "components": [{
               "type": "button",
@@ -161,6 +150,17 @@
                 }
               }
             }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
+            "type": "label",
+            "style": {
+              "size": "12"
+            },
+            "text": "By signing up, you agree to our Terms of Services and Privacy Policy."
           }]
         }]
       }]
