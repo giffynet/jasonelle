@@ -45,16 +45,27 @@
           },{
             "type": "space",
             "style": {
-              "height": "25"
+              "height": "20"
+            }
+          },{
+            "type": "label",
+            "options": {
+              "text": "By signing up, you agree to our Terms of Services and Privacy Policy."
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
             }
           },{
             "type": "button",
-            "text": "Activate",
+            "text": "Create Account",
             "style": {
               "background": "#379ce9",
               "color": "#ffffff",
+              "corner_radius": "10",
               "height": "50",
-              "size": "18"
+              "size": "20"
             },
             "action" : {
               "type": "$network.request",
