@@ -72,7 +72,7 @@
                 "type": "$href",
                 "options": {
                   "url": "{{$global.jason_url}}/consumerapp_termofservices.json",
-                  "transition": "modal",
+                  "transition": "modal"
                 }
               }
             },{
@@ -82,7 +82,7 @@
                 "type": "$href",
                 "options": {
                   "url": "{{$global.jason_url}}/consumerapp_privacypolicy.json",
-                  "transition": "modal",
+                  "transition": "modal"
                 }
               }
             }]
@@ -104,41 +104,26 @@
             "action" : {
               "type": "$network.request",
               "options": {
-                "url": "{{$global.jason_url}}/getmerchanttoken.json",
+                "url": "{{$global.jason_url}}/getotp.json",
                 "method": "get",
                 "header" : {
                   "content_type": "json"
                 },
                 "data": {
-                  "device_id": "{{$get.device_id}}",
-                  "activation_code": "{{$get.activation_code}}"
+                  "mobile_no": "{{$get.mobile_no}}"
                 }
               },
               "success": {
-                "type": "$global.set",
+                "type": "$href",
                 "options": {
-                  "jwt_token": "{{$jason.jwt_token}}",
-                  "default_currency": "{{$jason.default_currency}}",
-                  "default_dialingcode": "{{$jason.default_dialingcode}}"
-                },
-                "success": {
-                  "type": "$href",
-                  "options": {
-                    "url": "{{$global.jason_url}}/merchantapp.json",
-                    "transition": "replace"
-                  }
+                  "url": "{{$global.jason_url}}/consumerapp_otp.json",
+                  "transition": "replace"
                 }
               },
               "error": {
-                "type": "$global.reset",
+                "type": "$util.toast",
                 "options": {
-                  "items": ["jwt_token"]
-                },
-                "success": {
-                  "type": "$util.toast",
-                  "options": {
-                    "text": "Failed to activate this device. Please try again."
-                  }
+                  "text": "Failed to create account. Please try again."
                 }
               }
             }
