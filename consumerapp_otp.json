@@ -96,15 +96,28 @@
                 }
               },
               "success": {
-                "type": "$util.toast",
+                "type": "$global.set",
                 "options": {
-                  "text": "{{$params.mobile_no}} {{$get.otp}}"
+                  "jwt_token": "{{$jason.jwt_token}}"
+                },
+                "success": {
+                  "type": "$href",
+                  "options": {
+                    "url": "{{$global.jason_url}}/consumerapp_setpin.json",
+                    "transition": "replace"
+                  }
                 }
               },
               "error": {
-                "type": "$util.toast",
+                "type": "$global.reset",
                 "options": {
-                  "text": "{{$params.mobile_no}} {{$get.otp}}"
+                  "items": ["jwt_token"]
+                },
+                "success": {
+                  "type": "$util.toast",
+                  "options": {
+                    "text": "Failed to verify your OTP. Please try again."
+                  }
                 }
               }
             }
