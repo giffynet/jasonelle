@@ -67,7 +67,7 @@
             }
           },{
             "type": "textfield",
-            "name": "mobile_number",
+            "name": "mobile_no",
             "placeholder": "e.g. 6221811198111",
             "keyboard": "phone",
             "style": {
@@ -140,7 +140,10 @@
                 "type": "$href",
                 "options": {
                   "url": "{{$global.jason_url}}/consumerapp_otp.json",
-                  "transition": "replace"
+                  "transition": "replace",
+                  "options": {
+                    "mobile_no": "{{$get.mobile_no}}"
+                  }
                 }
               },
               "error": {
