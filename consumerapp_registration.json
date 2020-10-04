@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "Giffy",
+      "title": "Giffy Consumer",
       "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
       "actions": {
         "$load": {
@@ -18,12 +18,6 @@
 
     "body": {
       "background": "#ffffff",
-      "header": {
-        "title": "Giffy",
-        "style": {
-          "size": "18"
-        }
-      },
       "sections": [{
         "items": [{
           "type": "vertical",
@@ -45,9 +39,30 @@
               "height": "25"
             }
           },{
+            "type": "label",
+            "text": "Enter Customer's Mobile Number",
+            "style": {
+              "size": "18"
+            }
+          },{
+            "type": "label",
+            "text": "Please include country and area code",
+            "style": {
+              "size": "12"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
             "type": "textfield",
-            "name": "mobile_no",
-            "placeholder": "Enter Mobile Number"
+            "name": "mobile_number",
+            "placeholder": "e.g. 6221811198111",
+            "keyboard": "phone",
+            "style": {
+              "size": "18"
+            }
           },{
             "type": "space",
             "style": {
@@ -68,6 +83,9 @@
             "components": [{
               "type": "button",
               "text": "Term of Services",
+              "style": {
+                "align": "center"
+              },
               "action": {
                 "type": "$href",
                 "options": {
@@ -78,6 +96,9 @@
             },{
               "type": "button",
               "text": "Privacy Policy",
+              "style": {
+                "align": "center"
+              },
               "action": {
                 "type": "$href",
                 "options": {
