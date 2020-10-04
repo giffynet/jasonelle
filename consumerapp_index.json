@@ -5,28 +5,22 @@
       "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
       "actions": {
         "$load": {
-          "type": "$global.set",
+          "type": "$network.request",
           "options": {
-            "jason_url": "https://giffynet.github.io/jasonelle"
+            "url": "{{$global.jason_url}}/consumercards.json",
+            "method": "get",
+            "header" : {
+              "Authorization" : "Bearer {{$global.jwt_token}}"
+            }
           },
           "success": {
-            "type": "$network.request",
+            "type": "$render"
+          },
+          "error": {
+            "type": "$util.toast",
             "options": {
-              "url": "{{$global.jason_url}}/consumercards.json",
-              "method": "get",
-              "header" : {
-                "Authorization" : "Bearer {{$global.jwt_token}}"
-              }
-            },
-            "success": {
-              "type": "$render"
-            },
-            "error": {
-              "type": "$util.toast",
-              "options": {
-                "type": "warning",
-                "text": "Unable to fetch consumer cards list from server. Please check your internet connection."
-              }
+              "type": "warning",
+              "text": "Unable to fetch consumer cards list from server. Please check your internet connection."
             }
           }
         },
