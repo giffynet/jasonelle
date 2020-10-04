@@ -1,0 +1,119 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy Consumer - OTP",
+      "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
+      "actions": {
+        "$load": {
+          "type": "$render"
+        }
+      },
+      "templates": {
+
+    "body": {
+      "background": "#ffffff",
+      "sections": [{
+        "items": [{
+          "type": "vertical",
+          "style": {
+            "align": "center",
+            "padding": "20",
+            "border": "none"
+          },
+          "components": [{
+            "type": "image",
+            "url": "{{$global.jason_url}}/giffy_circle_small.png",
+            "style": {
+              "width": "100",
+              "height": "100"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
+            "type": "label",
+            "text": "One Time Password",
+            "style": {
+              "size": "18"
+            }
+          },{
+            "type": "label",
+            "text": "Please enter OTP that has sent to you via SMS.",
+            "style": {
+              "size": "12"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
+            "type": "textfield",
+            "name": "otp",
+            "placeholder": "e.g. 123456",
+            "keyboard": "number",
+            "style": {
+              "size": "18"
+            }
+          },{
+            "type": "space",
+            "style": {
+              "height": "20"
+            }
+          },{
+            "type": "button",
+            "text": "Submit",
+            "style": {
+              "background": "#379ce9",
+              "color": "#ffffff",
+              "corner_radius": "10",
+              "height": "50",
+              "size": "20"
+            },
+            "action" : {
+              "type": "$network.request",
+              "options": {
+                "url": "{{$global.jason_url}}/getconsumertoken.json",
+                "method": "get",
+                "header" : {
+                  "content_type": "json"
+                },
+                "data": {
+                  "mobile_no": "{{$params.mobile_no}}",
+                  "otp": "{{$get.otp}}"
+                }
+              },
+              "success": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "{{$params.mobile_no}} {{$get.otp}}"
+                }
+              },
+              "error": {
+                "type": "$util.toast",
+                "options": {
+                  "text": "{{$params.mobile_no}} {{$get.otp}}"
+                }
+              }
+            }
+          }]
+        }]
+      }]
+    }
+
+      }
+    }
+  }
+}
