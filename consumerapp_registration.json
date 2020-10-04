@@ -84,7 +84,8 @@
               "type": "button",
               "text": "Term of Services",
               "style": {
-                "align": "center"
+                "align": "center",
+                "height": "20"
               },
               "action": {
                 "type": "$href",
@@ -97,7 +98,8 @@
               "type": "button",
               "text": "Privacy Policy",
               "style": {
-                "align": "center"
+                "align": "center",
+                "height": "20"
               },
               "action": {
                 "type": "$href",
