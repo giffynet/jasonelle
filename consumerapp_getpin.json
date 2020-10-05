@@ -39,13 +39,13 @@
             }
           },{
             "type": "label",
-            "text": "Set PIN Code",
+            "text": "PIN Code",
             "style": {
               "size": "18"
             }
           },{
             "type": "label",
-            "text": "Please enter new PIN code .",
+            "text": "Please enter your PIN code .",
             "style": {
               "size": "12"
             }
