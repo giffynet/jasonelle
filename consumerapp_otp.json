@@ -92,6 +92,7 @@
                 },
                 "data": {
                   "mobile_no": "{{$params.mobile_no}}",
+                  "otp_ref_no": "{{$params.otp_ref_no}}",
                   "otp": "{{$get.otp}}"
                 }
               },
