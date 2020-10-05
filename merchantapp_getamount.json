@@ -87,7 +87,7 @@
                   "size": "24"
                 },
                 "action": [{
-                  "{{#if $get.amount.indexOf('{{$get.amount}}') == -1 }}": {
+                  "{{#if $get.amount.indexOf('{{') == -1 }}": {
                     "type": "$href",
                     "options": {
                       "url": "{{$params.next_url}}",
