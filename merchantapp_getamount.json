@@ -86,16 +86,27 @@
                   "height": "80",
                   "size": "24"
                 },
-                "action": {
-                  "type": "$href",
-                  "options": {
-                    "url": "{{$params.next_url}}",
-                    "transition": "replace",
-                    "options": {
-                      "amount": "{{$get.amount}}",
-                      "programme_id": "{{$params.programme_id}}",
-                      "programme_name": "{{$params.programme_name}}",
-                      "currency": "{{$params.currency}}"
+                "action": {[
+                  {
+                    "{{#if $get.amount.indexOf('{{$get.amount}}') == -1 }}": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$params.next_url}}",
+                        "transition": "replace",
+                        "options": {
+                          "amount": "{{$get.amount}}",
+                          "programme_id": "{{$params.programme_id}}",
+                          "programme_name": "{{$params.programme_name}}",
+                          "currency": "{{$params.currency}}"
+                        }
+                      }
+                    }
+                  },{
+                    "{{#else}}": {
+                      "type": "$util.toast",
+                      "options": {
+                        "text": "Invalid amount"
+                      }
                     }
                   }
                 }
