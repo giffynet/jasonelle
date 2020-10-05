@@ -63,8 +63,8 @@
             "type": "textfield",
             "name": "pin1",
             "keyboard": "number",
-            "secure": "true",
             "style": {
+              "secure": "true",
               "size": "18"
             }
           },{
@@ -93,8 +93,8 @@
             "type": "textfield",
             "name": "pin2",
             "keyboard": "number",
-            "secure": "true",
             "style": {
+              "secure": "true",
               "size": "18"
             }
           },{
