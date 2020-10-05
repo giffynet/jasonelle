@@ -87,15 +87,35 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$href",
+                  "type": "$network.request",
                   "options": {
-                    "url": "{{$params.next_url}}",
-                    "transition": "replace",
+                    "url": "{{$global.jason_url}}/validate.json",
+                    "method": "get",
+                    "header" : {
+                      "Authorization" : "Bearer {{$global.jwt_token}}"
+                    },
+                    "data": {
+                      "operation": "isnumeric",
+                      "value1": "{{$get.amount}}"
+                    }
+                  },
+                  "success": {
+                    "type": "$href",
                     "options": {
-                      "amount": "{{$get.amount}}",
-                      "programme_id": "{{$params.programme_id}}",
-                      "programme_name": "{{$params.programme_name}}",
-                      "currency": "{{$params.currency}}"
+                      "url": "{{$params.next_url}}",
+                      "transition": "replace",
+                      "options": {
+                        "amount": "{{$get.amount}}",
+                        "programme_id": "{{$params.programme_id}}",
+                        "programme_name": "{{$params.programme_name}}",
+                        "currency": "{{$params.currency}}"
+                      }
+                    }
+                  },
+                  "error": {
+                    "type": "$util.toast",
+                    "options": {
+                      "text": "Invalid amount value"
                     }
                   }
                 }
