@@ -86,14 +86,17 @@
                   "height": "80",
                   "size": "24"
                 },
-                "href": {
-                  "url": "{{$params.next_url}}",
-                  "transition": "replace",
+                "action": {
+                  "type": "$href",
                   "options": {
-                    "amount": "{{$get.amount}}",
-                    "programme_id": "{{$params.programme_id}}",
-                    "programme_name": "{{$params.programme_name}}",
-                    "currency": "{{$params.currency}}"
+                    "url": "{{$params.next_url}}",
+                    "transition": "replace",
+                    "options": {
+                      "amount": "{{$get.amount}}",
+                      "programme_id": "{{$params.programme_id}}",
+                      "programme_name": "{{$params.programme_name}}",
+                      "currency": "{{$params.currency}}"
+                    }
                   }
                 }
               }]
