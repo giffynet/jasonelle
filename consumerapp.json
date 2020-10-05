@@ -44,12 +44,7 @@
       }
     },
     "body": {
-      "background": "#ffffff",
-      "header": {
-        "style": {
-          "size": "18"
-        }
-      }
+      "background": "#ffffff"
     }
   }
 }
