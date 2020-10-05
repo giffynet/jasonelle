@@ -133,7 +133,8 @@
                   "content_type": "json"
                 },
                 "data": {
-                  "mobile_no": "{{$get.mobile_no}}"
+                  "mobile_no": "{{$get.mobile_no}}",
+                  "app_id": "GIFFY"
                 }
               },
               "success": {
