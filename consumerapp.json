@@ -30,7 +30,7 @@
               "success": {
                 "type": "$href",
                 "options": {
-                  "url": "{{$global.jason_url}}/consumerapp_index.json",
+                  "url": "{{$global.jason_url}}/consumerapp_getpin.json",
                   "transition": "replace"
                 }
               }
