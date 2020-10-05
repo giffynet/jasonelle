@@ -18,6 +18,12 @@
 
     "body": {
       "background": "#ffffff",
+      "header": {
+        "title": "Giffy Merchant",
+        "style": {
+          "size": "18"
+        }
+      },
       "sections": [{
         "items": [{
           "type": "vertical",
