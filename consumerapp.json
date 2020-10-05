@@ -23,16 +23,10 @@
               }
             },
             "success": {
-              "type": "$global.set",
+              "type": "$href",
               "options": {
-                "jwt_token": "{{$jason.jwt_token}}"
-              },
-              "success": {
-                "type": "$href",
-                "options": {
-                  "url": "{{$global.jason_url}}/consumerapp_index.json",
-                  "transition": "replace"
-                }
+                "url": "{{$global.jason_url}}/consumerapp_index.json",
+                "transition": "replace"
               }
             },
             "error": {
