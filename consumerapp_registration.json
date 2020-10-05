@@ -142,7 +142,8 @@
                   "url": "{{$global.jason_url}}/consumerapp_otp.json",
                   "transition": "replace",
                   "options": {
-                    "mobile_no": "{{$get.mobile_no}}"
+                    "mobile_no": "{{$get.mobile_no}}",
+                    "otp_id": "{{$jason.otp_id}}"
                   }
                 }
               },
