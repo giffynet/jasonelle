@@ -53,7 +53,7 @@
           "sections": [{
             "header": {
               "type": "label",
-              "text": "Inbox",
+              "text": "Inbox Message(s)",
               "style": {
                 "size": "18"
               }
