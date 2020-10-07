@@ -7,7 +7,8 @@
             "title": "Raffle Kingdom App",
             "actions":{
                 "$load": {"type": "$render"},
-                "$show": {"type": "$reload"}
+                "$show": {"type": "$reload"},
+                "$pull": {"type": "$reload"}
             },
             "templates": {
                 "body": {
