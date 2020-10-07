@@ -6,7 +6,7 @@
 
             "title": "Raffle Kingdom App",
             "actions":{ 
-                "$pull": {
+                "foreground": {
                     "type": "$reload"
                 },
                 "$show": {
