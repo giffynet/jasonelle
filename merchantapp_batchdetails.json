@@ -51,6 +51,10 @@
             }
           },
           "sections": [{
+            "header": {
+              "type": "label",
+              "text": "Transactions History"
+            },
             "items": {
               "{{#each $jason.transactions}}": {
                 "type": "vertical",
