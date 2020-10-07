@@ -13,7 +13,7 @@
                     "type": "$reload"
                 },
                 "$show": {
-                    "type": "reload"}
+                    "type": "$reload"}
                 
             },
             "templates": {
