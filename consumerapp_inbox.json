@@ -51,6 +51,13 @@
             }
           },
           "sections": [{
+            "header": {
+              "type": "label",
+              "text": "Inbox",
+              "style": {
+                "size": "18"
+              }
+            },
             "items": {
               "{{#each $jason.messages}}": {
                 "type": "vertical",
