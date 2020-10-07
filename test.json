@@ -12,7 +12,7 @@
                 "foreground": {
                     "type": "$reload"
                 },
-                "$show": {
+                "show": {
                     "type": "$reload"
                 }
                 
