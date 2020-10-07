@@ -6,11 +6,14 @@
 
             "title": "Raffle Kingdom App",
             "actions":{ 
+                "load": {
+                    "type": "$render"
+                },
                 "foreground": {
                     "type": "$reload"
                 },
                 "$show": {
-                    "type": "$render"}
+                    "type": "reload"}
                 
             },
             "templates": {
