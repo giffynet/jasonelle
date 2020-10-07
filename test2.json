@@ -27,29 +27,7 @@
                         "type": "html",
                         "url": "https://rafflekingdom.co.uk/cart",
                         "action": { "type": "$default" }
-                    },
-                    "sections": [{
-                        "items": [{
-                            "type": "vertical",
-                            "style": {
-                                "align": "center",
-                                "padding": "20",
-                                "distribution": "equalspacing"
-                            },
-                            "components": [{
-                                "type": "space",
-                                "style": {
-                                "height": "20"
-                                }
-                            },{
-                                "type": "label",
-                                "text": "TESTING",
-                                "style": {
-                                "size": "18"
-                                }
-                            }]
-                        }]
-                    }]
+                    }
                 }
             }
         }
