@@ -6,6 +6,9 @@
 
             "title": "Raffle Kingdom App",
             "actions":{ 
+                "$pull": {
+                    "type": "$reload"
+                }
                 "$show": {
                     "type": "$render"}
                 
