@@ -23,20 +23,13 @@
                         }   
                     },
 
-            "background": {
-
-                "type": "html",
-
-                "url": "https://rafflekingdom.co.uk/cart",
-
-                "action": { "type": "$default" }
-
-
+                    "background": {
+                        "type": "html",
+                        "url": "https://rafflekingdom.co.uk/cart",
+                        "action": { "type": "$default" }
+                    }
+                }
             }
-            
-
         }
-
     }
-
 }
