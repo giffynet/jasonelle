@@ -53,7 +53,10 @@
           "sections": [{
             "header": {
               "type": "label",
-              "text": "Transactions History"
+              "text": "Transaction History",
+              "style": {
+                "size": "18"
+              }
             },
             "items": {
               "{{#each $jason.transactions}}": {
