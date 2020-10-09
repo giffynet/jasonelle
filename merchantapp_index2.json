@@ -1,0 +1,216 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy Merchant -  Index",
+      "description": "This app enable merchant to  accept digital gift card powered by Giffy",
+      "actions": {
+        "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "{{$global.jason_url}}/transactionlist_all.json",
+            "method": "get",
+            "header" : {
+              "Authorization" : "Bearer {{$global.jwt_token}}"
+            }
+          },
+          "success": {
+            "type": "$render"
+          },
+          "error": {
+            "type": "$util.toast",
+            "options": {
+              "type": "warning",
+              "text": "Unable to fetch transactions list from server. Please check your internet connection."
+            }
+          }
+        },
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "background": "#ffffff",
+          "header": {
+            "title": {
+              "type": "image",
+              "url": "{{$global.jason_url}}/giffy_circle_small.png"
+            },
+            "style": {
+              "background": "#e98437"
+            },
+            "menu": {
+              "text": "BATCH TOTAL",
+              "style": {
+                "color": "#FFFFFF"
+              },
+              "action": {
+                "type": "$href",
+                "options": {
+                  "url": "{{$global.jason_url}}/merchantapp_batchsummary.json",
+                  "transition": "push"
+                }
+              }
+            }
+          },
+          "layers": [{
+            "type": "image",
+            "url": "{{$global.jason_url}}/addcard.png",
+            "style": {
+              "bottom": "20",
+              "right": "20",
+              "width": "60"
+            },
+            "action": {
+              "type": "$util.picker",
+              "options": {
+                "items": [
+                  {
+                    "text": "Sell Gift Card",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/merchantapp_sales.json",
+                        "transition": "push"
+                      }
+                    }
+                  },{
+                    "text": "Top Up Gift Card",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/merchantapp_getamount.json",
+                        "transition": "push",
+                        "options": {
+                          "activity": "Topup",
+                          "currency": "{{$global.default_currency}}",
+                          "next_url": "{{$global.jason_url}}/merchantapp_topup_byqrcode.json"
+                        }
+                      }
+                    }
+                  },{
+                    "text": "Redeem Gift Card",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/merchantapp_getamount.json",
+                        "transition": "push",
+                        "options": {
+                          "activity": "Redeem",
+                          "currency": "{{$global.default_currency}}",
+                          "next_url": "{{$global.jason_url}}/merchantapp_redeem_byqrcode.json"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }],
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "components": [{
+                "type": "label",
+                "text": "Current Batch",
+                "style": {
+                  "size": "20",
+                  "color": "#e67620"
+                }
+              }]
+            }]
+          },{
+            "items": {
+              "{{#each $jason.transactions}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "20",
+                  "distribution": "equalspacing"
+                },
+                "components": [{
+                  "type": "label",
+                  "text": "{{transaction_datetime}} / {{consumer_name}}",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "label",
+                  "text": "{{transaction_type}} {{transaction_currency}} {{transaction_amount}} [{{status_text}}]",
+                  "style": {
+                    "size": "18"
+                  },
+                  "href": {
+                    "url": "{{$global.jason_url}}/merchantapp_transactionresult.json",
+                    "transition": "push",
+                    "options": {
+                      "transaction_id": "{{transaction_id}}"
+                    }
+                  }
+                },{
+                  "type": "label",
+                  "text": "{{programme_name}}",
+                  "style": {
+                    "size": "12"
+                  }
+                }]
+              }
+            }
+          },{
+            "items": [{
+              "type": "vertical",
+              "components": [{
+                "type": "label",
+                "text": "Previous Batch",
+                "style": {
+                  "size": "20",
+                  "color": "#e67620"
+                }
+              }]
+            }]
+          },{
+            "items": {
+              "{{#each $jason.transactions_prev}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "20",
+                  "distribution": "equalspacing"
+                },
+                "components": [{
+                  "type": "label",
+                  "text": "{{transaction_datetime}} / {{consumer_name}}",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "label",
+                  "text": "{{transaction_type}} {{transaction_currency}} {{transaction_amount}} [{{status_text}}]",
+                  "style": {
+                    "size": "18"
+                  },
+                  "href": {
+                    "url": "{{$global.jason_url}}/merchantapp_transactionresult.json",
+                    "transition": "push",
+                    "options": {
+                      "transaction_id": "{{transaction_id}}"
+                    }
+                  }
+                },{
+                  "type": "label",
+                  "text": "{{programme_name}}",
+                  "style": {
+                    "size": "12"
+                  }
+                }]
+              }
+            }
+          }]
+        }
+      }
+    }
+  }
+}
