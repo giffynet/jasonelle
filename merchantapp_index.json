@@ -131,146 +131,33 @@
                 },
                 "components": [{
                   "type": "label",
-                  "text": "{{programme_name}} from {{issuer_name}}",
+                  "text": "{{transaction_datetime}} / {{consumer_name}}",
                   "style": {
-                    "size": "18"
+                    "size": "12"
                   }
                 },{
-                  "type": "button",
-                  "url": "{{image_url}}",
+                  "type": "label",
+                  "text": "{{transaction_type}} {{transaction_currency}} {{transaction_amount}} [{{status_text}}]",
+                  "style": {
+                    "size": "18"
+                  },
                   "href": {
-                    "url": "{{$global.jason_url}}/consumerapp_cardactivation.json",
+                    "url": "{{$global.jason_url}}/merchantapp_transactionresult.json",
                     "transition": "push",
                     "options": {
-                      "card_id": "{{card_id}}",
-                      "consumer_id": "{{consumer_id}}",
-                      "programme_id": "{{programme_id}}"
+                      "transaction_id": "{{transaction_id}}"
                     }
                   }
                 },{
                   "type": "label",
-                  "text": "Balance: {{currency}} {{total_balance}}",
-                  "style": {
-                    "size": "18"
-                  }
-                },{
-                  "type": "space",
-                  "style": {
-                    "height": "10"
-                  }
-                },{
-                  "type": "button",
-                  "text": "Terms and Conditions*",
+                  "text": "{{programme_name}}",
                   "style": {
                     "size": "12"
-                  },
-                  "href": {
-                    "url": "{{$global.jason_url}}/consumerapp_cardtermsandconditions.json",
-                    "transition": "modal",
-                    "options": {
-                      "card_id": "{{card_id}}",
-                      "programme_id": "{{programme_id}}"
-                    }
                   }
                 }]
               }
             }
-          },{
-            "items": [{
-              "type": "vertical",
-              "components": [{
-                "type": "label",
-                "text": "Active",
-                "style": {
-                  "size": "20",
-                  "color": "#e67620"
-                }
-              }]
-            }]
-          },{
-            "items": {
-              "{{#each $jason.consumercards.active}}": {
-                "type": "vertical",
-                "style": {
-                  "align": "center",
-                  "padding": "20",
-                  "distribution": "equalspacing"
-                },
-                "components": [{
-                  "type": "label",
-                  "text": "{{programme_name}} from {{issuer_name}}",
-                  "style": {
-                    "size": "18"
-                  }
-                },{
-                  "type": "button",
-                  "url": "{{image_url}}",
-                  "href": {
-                    "url": "{{$global.jason_url}}/consumerapp_cardtranshistory.json",
-                    "transition": "push",
-                    "options": {
-                      "card_id": "{{card_id}}",
-                      "consumer_id": "{{consumer_id}}",
-                      "programme_id": "{{programme_id}}"
-                    }
-                  }
-                },{
-                  "type": "label",
-                  "text": "Balance: {{currency}} {{total_balance}}",
-                  "style": {
-                    "size": "18"
-                  }
-                },{
-                  "type": "label",
-                  "text": "Valid until: {{expiry_date}}",
-                  "style": {
-                    "size": "12"
-                  }
-                },{
-                  "type": "space",
-                  "style": {
-                    "height": "10"
-                  }
-                },{
-                  "type": "button",
-                  "text": "Terms and Conditions*",
-                  "style": {
-                    "size": "12"
-                  },
-                  "href": {
-                    "url": "{{$global.jason_url}}/consumerapp_cardtermsandconditions.json",
-                    "transition": "modal",
-                    "options": {
-                      "card_id": "{{card_id}}",
-                      "programme_id": "{{programme_id}}"
-                    }
-                  }
-                }]
-              }
-            }
-          },{
-            "items": [{
-              "type": "vertical",
-              "style": {
-                "align": "center",
-                "padding": "20",
-                "distribution": "equalspacing"
-              },
-              "components": [{
-                "type": "button",
-                "text": "View expired cards",
-                "style": {
-                  "background": "#ffffff",
-                  "color": "#6200ee",
-                  "size": "14"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/consumerapp_index2.json",
-                  "transition": "replace"
-                }
-              }]
-            }]
-          }]
+          }
         }
       }
     }
