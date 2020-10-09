@@ -73,7 +73,7 @@
                     "action": {
                       "type": "$href",
                       "options": {
-                        "url": "{{$global.jason_url}}/consumerapp_addcard_byqrcode.json",
+                        "url": "{{$global.jason_url}}/merchantapp_sales.json",
                         "transition": "push"
                       }
                     }
@@ -82,8 +82,13 @@
                     "action": {
                       "type": "$href",
                       "options": {
-                        "url": "{{$global.jason_url}}/consumerapp_addcard_bypromocode.json",
-                        "transition": "push"
+                        "url": "{{$global.jason_url}}/merchantapp_getamount.json",
+                        "transition": "push",
+                        "options": {
+                          "activity": "Topup",
+                          "currency": "{{$global.default_currency}}",
+                          "next_url": "{{$global.jason_url}}/merchantapp_topup_byqrcode.json"
+                        }
                       }
                     }
                   },{
@@ -91,8 +96,13 @@
                     "action": {
                       "type": "$href",
                       "options": {
-                        "url": "{{$global.jason_url}}/consumerapp_addcard_bypromocode.json",
-                        "transition": "push"
+                        "url": "{{$global.jason_url}}/merchantapp_getamount.json",
+                        "transition": "push",
+                        "options": {
+                          "activity": "Topup",
+                          "currency": "{{$global.default_currency}}",
+                          "next_url": "{{$global.jason_url}}/merchantapp_redeem_byqrcode.json"
+                        }
                       }
                     }
                   }
