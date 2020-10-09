@@ -99,7 +99,7 @@
                         "url": "{{$global.jason_url}}/merchantapp_getamount.json",
                         "transition": "push",
                         "options": {
-                          "activity": "Topup",
+                          "activity": "Redeem",
                           "currency": "{{$global.default_currency}}",
                           "next_url": "{{$global.jason_url}}/merchantapp_redeem_byqrcode.json"
                         }
