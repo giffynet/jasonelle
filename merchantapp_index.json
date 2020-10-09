@@ -5,7 +5,24 @@
       "description": "This app enable merchant to  accept digital gift card powered by Giffy",
       "actions": {
         "$load": {
-          "type": "$render"
+          "type": "$network.request",
+          "options": {
+            "url": "{{$global.jason_url}}/transactionlist.json",
+            "method": "get",
+            "header" : {
+              "Authorization" : "Bearer {{$global.jwt_token}}"
+            }
+          },
+          "success": {
+            "type": "$render"
+          },
+          "error": {
+            "type": "$util.toast",
+            "options": {
+              "type": "warning",
+              "text": "Unable to fetch transactions list from server. Please check your internet connection."
+            }
+          }
         },
         "$foreground": {
           "type": "$reload"
@@ -32,112 +49,224 @@
               },
               "action": {
                 "type": "$util.picker",
-                "title": "Batch Menu",
                 "options": {
                   "items": [{
-                    "text": "Batch Details",
+                    "text": "My Profile",
                     "action": {
                       "type": "$href",
                       "options": {
-                        "url": "{{$global.jason_url}}/merchantapp_batchdetails.json",
+                        "url": "{{$global.jason_url}}/consumerapp_profile.json",
                         "transition": "push"
                       }
-                    },
-                    "success": {
-                      "type": "$render"
-                    },
-                    "error": {
                     }
                   },{
-                    "text": "Batch Total",
+                    "text": "My Inbox",
                     "action": {
                       "type": "$href",
                       "options": {
-                        "url": "{{$global.jason_url}}/merchantapp_batchsummary.json",
+                        "url": "{{$global.jason_url}}/consumerapp_inbox.json",
                         "transition": "push"
                       }
-                    },
-                    "success": {
-                      "type": "$render"
-                    },
-                    "error": {
                     }
                   }]
                 }
               }
             }
           },
+          "layers": [{
+            "type": "image",
+            "url": "{{$global.jason_url}}/addcard.png",
+            "style": {
+              "bottom": "20",
+              "right": "20",
+              "width": "60"
+            },
+            "action": {
+              "type": "$util.picker",
+              "options": {
+                "items": [
+                  {
+                    "text": "Buy Gift Card",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_addcard_byqrcode.json",
+                        "transition": "push"
+                      }
+                    }
+                  },{
+                    "text": "Enter Promo Code",
+                    "action": {
+                      "type": "$href",
+                      "options": {
+                        "url": "{{$global.jason_url}}/consumerapp_addcard_bypromocode.json",
+                        "transition": "push"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }],
           "sections": [{
+            "items": [{
+              "type": "vertical",
+              "components": [{
+                "type": "label",
+                "text": "Current Batch",
+                "style": {
+                  "size": "20",
+                  "color": "#e67620"
+                }
+              }]
+            }]
+          },{
+            "items": {
+              "{{#each $jason.transactions}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "20",
+                  "distribution": "equalspacing"
+                },
+                "components": [{
+                  "type": "label",
+                  "text": "{{programme_name}} from {{issuer_name}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "button",
+                  "url": "{{image_url}}",
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_cardactivation.json",
+                    "transition": "push",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "consumer_id": "{{consumer_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                },{
+                  "type": "label",
+                  "text": "Balance: {{currency}} {{total_balance}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "space",
+                  "style": {
+                    "height": "10"
+                  }
+                },{
+                  "type": "button",
+                  "text": "Terms and Conditions*",
+                  "style": {
+                    "size": "12"
+                  },
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_cardtermsandconditions.json",
+                    "transition": "modal",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                }]
+              }
+            }
+          },{
+            "items": [{
+              "type": "vertical",
+              "components": [{
+                "type": "label",
+                "text": "Active",
+                "style": {
+                  "size": "20",
+                  "color": "#e67620"
+                }
+              }]
+            }]
+          },{
+            "items": {
+              "{{#each $jason.consumercards.active}}": {
+                "type": "vertical",
+                "style": {
+                  "align": "center",
+                  "padding": "20",
+                  "distribution": "equalspacing"
+                },
+                "components": [{
+                  "type": "label",
+                  "text": "{{programme_name}} from {{issuer_name}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "button",
+                  "url": "{{image_url}}",
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_cardtranshistory.json",
+                    "transition": "push",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "consumer_id": "{{consumer_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                },{
+                  "type": "label",
+                  "text": "Balance: {{currency}} {{total_balance}}",
+                  "style": {
+                    "size": "18"
+                  }
+                },{
+                  "type": "label",
+                  "text": "Valid until: {{expiry_date}}",
+                  "style": {
+                    "size": "12"
+                  }
+                },{
+                  "type": "space",
+                  "style": {
+                    "height": "10"
+                  }
+                },{
+                  "type": "button",
+                  "text": "Terms and Conditions*",
+                  "style": {
+                    "size": "12"
+                  },
+                  "href": {
+                    "url": "{{$global.jason_url}}/consumerapp_cardtermsandconditions.json",
+                    "transition": "modal",
+                    "options": {
+                      "card_id": "{{card_id}}",
+                      "programme_id": "{{programme_id}}"
+                    }
+                  }
+                }]
+              }
+            }
+          },{
             "items": [{
               "type": "vertical",
               "style": {
                 "align": "center",
                 "padding": "20",
-                "border": "none"
+                "distribution": "equalspacing"
               },
               "components": [{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
                 "type": "button",
-                "text": "Sales",
+                "text": "View expired cards",
                 "style": {
-                  "background": "#379ce9",
-                  "color": "#ffffff",
-                  "height": "80",
-                  "size": "24"
+                  "background": "#ffffff",
+                  "color": "#6200ee",
+                  "size": "14"
                 },
                 "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_sales.json",
-                  "transition": "push"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
-                "type": "button",
-                "text": "Topup",
-                "style": {
-                  "background": "#379ce9",
-                  "color": "#ffffff",
-                  "height": "80",
-                  "size": "24"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_getamount.json",
-                  "transition": "push",
-                  "options": {
-                    "activity": "Topup",
-                    "currency": "{{$global.default_currency}}",
-                    "next_url": "{{$global.jason_url}}/merchantapp_topup_byqrcode.json"
-                  }
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
-                "type": "button",
-                "text": "Redeem",
-                "style": {
-                  "background": "#379ce9",
-                  "color": "#ffffff",
-                  "height": "80",
-                  "size": "24"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_getamount.json",
-                  "transition": "push",
-                  "options": {
-                    "activity": "Redeem",
-                    "currency": "{{$global.default_currency}}",
-                    "next_url": "{{$global.jason_url}}/merchantapp_redeem_byqrcode.json"
-                  }
+                  "url": "{{$global.jason_url}}/consumerapp_index2.json",
+                  "transition": "replace"
                 }
               }]
             }]
