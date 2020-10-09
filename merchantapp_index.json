@@ -74,12 +74,14 @@
             }
           },
           "layers": [{
-            "type": "image",
-            "url": "{{$global.jason_url}}/addcard.png",
+            "type": "button",
+            "text": "+",
             "style": {
-              "bottom": "20",
-              "right": "20",
-              "width": "60"
+              "background": "#379ce9",
+              "color": "#ffffff",
+              "corner_radius": "50",
+              "height": "50",
+              "size": "20"
             },
             "action": {
               "type": "$util.picker",
