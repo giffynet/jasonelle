@@ -136,5 +136,41 @@
       "consumer_id": "1",
       "consumer_name" : "Optimus Prime"
     }
+  ],
+  "transactions_prev": [
+    {
+      "batch_id": "1",
+      "transaction_id": "123456789012",
+      "transaction_type": "sales",
+      "transaction_datetime": "15-07-2020 14:00",
+      "transaction_currency": "SGD",
+      "transaction_amount": "50",
+      "status_code": "0",
+      "status_text": "Successful",
+      "programme_id": "3",
+      "programme_name": "Cashback Gift Card",
+      "basic_amount": 50,
+      "bonus_amount": 0,
+      "excess_amount": 0,
+      "consumer_id": "1",
+      "consumer_name" : "Optimus Prime"
+    },
+    {
+      "batch_id": "1",
+      "transaction_id": "123456789012",
+      "transaction_type": "redeem",
+      "transaction_datetime": "15-07-2020 14:00",
+      "transaction_currency": "SGD",
+      "transaction_amount": "25",
+      "status_code": "0",
+      "status_text": "Successful",
+      "programme_id": "3",
+      "programme_name": "Cashback Gift Card",
+      "basic_amount": 50,
+      "bonus_amount": 5,
+      "excess_amount": 0,
+      "consumer_id": "1",
+      "consumer_name" : "Optimus Prime"
+    }
   ]
 }
