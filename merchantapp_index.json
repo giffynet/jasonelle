@@ -43,32 +43,15 @@
               "background": "#e98437"
             },
             "menu": {
-              "text": "MORE",
+              "text": "BATCH TOTAL",
               "style": {
                 "color": "#FFFFFF"
               },
               "action": {
-                "type": "$util.picker",
+                "type": "$href",
                 "options": {
-                  "items": [{
-                    "text": "My Profile",
-                    "action": {
-                      "type": "$href",
-                      "options": {
-                        "url": "{{$global.jason_url}}/consumerapp_profile.json",
-                        "transition": "push"
-                      }
-                    }
-                  },{
-                    "text": "My Inbox",
-                    "action": {
-                      "type": "$href",
-                      "options": {
-                        "url": "{{$global.jason_url}}/consumerapp_inbox.json",
-                        "transition": "push"
-                      }
-                    }
-                  }]
+                  "url": "{{$global.jason_url}}/merchantapp_batchsummary.json",
+                  "transition": "push"
                 }
               }
             }
@@ -82,9 +65,9 @@
               "corner_radius": "50",
               "bottom": "20",
               "right": "20",
-              "width": "50"
-              "height": "50",
-              "size": "30"
+              "width": "60"
+              "height": "60",
+              "size": "60"
             },
             "action": {
               "type": "$util.picker",
