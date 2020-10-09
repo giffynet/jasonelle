@@ -159,6 +159,28 @@
                 }]
               }
             }
+          },{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "align": "center",
+                "padding": "20",
+                "distribution": "equalspacing"
+              },
+              "components": [{
+                "type": "button",
+                "text": "View previous batch",
+                "style": {
+                  "background": "#ffffff",
+                  "color": "#6200ee",
+                  "size": "14"
+                },
+                "href": {
+                  "url": "{{$global.jason_url}}/merchantapp_index2.json",
+                  "transition": "replace"
+                }
+              }]
+            }]
           }]
         }
       }
