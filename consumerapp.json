@@ -25,7 +25,7 @@
             "success": {
               "type": "$href",
               "options": {
-                "url": "{{$global.jason_url}}/consumerapp_index.json",
+                "url": "{{$global.jason_url}}/consumerapp_getpin.json",
                 "transition": "replace"
               }
             },
@@ -44,7 +44,12 @@
       }
     },
     "body": {
-      "background": "#ffffff"
+      "background": "#ffffff",
+      "header": {
+        "style": {
+          "size": "18"
+        }
+      }
     }
   }
 }
