@@ -80,7 +80,7 @@
                 "options": {
                   "jwt_token": "{{$jason.jwt_token}}",
                   "default_currency": "{{$jason.default_currency}}",
-                  "default_dialingcode": "{{$jason.default_dialingcode}}"
+                  "default_dialing": "{{$jason.default_dialing}}"
                 },
                 "success": {
                   "type": "$href",
