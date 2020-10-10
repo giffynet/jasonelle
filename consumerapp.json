@@ -23,10 +23,16 @@
               }
             },
             "success": {
-              "type": "$href",
+              "type": "$global.set",
               "options": {
-                "url": "{{$global.jason_url}}/consumerapp_getpin.json",
-                "transition": "replace"
+                "jwt_token": "{{$jason.jwt_token}}"
+              },
+              "success": {
+                "type": "$href",
+                "options": {
+                  "url": "{{$global.jason_url}}/consumerapp_getpin.json",
+                  "transition": "replace"
+                }
               }
             },
             "error": {
