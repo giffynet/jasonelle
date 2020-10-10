@@ -80,14 +80,40 @@
                   "height": "80",
                   "size": "24"
                 },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno.json",
-                  "transition": "replace",
+                "action": {
+                  "type": "$util.picker",
                   "options": {
-                    "amount": "{{$params.amount}}",
-                    "programme_id": "{{$params.programme_id}}",
-                    "programme_name": "{{$params.programme_name}}",
-                    "currency": "{{$params.currency}}"
+                    "items": [{
+                      "text": "Enter Customer PIN Code",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_custgencode.json",
+                          "transition": "replace",
+                          "options": {
+                            "amount": "{{$params.amount}}",
+                            "programme_id": "{{$params.programme_id}}",
+                            "programme_name": "{{$params.programme_name}}",
+                            "currency": "{{$params.currency}}"
+                          }
+                        }
+                      }
+                    },{
+                      "text": "Generate Merchant PIN Code",
+                      "action": {
+                        "type": "$href",
+                        "options": {
+                          "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_merchgencode.json",
+                          "transition": "replace",
+                          "options": {
+                            "amount": "{{$params.amount}}",
+                            "programme_id": "{{$params.programme_id}}",
+                            "programme_name": "{{$params.programme_name}}",
+                            "currency": "{{$params.currency}}"
+                          }
+                        }
+                      }
+                    }]
                   }
                 }
               }]
