@@ -47,6 +47,12 @@
                 "href": {
                   "url": "{{$global.jason_url}}/merchantapp_sales_byqrcode.json",
                   "transition": "push"
+                  "options": {
+                    "amount": "{{$params.amount}}",
+                    "programme_id": "{{$params.programme_id}}",
+                    "programme_name": "{{$params.programme_name}}",
+                    "currency": "{{$params.currency}}"
+                  }
                 }
               },{
                 "type": "space",
@@ -64,11 +70,12 @@
                 },
                 "href": {
                   "url": "{{$global.jason_url}}/merchantapp_getamount.json",
-                  "transition": "push",
+                  "transition": "replace",
                   "options": {
-                    "activity": "Topup",
-                    "currency": "{{$global.default_currency}}",
-                    "next_url": "{{$global.jason_url}}/merchantapp_topup_byqrcode.json"
+                    "amount": "{{$params.amount}}",
+                    "programme_id": "{{$params.programme_id}}",
+                    "programme_name": "{{$params.programme_name}}",
+                    "currency": "{{$params.currency}}"
                   }
                 }
               }]
