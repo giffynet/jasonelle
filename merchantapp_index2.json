@@ -90,7 +90,7 @@
                         "options": {
                           "activity": "Topup",
                           "currency": "{{$global.default_currency}}",
-                          "next_url": "{{$global.jason_url}}/merchantapp_topup_byqrcode.json"
+                          "next_url": "{{$global.jason_url}}/merchantapp_topup_options.json"
                         }
                       }
                     }
@@ -104,7 +104,7 @@
                         "options": {
                           "activity": "Redeem",
                           "currency": "{{$global.default_currency}}",
-                          "next_url": "{{$global.jason_url}}/merchantapp_redeem_byqrcode.json"
+                          "next_url": "{{$global.jason_url}}/merchantapp_redeem_options.json"
                         }
                       }
                     }
