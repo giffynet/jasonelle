@@ -27,6 +27,9 @@
         "$foreground": {
           "type": "$reload"
         },
+        "$show": {
+          "type": "$reload"
+        },
         "$pull": {
           "type": "$reload"
         }
