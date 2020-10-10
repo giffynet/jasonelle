@@ -5,7 +5,13 @@
       "description": "This app enable merchant to  accept digital gift card powered by Giffy",
       "actions": {
         "$load": {
-          "type": "$render"
+          "type": "$global.reset",
+          "options": {
+            "items": ["jwt_token", "default_currency", "default_dialing"]
+          },
+          "success": {
+            "type": "$render"
+          }
         }
       },
       "templates": {
@@ -79,26 +85,21 @@
                 "type": "$global.set",
                 "options": {
                   "jwt_token": "{{$jason.jwt_token}}"
+                  "default_currency": "{{$jason.default_currency}}",
+                  "default_dialing": "{{$jason.default_dialing}}"
                 },
                 "success": {
-                  "type": "$global.set",
+                  "type": "$href",
                   "options": {
-                    "default_currency": "{{$jason.default_currency}}",
-                    "default_dialing": "{{$jason.default_dialing}}"
-                  },
-                  "success": {
-                    "type": "$href",
-                    "options": {
-                      "url": "{{$global.jason_url}}/merchantapp_index.json",
-                      "transition": "replace"
-                    }
+                    "url": "{{$global.jason_url}}/merchantapp_index.json",
+                    "transition": "replace"
                   }
                 }
               },
               "error": {
                 "type": "$global.reset",
                 "options": {
-                  "items": ["jwt_token"]
+                  "items": ["jwt_token", "default_currency", "default_dialing"]
                 },
                 "success": {
                   "type": "$util.toast",
