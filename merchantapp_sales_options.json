@@ -21,7 +21,8 @@
             },
             "style": {
               "background": "#e98437"
-            },
+            }
+          },
           "sections": [{
             "items": [{
               "type": "vertical",
