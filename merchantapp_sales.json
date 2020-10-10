@@ -74,7 +74,7 @@
                   "href": {
                     "url": [
                       {
-                        "{{#if initial_value>0}}": "{{$global.jason_url}}/merchantapp_sales_bymobileno.json"
+                        "{{#if initial_value>0}}": "{{$global.jason_url}}/merchantapp_sales_options.json"
                       },
                       {
                         "{{#else}}": "{{$global.jason_url}}/merchantapp_getamount.json"
@@ -94,7 +94,7 @@
                       "programme_id": "{{programme_id}}",
                       "programme_name": "{{programme_name}}",
                       "currency": "{{currency}}",
-                      "next_url": "{{$global.jason_url}}/merchantapp_sales_bymobileno.json"
+                      "next_url": "{{$global.jason_url}}/merchantapp_sales_options.json"
                     }
                   }
                 }]
