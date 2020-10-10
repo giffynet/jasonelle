@@ -73,7 +73,7 @@
               },{
                 "type": "textfield",
                 "name": "mobile_number",
-                "value": "{{$global.default_dialingcode}}",
+                "value": "{{$global.default_dialing}}",
                 "placeholder": "e.g. 6221811198111",
                 "keyboard": "phone",
                 "style": {
