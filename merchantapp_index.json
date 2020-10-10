@@ -111,6 +111,16 @@
             }
           }],
           "sections": [{
+            "header": {
+              "type": "label",
+              "text": "↻ Pull to refresh",
+              "style": {
+                "background": "#ffffff",
+                "color": "#6200ee",
+                "size": "14",
+                "align": "center",
+              },
+            },
             "items": [{
               "type": "vertical",
               "components": [{
