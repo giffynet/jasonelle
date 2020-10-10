@@ -113,7 +113,7 @@
           "sections": [{
             "header": {
               "type": "label",
-              "text": "↻ Pull to refresh",
+              "text": "⟳ Pull to refresh",
               "style": {
                 "background": "#ffffff",
                 "color": "#6200ee",
