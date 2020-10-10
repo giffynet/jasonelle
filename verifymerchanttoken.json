@@ -1,3 +1,5 @@
 {
-  "status": 200
+  "jwt_token": "mytoken",
+  "default_currency": "SGD",
+  "default_dialing": ""
 }
