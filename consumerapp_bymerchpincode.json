@@ -59,7 +59,6 @@
               },{
                 "type": "textfield",
                 "name": "dynamic_pin1",
-                "placeholder": "e.g. 123456",
                 "keyboard": "number",
                 "style": {
                   "size": "48"
@@ -94,12 +93,41 @@
                     }
                   },
                   "success": {
-                    "type": "$href",
+                    "type": "$util.alert",
                     "options": {
-                      "url": "{{$global.jason_url}}/consumerapp_transactionresult.json",
-                      "transition": "replace",
+                      "title": "{{$jason.transaction_type}}",
+                      "description": "Please confirm [{{$jason.transaction_type}}] of {{$jason.transaction_currency}} {{$jason.transaction_amount}}"
+                    },
+                    "success": {
+                      "type": "$network.request",
                       "options": {
-                        "transaction_id": "{{$jason.transaction_id}}"
+                        "url": "{{$global.jason_url}}/transaction.json",
+                        "method": "get",
+                        "header" : {
+                          "Authorization": "Bearer {{$global.jwt_token}}",
+                          "content_type": "json"
+                        },
+                        "data": {
+                          "card_id": "{{params.card_id}}",
+                          "merchant_dynamic_pin": "{{$get.dynamic_pin1}}"
+                        }
+                      },
+                      "success": {
+                        "type": "$href",
+                        "options": {
+                          "url": "{{$global.jason_url}}/consumerapp_transactionresult.json",
+                          "transition": "replace",
+                          "options": {
+                            "transaction_id": "{{$jason.transaction_id}}"
+                          }
+                        }
+                      },
+                      "error": {
+                        "type": "$util.toast",
+                        "options": {
+                          "text": "Transaction is not successful",
+                          "type": "warning"
+                        }
                       }
                     }
                   },
@@ -110,11 +138,6 @@
                       "type": "warning"
                     }
                   }
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
                 }
               }]
             }]
