@@ -114,7 +114,7 @@
           "sections": [{
             "header": {
               "type": "label",
-              "text": "⟳ Pull to refresh",
+              "text": "⟳ Pull to refresh {{$global.inapp_pin}}",
               "style": {
                 "background": "#ffffff",
                 "color": "#6200ee",
