@@ -95,8 +95,8 @@
                   "success": {
                     "type": "$util.alert",
                     "options": {
-                      "title": "{{$jason.transaction_type}}",
-                      "description": "Please confirm [{{$jason.transaction_type}}] of {{$jason.transaction_currency}} {{$jason.transaction_amount}}"
+                      "title": "Do you want to continue?",
+                      "description": "Please confirm {{$jason.transaction_type}} of {{$jason.transaction_currency}} {{$jason.transaction_amount}}"
                     },
                     "success": {
                       "type": "$network.request",
