@@ -90,6 +90,7 @@
               },{
                 "type": "textfield",
                 "name": "mobile_number2",
+                "value": "{{$global.default_dialing}}",
                 "keyboard": "phone",
                 "style": {
                   "size": "18"
@@ -125,11 +126,14 @@
                     }
                   },
                   "success": {
-                    "type": "$set",
+                    "type": "href",
+                    "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_merchgencode_result.json",
+                    "transition": "replace",
                     "options": {
-                      "dynamic_pin2": "{{$jason.dynamic_pin}}{{$get.mobile_number2}}",
+                      "dynamic_pin2": "{{$jason.dynamic_pin}}",
                       "expiry": "{{$jason.expiry}}",
                       "expiry2": "Expired by: {{$jason.expiry}}",
+                      "mobile_number2": "{{$get.mobile_number2}}"
                     },
                     "success": {
                       "type": "$render"
