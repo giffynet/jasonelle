@@ -111,9 +111,38 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$util.toast",
+                  "type": "$network.request",
                   "options": {
-                    "text": "{{$get.mobile_number2}}"
+                    "url": "{{$global.jason_url}}/merchgencode.json",
+                    "method": "get",
+                    "header" : {
+                      "Authorization": "Bearer {{$global.jwt_token}}",
+                      "content_type": "json"
+                    },
+                    "data": {
+                      "amount": "{{$params.amount}}",
+                      "currency": "{{$params.currency}}",
+                      "transaction_type": "topup",
+                      "customer_mobile_no": "{{$get.mobile_number2}}"
+                    }
+                  },
+                  "success": {
+                    "type": "$set",
+                    "options": {
+                      "dynamic_pin2": "{{$jason.dynamic_pin}}{{$get.mobile_number2}}",
+                      "expiry": "{{$jason.expiry}}",
+                      "expiry2": "Expired by: {{$jason.expiry}}"
+                    },
+                    "success": {
+                      "type": "$render"
+                    }
+                  },
+                  "error": {
+                    "type": "$util.toast",
+                    "options": {
+                      "text": "Unable to generate dynamic PIN. Please check your internet connection.",
+                      "type": "warning"
+                    }
                   }
                 }
               },{
