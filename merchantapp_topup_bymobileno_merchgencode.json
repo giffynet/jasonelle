@@ -29,21 +29,6 @@
             },
             "style": {
               "background": "#e98437"
-            },
-            "menu": {
-              "text": "SHARE",
-              "style": {
-                "color": "#FFFFFF"
-              },
-              "action": {
-                "type": "$util.share",
-                "options": {
-                  "items": [{
-                    "type": "text",
-                    "text": "Please enter PIN: {{$get.dynamic_pin2}} by {{$get.expiry}} to topup {{$params.currency}} {{$params.amount}} to your gift card, which is registered under mobile number +{{$get.mobile_number2}}. Thank you for your support."
-                  }]
-                }
-              }
             }
           },
           "sections": [{
@@ -131,6 +116,8 @@
                       "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_merchgencode_result.json",
                       "transition": "replace",
                       "options": {
+                        "amount": "{{$params.amount}}",
+                        "currency": "{{$params.currency}}",
                         "dynamic_pin2": "{{$jason.dynamic_pin}}",
                         "expiry": "{{$jason.expiry}}",
                         "expiry2": "Expired by: {{$jason.expiry}}",
