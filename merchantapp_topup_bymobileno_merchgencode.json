@@ -134,9 +134,6 @@
                       "expiry": "{{$jason.expiry}}",
                       "expiry2": "Expired by: {{$jason.expiry}}",
                       "mobile_number2": "{{$get.mobile_number2}}"
-                    },
-                    "success": {
-                      "type": "$render"
                     }
                   },
                   "error": {
