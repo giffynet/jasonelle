@@ -131,7 +131,8 @@
                     "options": {
                       "dynamic_pin2": "{{$jason.dynamic_pin}}{{$get.mobile_number2}}",
                       "expiry": "{{$jason.expiry}}",
-                      "expiry2": "Expired by: {{$jason.expiry}}"
+                      "expiry2": "Expired by: {{$jason.expiry}}",
+                      "mobile_number": "{{$get.mobile_number2}}"
                     },
                     "success": {
                       "type": "$render"
