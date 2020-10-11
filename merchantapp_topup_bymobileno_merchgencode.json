@@ -101,34 +101,6 @@
                   "height": "20"
                 }
               },{
-                "type": "label",
-                "text": "Merchant's Dynamic PIN",
-                "style": {
-                  "size": "18"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
-                "type": "label",
-                "text": "{{$get.dynamic_pin2}}",
-                "style": {
-                  "size": "48"
-                }
-              },{
-                "type": "label",
-                "text": "{{$get.expiry2}}",
-                "style": {
-                  "size": "12"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
                 "type": "button",
                 "text": "Get PIN",
                 "style": {
@@ -171,6 +143,25 @@
                       "type": "warning"
                     }
                   }
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "label",
+                "text": "{{$get.dynamic_pin2}}",
+                "style": {
+                  "size": "48",
+                  "align": "center"
+                }
+              },{
+                "type": "label",
+                "text": "{{$get.expiry2}}",
+                "style": {
+                  "size": "12",
+                  "align": "center"
                 }
               }]
             }]
