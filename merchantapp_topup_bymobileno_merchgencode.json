@@ -126,7 +126,7 @@
                     }
                   },
                   "success": {
-                    "type": "href",
+                    "type": "$href",
                     "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_merchgencode_result.json",
                     "transition": "replace",
                     "options": {
