@@ -127,13 +127,15 @@
                   },
                   "success": {
                     "type": "$href",
-                    "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_merchgencode_result.json",
-                    "transition": "replace",
                     "options": {
-                      "dynamic_pin2": "{{$jason.dynamic_pin}}",
-                      "expiry": "{{$jason.expiry}}",
-                      "expiry2": "Expired by: {{$jason.expiry}}",
-                      "mobile_number2": "{{$get.mobile_number2}}"
+                      "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_merchgencode_result.json",
+                      "transition": "replace",
+                      "options": {
+                        "dynamic_pin2": "{{$jason.dynamic_pin}}",
+                        "expiry": "{{$jason.expiry}}",
+                        "expiry2": "Expired by: {{$jason.expiry}}",
+                        "mobile_number2": "{{$get.mobile_number2}}"
+                      }
                     }
                   },
                   "error": {
