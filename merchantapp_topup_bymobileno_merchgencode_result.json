@@ -115,6 +115,11 @@
                   "align": "center"
                 }
               },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
                 "type": "button",
                 "text": "OK",
                 "style": {
