@@ -91,7 +91,6 @@
                 "type": "textfield",
                 "name": "mobile_number2",
                 "value": "{{$global.default_dialing}}",
-                "placeholder": "e.g. 6221811198111",
                 "keyboard": "phone",
                 "style": {
                   "size": "18"
@@ -116,7 +115,7 @@
                 "type": "label",
                 "text": "{{$get.dynamic_pin2}}",
                 "style": {
-                  "size": "24"
+                  "size": "48"
                 }
               },{
                 "type": "label",
