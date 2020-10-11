@@ -9,7 +9,8 @@
           "options": {
             "dynamic_pin2": "",
             "expiry2": "",
-            "expiry": ""
+            "expiry": "",
+            "mobile_number2": ""
           },
           "success": {
             "type": "$render"
