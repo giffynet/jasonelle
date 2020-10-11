@@ -130,33 +130,13 @@
                     "size": "20"
                   },
                   "action": {
-                    "type": "$util.picker",
+                    "type": "$href",
                     "options": {
-                      "items": [{
-                        "text": "Show My PIN Code",
-                        "action": {
-                          "type": "$href",
-                          "options": {
-                            "url": "{{$global.jason_url}}/consumerapp_bycustpincode.json",
-                            "transition": "push",
-                            "options": {
-                              "card_id": "{{$params.card_id}}"
-                            }
-                          }
-                        }
-                      },{
-                        "text": "Enter Merchant PIN Code",
-                        "action": {
-                          "type": "$href",
-                          "options": {
-                            "url": "{{$global.jason_url}}/consumerapp_bymerchpincode.json",
-                            "transition": "push",
-                            "options": {
-                              "card_id": "{{$params.card_id}}"
-                            }
-                          }
-                        }
-                      }]
+                      "url": "{{$global.jason_url}}/consumerapp_bymerchpincode.json",
+                      "transition": "push",
+                      "options": {
+                        "card_id": "{{$params.card_id}}"
+                      }
                     }
                   }
                 }]
