@@ -129,7 +129,7 @@
                   "success": {
                     "type": "$set",
                     "options": {
-                      "dynamic_pin2": "{{$jason.dynamic_pin}}",
+                      "dynamic_pin2": "{{$jason.dynamic_pin}}{{$get.mobile_number2}}",
                       "expiry": "{{$jason.expiry}}",
                       "expiry2": "Expired by: {{$jason.expiry}}"
                     },
