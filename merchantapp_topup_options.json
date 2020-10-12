@@ -81,39 +81,16 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$util.picker",
+                  "type": "$href",
                   "options": {
-                    "items": [{
-                      "text": "Enter Customer PIN Code",
-                      "action": {
-                        "type": "$href",
-                        "options": {
-                          "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_custgencode.json",
-                          "transition": "replace",
-                          "options": {
-                            "amount": "{{$params.amount}}",
-                            "programme_id": "{{$params.programme_id}}",
-                            "programme_name": "{{$params.programme_name}}",
-                            "currency": "{{$params.currency}}"
-                          }
-                        }
-                      }
-                    },{
-                      "text": "Generate Merchant PIN Code",
-                      "action": {
-                        "type": "$href",
-                        "options": {
-                          "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_merchgencode.json",
-                          "transition": "replace",
-                          "options": {
-                            "amount": "{{$params.amount}}",
-                            "programme_id": "{{$params.programme_id}}",
-                            "programme_name": "{{$params.programme_name}}",
-                            "currency": "{{$params.currency}}"
-                          }
-                        }
-                      }
-                    }]
+                    "url": "{{$global.jason_url}}/merchantapp_topup_bymobileno_merchgencode.json",
+                    "transition": "replace",
+                    "options": {
+                      "amount": "{{$params.amount}}",
+                      "programme_id": "{{$params.programme_id}}",
+                      "programme_name": "{{$params.programme_name}}",
+                      "currency": "{{$params.currency}}"
+                    }
                   }
                 }
               }]
