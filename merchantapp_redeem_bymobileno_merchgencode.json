@@ -29,21 +29,6 @@
             },
             "style": {
               "background": "#e98437"
-            },
-            "menu": {
-              "text": "SHARE",
-              "style": {
-                "color": "#FFFFFF"
-              },
-              "action": {
-                "type": "$util.share",
-                "options": {
-                  "items": [{
-                    "type": "text",
-                    "text": "Please enter PIN: {{$get.dynamic_pin2}} by {{$get.expiry}} to redeem {{$params.currency}} {{$params.amount}} from your gift card, which is registered under mobile number +{{$get.mobile_number2}}. Thank you for your support."
-                  }]
-                }
-              }
             }
           },
           "sections": [{
