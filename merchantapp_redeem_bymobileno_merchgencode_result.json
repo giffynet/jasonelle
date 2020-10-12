@@ -62,7 +62,7 @@
                 }
               },{
                 "type": "label",
-                "text": "Topup {{$params.currency}} {{$params.amount}}",
+                "text": "Redeem {{$params.currency}} {{$params.amount}}",
                 "style": {
                   "size": "18"
                 }
