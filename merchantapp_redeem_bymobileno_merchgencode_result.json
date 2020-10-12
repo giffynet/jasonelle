@@ -1,0 +1,141 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Giffy Merchant - Redeem by Mobile No",
+      "description": "This app enable merchant to  accept digital gift card powered by Giffy",
+      "actions": {
+        "$load": {
+          "type": "$set",
+          "options": {
+            "dynamic_pin2": "{{$params.dynamic_pin2}}",
+            "expiry2": "{{$params.expiry2}}",
+            "expiry": "{{$params.expiry}}",
+            "mobile_number2": "{{$params.mobile_number2}}"
+          },
+          "success": {
+            "type": "$render"
+          }
+        },
+        "$foreground": {
+          "type": "$reload"
+        }
+      },
+      "templates": {
+        "body": {
+          "background": "#ffffff",
+          "header": {
+            "title": {
+            "type": "image",
+            "url": "{{$global.jason_url}}/giffy_circle_small.png"
+            },
+            "style": {
+              "background": "#e98437"
+            },
+            "menu": {
+              "text": "SHARE",
+              "style": {
+                "color": "#FFFFFF"
+              },
+              "action": {
+                "type": "$util.share",
+                "options": {
+                  "items": [{
+                    "type": "text",
+                    "text": "Please enter PIN: {{$get.dynamic_pin2}} by {{$get.expiry}} to redeem {{$params.currency}} {{$params.amount}} to your gift card, which is registered under mobile number +{{$get.mobile_number2}}. Thank you for your support."
+                  }]
+                }
+              }
+            }
+          },
+          "sections": [{
+            "items": [{
+              "type": "vertical",
+              "style": {
+                "align": "center",
+                "padding": "20",
+                "distribution": "equalspacing"
+              },
+              "components": [{
+                "type": "space",
+                "style": {
+                "height": "20"
+                }
+              },{
+                "type": "label",
+                "text": "Topup {{$params.currency}} {{$params.amount}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "label",
+                "text": "Enter Customer's Mobile Number",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "label",
+                "text": "Please include country and area code",
+                "style": {
+                  "size": "12"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "label",
+                "text": "{{$get.mobile_number2}}",
+                "value": "{{$global.default_dialing}}",
+                "style": {
+                  "size": "18"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "label",
+                "text": "{{$get.dynamic_pin2}}",
+                "style": {
+                  "size": "48",
+                  "align": "center"
+                }
+              },{
+                "type": "label",
+                "text": "{{$get.expiry2}}",
+                "style": {
+                  "size": "12",
+                  "align": "center"
+                }
+              },{
+                "type": "space",
+                "style": {
+                  "height": "20"
+                }
+              },{
+                "type": "button",
+                "text": "OK",
+                "style": {
+                  "background": "#379ce9",
+                  "color": "#ffffff",
+                  "height": "80",
+                  "size": "24"
+                },
+                "action": {
+                  "type": "$ok"
+                }
+              }]
+            }]
+          }]
+        }
+      }
+    }
+  }
+}
