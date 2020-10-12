@@ -101,34 +101,6 @@
                   "height": "20"
                 }
               },{
-                "type": "label",
-                "text": "Merchant's Dynamic PIN",
-                "style": {
-                  "size": "18"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
-                "type": "label",
-                "text": "{{$get.dynamic_pin2}}",
-                "style": {
-                  "size": "48"
-                }
-              },{
-                "type": "label",
-                "text": "{{$get.expiry2}}",
-                "style": {
-                  "size": "12"
-                }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
                 "type": "button",
                 "text": "Get PIN",
                 "style": {
@@ -154,14 +126,18 @@
                     }
                   },
                   "success": {
-                    "type": "$set",
+                    "type": "$href",
                     "options": {
-                      "dynamic_pin2": "{{$jason.dynamic_pin}}",
-                      "expiry": "{{$jason.expiry}}",
-                      "expiry2": "Expired by: {{$jason.expiry}}"
-                    },
-                    "success": {
-                      "type": "$render"
+                      "url": "{{$global.jason_url}}/merchantapp_redeem_bymobileno_merchgencode_result.json",
+                      "transition": "replace",
+                      "options": {
+                        "amount": "{{$params.amount}}",
+                        "currency": "{{$params.currency}}",
+                        "dynamic_pin2": "{{$jason.dynamic_pin}}",
+                        "expiry": "{{$jason.expiry}}",
+                        "expiry2": "Expired by: {{$jason.expiry}}",
+                        "mobile_number2": "{{$get.mobile_number2}}"
+                      }
                     }
                   },
                   "error": {
