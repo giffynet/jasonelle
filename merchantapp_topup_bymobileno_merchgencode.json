@@ -133,25 +133,6 @@
                     }
                   }
                 }
-              },{
-                "type": "space",
-                "style": {
-                  "height": "20"
-                }
-              },{
-                "type": "label",
-                "text": "{{$get.dynamic_pin2}}",
-                "style": {
-                  "size": "48",
-                  "align": "center"
-                }
-              },{
-                "type": "label",
-                "text": "{{$get.expiry2}}",
-                "style": {
-                  "size": "12",
-                  "align": "center"
-                }
               }]
             }]
           }]
