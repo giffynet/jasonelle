@@ -26,7 +26,7 @@
               "type": "$href",
               "options": {
                 "url": "https://giffynet.github.io/jasonelle/testing2.json",
-                "transition": "push",
+                "transition": "replace",
                 "options": {
                   "url": "{{$jason.url}}"
                 }
