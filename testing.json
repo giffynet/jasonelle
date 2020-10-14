@@ -16,7 +16,16 @@
         },
         "handleLink": [
           {
-            "{{#if $jason.url.indexOf('facebook') != -1 || $jason.url.indexOf('addthis') != -1 }}": {
+            "{{#if $jason.url.indexOf('facebook') != -1}}": {
+              "type": "$href",
+              "options": {
+                "url": "{{$jason.url}}",
+                "view": "web"
+              }
+            }
+          },
+          {
+            "{{#elseif $jason.url.indexOf('addthis') != -1}}": {
               "type": "$href",
               "options": {
                 "url": "{{$jason.url}}",
