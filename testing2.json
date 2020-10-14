@@ -5,7 +5,10 @@
       "description": "Opens tab if external link",
       "actions": {
         "$load": {
-          "type": "$render"
+          "type": "util.toast",
+          "options": {
+            "text": "{{$params.url}}"
+          }
         },
         "global_debug" : {
           "type" : "$debug.on",
