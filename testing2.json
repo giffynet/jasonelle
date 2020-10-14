@@ -5,10 +5,7 @@
       "description": "Opens tab if external link",
       "actions": {
         "$load": {
-          "type": "$util.toast",
-          "options": {
-            "text": "{{$params.url}}"
-          }
+          "type": "$render"
         },
         "global_debug" : {
           "type" : "$debug.on",
@@ -40,14 +37,16 @@
             }
           }
         ]
-      }
-    },
-    "body": {
-      "background": {
-        "type": "html",
-        "url": "{{$params.url}}",
-        "action": {
-          "trigger": "handleLink"
+      },
+      "templates": {
+        "body": {
+          "background": {
+            "type": "html",
+            "url": "{{$params.url}}",
+            "action": {
+              "trigger": "handleLink"
+            }
+          }
         }
       }
     }
