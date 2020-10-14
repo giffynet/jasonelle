@@ -4,6 +4,9 @@
       "title": "Der Postillon",
       "description": "Opens tab if external link",
       "actions": {
+        "$show": {
+          "type": "$reload"
+        },
         "global_debug" : {
           "type" : "$debug.on",
           "options" :
