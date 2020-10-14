@@ -1,0 +1,49 @@
+{
+  "$jason": {
+    "head": {
+      "title": "Der Postillon",
+      "description": "Opens tab if external link",
+      "actions": {
+        "global_debug" : {
+          "type" : "$debug.on",
+          "options" :
+          {
+            "class"  : "trace|debug|info|warning|error|fatal"
+          }
+        },
+        "handleLink": [
+          {
+            "{{#if $jason.url.indexOf('facebook') != -1 }}": {
+              "type": "$href",
+              "options": {
+                "url": "{{$jason.url}}",
+                "view": "web"
+              }
+            }
+          },
+          {
+            "{{#else}}": {
+              "type": "$href",
+              "options": {
+                "url": "https://giffynet.github.io/jasonelle/testing2.json",
+                "transition": "replace",
+                "options": {
+                  "url": "{{$jason.url}}"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "body": {
+      "background": {
+        "type": "html",
+        "url": "{{$params.url}}",
+        "action": {
+          "trigger": "handleLink"
+        }
+      }
+    }
+  }
+}
