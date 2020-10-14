@@ -16,7 +16,7 @@
         },
         "handleLink": [
           {
-            "{{#if $jason.url.indexOf('facebook') != -1 }}": {
+            "{{#if $jason.url.indexOf('facebook') != -1 || $jason.url.indexOf('addthis') != -1 }}": {
               "type": "$href",
               "options": {
                 "url": "{{$jason.url}}",
@@ -26,14 +26,7 @@
           },
           {
             "{{#else}}": {
-              "type": "$href",
-              "options": {
-                "url": "https://giffynet.github.io/jasonelle/testing2.json",
-                "transition": "push",
-                "options": {
-                  "url": "{{$jason.url}}"
-                }
-              }
+              "type": "$default",
             }
           }
         ]
