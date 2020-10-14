@@ -51,8 +51,8 @@
             "items": [{
               "type": "label",
               "text": "{{$params.url}}"
-            }
-          }
+            }]
+          }]
         }
       }
     }
