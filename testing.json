@@ -55,7 +55,11 @@
                 "description": "{{$jason.url}}",
               },
               "success": {
-                "type": "$default"
+                "type": "$href",
+                "options": {
+                  "url": "{{$jason.url}}",
+                  "view": "web"
+                }
               }
             }
           }
