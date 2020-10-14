@@ -23,7 +23,14 @@
           },
           {
             "{{#else}}": {
-              "type": "$default"
+              "type": "$href",
+              "options": {
+                "url": "https://giffynet.github.io/jasonelle/testing2.json",
+                "transition": "replace",
+                "options": {
+                  "url": "{{$jason.url}}"
+                }
+              }
             }
           }
         ]
