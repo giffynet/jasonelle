@@ -7,6 +7,12 @@
         "$load": {
           "type": "$render"
         },
+        "$show": {
+          "type": "$util.toast",
+          "options": {
+            "text": "{{$params.url}}"
+          }
+        },
         "global_debug" : {
           "type" : "$debug.on",
           "options" :
