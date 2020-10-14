@@ -17,25 +17,46 @@
         "handleLink": [
           {
             "{{#if $jason.url.indexOf('facebook') != -1}}": {
-              "type": "$href",
+              "type": "$util.alert",
               "options": {
-                "url": "{{$jason.url}}",
-                "view": "web"
+                "title": "continue?",
+                "description": "{{$jason.url}}",
+              },
+              "success": {
+                "type": "$href",
+                "options": {
+                  "url": "{{$jason.url}}",
+                  "view": "web"
+                }
               }
             }
           },
           {
             "{{#elseif $jason.url.indexOf('addthis') != -1}}": {
-              "type": "$href",
+              "type": "$util.alert",
               "options": {
-                "url": "{{$jason.url}}",
-                "view": "web"
+                "title": "continue?",
+                "description": "{{$jason.url}}",
+              },
+              "success": {
+                "type": "$href",
+                "options": {
+                  "url": "{{$jason.url}}",
+                  "view": "web"
+                }
               }
             }
           },
           {
             "{{#else}}": {
-              "type": "$default",
+              "type": "$util.alert",
+              "options": {
+                "title": "continue?",
+                "description": "{{$jason.url}}",
+              },
+              "success": {
+                "type": "$default"
+              }
             }
           }
         ]
