@@ -7,12 +7,6 @@
         "$load": {
           "type": "$render"
         },
-        "$show": {
-          "type": "$util.toast",
-          "options": {
-            "text": "{{$params.url}}"
-          }
-        },
         "global_debug" : {
           "type" : "$debug.on",
           "options" :
@@ -51,6 +45,12 @@
             "url": "{{$params.url}}",
             "action": {
               "trigger": "handleLink"
+            }
+          },
+          "sections": [{
+            "items": [{
+              "type": "label",
+              "text": "{{$params.url}}"
             }
           }
         }
