@@ -5,7 +5,7 @@
       "description": "Opens tab if external link",
       "actions": {
         "$load": {
-          "type": "util.toast",
+          "type": "$util.toast",
           "options": {
             "text": "{{$params.url}}"
           }
