@@ -156,7 +156,7 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$back"
+                  "type": "$ok"
                 }
               }]
             }]
