@@ -42,59 +42,7 @@
               "size": "18",
               "align": "center"
             }
-          }],
-          "footer": {
-            "tabs": {
-              "style": {
-                "background": "#ffffff",
-                "color:disabled": "#707070",
-                "color": "#f4511e"
-              },
-              "items": [{
-                "text": "SCAN QR",
-                "image": "{{$global.jason_url}}/scanqr_icon.png",
-                "style": {
-                  "height": "30"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_redeem_byqrcode.json",
-                  "transition": "replace",
-                  "options": {
-                    "currency": "{{$params.currency}}",
-                    "amount": "{{$params.amount}}"
-                  }
-                }
-              }, {
-                "text": "CUST PIN",
-                "image": "{{$global.jason_url}}/pinentry_icon.png",
-                "style": {
-                  "height": "30"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_redeem_bymobileno_custgencode.json",
-                  "transition": "replace",
-                  "options": {
-                    "currency": "{{$params.currency}}",
-                    "amount": "{{$params.amount}}"
-                  }
-                }
-              }, {
-                "text": "MERCH PIN",
-                "image": "{{$global.jason_url}}/showpin_icon.png",
-                "style": {
-                  "height": "30"
-                },
-                "href": {
-                  "url": "{{$global.jason_url}}/merchantapp_redeem_bymobileno_merchgencode.json",
-                  "transition": "replace",
-                  "options": {
-                    "currency": "{{$params.currency}}",
-                    "amount": "{{$params.amount}}"
-                  }
-                }
-              }]
-            }
-          }
+          }]
         }
       },
       "actions": {
