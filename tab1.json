@@ -82,31 +82,9 @@
                   "size": "24"
                 },
                 "action": {
-                  "type": "$network.request",
+                  "type": "$util.toast",
                   "options": {
-                    "url": "{{$global.jason_url}}/transaction.json",
-                    "method": "get",
-                    "header" : {
-                      "Authorization": "Bearer {{$global.jwt_token}}",
-                      "content_type": "json"
-                    },
-                    "data": {
-                      "transaction_type": "sales",
-                      "payload": "{{$get.mobile_number}}"
-                    }
-                  },
-                  "success": {
-                    "type": "$util.toast",
-                    "options": {
-                      "text": "Transaction is successful"
-                    }
-                  },
-                  "error": {
-                    "type": "$util.toast",
-                    "options": {
-                      "text": "Transaction is not successful",
-                      "type": "warning"
-                    }
+                    "text": "Transaction is successful"
                   }
                 }
               }]
