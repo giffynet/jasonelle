@@ -4,7 +4,6 @@
       "title": "Giffy - Add Card By QR Code",
       "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
       "actions": {
-        "$push.onmessage": "{{$jason.action}}",
         "$load": {
           "type": "$network.request",
           "options": {
@@ -15,7 +14,7 @@
             }
           },
           "success": {
-            "type": "$push.register"
+            "type": "$render"
           },
           "error": {
             "type": "$util.toast",
