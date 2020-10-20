@@ -15,7 +15,7 @@
             }
           },
           "success": {
-            "type": "$render"
+            "type": "$push.register"
           },
           "error": {
             "type": "$util.toast",
