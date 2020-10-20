@@ -62,7 +62,7 @@
         "expiry_date": "01-08-2025"
       }
     ],
-    "others": [
+    "expired": [
       {
         "card_id": "5",
         "image_url": "https://giffynet.github.io/jasonelle/giftcard2.png",
