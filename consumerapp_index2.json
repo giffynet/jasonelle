@@ -275,7 +275,7 @@
             }]
           },{
             "items": {
-              "{{#each $jason.consumercards.others}}": {
+              "{{#each $jason.consumercards.expired}}": {
                 "type": "vertical",
                 "style": {
                   "align": "center",
