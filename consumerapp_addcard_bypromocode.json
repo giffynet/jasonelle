@@ -50,7 +50,6 @@
               },{
                 "type": "textfield",
                 "name": "promo_code",
-                "placeholder": "e.g. FREE10DOLLARS",
                 "style": {
                   "size": "18"
                 }
