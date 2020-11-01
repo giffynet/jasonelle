@@ -121,7 +121,7 @@
                   "error": {
                     "type": "$util.toast",
                     "options": {
-                      "text": "Invalid amount value"
+                      "text": "Invalid Amount"
                     }
                   }
                 }
