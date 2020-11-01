@@ -12,5 +12,12 @@ var val1 = function(data) {
     $agent.trigger("invalidinput");
   }
 }
+var val2 = function(data1, data2) {
+  if (data1 == data2) {
+    $agent.response("match");
+  } else {
+    $agent.trigger("invalidinput");
+  }
+}
 </script>
 </html>
