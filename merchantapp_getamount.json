@@ -95,7 +95,7 @@
                   "type": "$agent.request",
                   "options": {
                     "id": "satu",
-                    "method": "isnumeric",
+                    "method": "md5",
                     "params": ["{{$get.amount}}", true]
                   },
                   "success": {
