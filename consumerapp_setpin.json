@@ -3,7 +3,18 @@
     "head": {
       "title": "Giffy Consumer - Set PIN",
       "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
+      "agents": {
+        "validate": {
+          "url": "https://giffynet.github.io/jasonelle/validate.html"
+        }
+      },
       "actions": {
+        "mismatched": {
+          "type": "$util.toast",
+          "options": {
+            "text": "PIN Mismatched. Please try again."
+          }
+        },
         "$load": {
           "type": "$render"
         }
@@ -113,18 +124,11 @@
               "size": "20"
             },
             "action" : {
-              "type": "$network.request",
+              "type": "$agent.request",
               "options": {
-                "url": "{{$global.jason_url}}/validate.json",
-                "method": "get",
-                "header" : {
-                  "content_type": "json"
-                },
-                "data": {
-                  "operation": "ismatched",
-                  "value1": "{{$get.pin1}}",
-                  "value2": "{{$get.pin2}}"
-                }
+                "id": "validate",
+                "method": "val2",
+                "params": ["{{$get.pin1}}", "{{$get.pin2}}"]
               },
               "success": {
                 "type": "$global.set",
@@ -136,18 +140,6 @@
                   "options": {
                     "url": "{{$global.jason_url}}/consumerapp_index.json",
                     "transition": "replace"
-                  }
-                }
-              },
-              "error": {
-                "type": "$global.reset",
-                "options": {
-                  "items": ["inapp_pin"]
-                },
-                "success": {
-                  "type": "$util.toast",
-                  "options": {
-                    "text": "Failed to verify your PIN. Please try again."
                   }
                 }
               }
