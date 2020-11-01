@@ -2,11 +2,11 @@
 <script>
 var isnumeric = function(data, sync) {
   if (isNaN(data) || data < 1) {
-    result = false;
+    result = "0";
   } else {
-    result = true;
+    result = "1";
   }
-  if (result) {
+  if (result == "1") {
     $agent.response(result);
   } else {
     $agent.trigger("invalidinput");
