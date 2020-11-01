@@ -14,7 +14,7 @@
           "options": {
             "text": "Invalid amount value"
           }
-        }
+        },
         "$load": {
           "type": "$render"
         },
