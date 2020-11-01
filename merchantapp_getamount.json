@@ -95,8 +95,8 @@
                   "type": "$agent.request",
                   "options": {
                     "id": "satu",
-                    "method": "md5",
-                    "params": ["{{$get.amount}}",true]
+                    "method": "isnumeric",
+                    "params": ["{{$get.amount}}"]
                   },
                   "success": {
                     "type": "$href",
