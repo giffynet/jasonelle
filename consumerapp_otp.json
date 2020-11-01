@@ -62,7 +62,6 @@
           },{
             "type": "textfield",
             "name": "otp",
-            "placeholder": "e.g. 123456",
             "keyboard": "number",
             "style": {
               "size": "18"
