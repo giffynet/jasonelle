@@ -1,7 +1,6 @@
 <html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
 <script>
-var md5 = function(data, sync) {
+var isnumeric = function(data) {
   if (isNaN(data) || data < 1) {
     result = false;
   } else {
@@ -10,7 +9,7 @@ var md5 = function(data, sync) {
   if (result) {
     $agent.response(result);
   } else {
-    $agent.trigger("invalidInput");
+    $agent.trigger("invalidinput");
   }
 }
 </script>
