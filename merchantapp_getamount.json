@@ -95,7 +95,7 @@
                   "type": "$agent.request",
                   "options": {
                     "id": "validate",
-                    "method": "validate",
+                    "method": "val1",
                     "params": ["{{$get.amount}}", true]
                   },
                   "success": {
