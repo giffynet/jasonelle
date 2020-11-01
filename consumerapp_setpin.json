@@ -5,7 +5,7 @@
       "description": "This app enable consumer to buy and use digital gift card powered by Giffy",
       "agents": {
         "validate": {
-          "url": "https://giffynet.github.io/jasonelle/validate.html"
+          "url": "{{$global.jason_url}}/validate.html"
         }
       },
       "actions": {
