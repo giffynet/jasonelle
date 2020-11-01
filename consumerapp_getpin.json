@@ -9,7 +9,7 @@
         }
       },
       "actions": {
-        "invalidpin": {
+        "mismatched": {
           "type": "$util.toast",
           "options": {
             "text": "Invalid PIN. Please try again."
