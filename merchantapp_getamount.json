@@ -12,7 +12,7 @@
         "invalidinput": {
           "type": "$util.toast",
           "options": {
-            "text": "Invalid amount value"
+            "text": "Invalid Amount"
           }
         },
         "$load": {
@@ -116,12 +116,6 @@
                         "programme_name": "{{$params.programme_name}}",
                         "currency": "{{$params.currency}}"
                       }
-                    }
-                  },
-                  "error": {
-                    "type": "$util.toast",
-                    "options": {
-                      "text": "Invalid Amount"
                     }
                   }
                 }
