@@ -96,7 +96,7 @@
                   "options": {
                     "id": "satu",
                     "method": "isnumeric",
-                    "params": ["{{$get.amount}}"]
+                    "params": ["{{$get.amount}}", true]
                   },
                   "success": {
                     "type": "$href",
