@@ -2,16 +2,7 @@
 <script>
 var isNumeric = function(data, sync) {
   var result;
-  if (isNaN(data) || data < 1) {
-    result = false;
-  } else {
-    result = true;
-  }
-  if (result) {
-    $agent.response(result);
-  } else {
-    $agent.trigger("invalidInput");
-  }
+  $agent.response("1");
 }
 </script>
 </html>
