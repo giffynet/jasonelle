@@ -4,7 +4,7 @@
       "title": "Giffy Merchant - Get Amount",
       "description": "This app enable merchant to  accept digital gift card powered by Giffy",
       "agents": {
-        "satu": {
+        "validate": {
           "url": "https://giffynet.github.io/jasonelle/validate.html"
         }
       },
@@ -94,8 +94,8 @@
                 "action": {
                   "type": "$agent.request",
                   "options": {
-                    "id": "satu",
-                    "method": "md5",
+                    "id": "validate",
+                    "method": "isnum",
                     "params": ["{{$get.amount}}", true]
                   },
                   "success": {
