@@ -1,7 +1,7 @@
 <html>
 <script>
 var val1 = function(data) {
-  if (!isNaN(data) && data > 0) {
+  if (!isNaN(parseFloat(data)) && parseFloat(data) > 0) {
     result = "1";
   } else {
     result = "0";
