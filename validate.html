@@ -1,10 +1,10 @@
 <html>
 <script>
 var val1 = function(data) {
-  if (isNaN(data) || data < 1) {
-    result = "0";
-  } else {
+  if (!isNaN(data) && data > 0) {
     result = "1";
+  } else {
+    result = "0";
   }
   if (result == "1") {
     $agent.response(result);
