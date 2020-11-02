@@ -79,7 +79,7 @@
                 "type": "textfield",
                 "name": "amount",
                 "placeholder": "e.g. 1500.00",
-                "keyboard": "number",
+                "keyboard": "decimal",
                 "style": {
                   "size": "18"
                 }
