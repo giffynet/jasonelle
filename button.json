@@ -1,0 +1,36 @@
+{
+    "$jason":{
+        "head":{
+            "title": "Button",
+            "description": "Simple buttonn"
+        },
+        "body": {
+            "header": {
+                "title": "Boton",
+                "style": {
+                    "background": "#646464",
+                    "color": "#ffffff"
+                }
+            },
+            "sections":[{
+                "items":[
+                    {
+                        "type": "button",
+                        "text": "LogIn",
+                        "style":{
+                            "color": "#000000",
+                            "size": "20"
+                        },
+                        "action": {
+                            "type": "$util.alert",
+                            "options": {
+                                "title": "Success",
+                                "desctipiton": "Figon"
+                            }                        
+                        }
+                    }
+                ]
+            }]
+        }
+    }
+}
