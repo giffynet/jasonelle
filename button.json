@@ -25,7 +25,7 @@
                             "type": "$util.alert",
                             "options": {
                                 "title": "Success",
-                                "desctipiton": "Figon"
+                                "description": "Figon"
                             }                        
                         }
                     }
