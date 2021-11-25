@@ -1,12 +1,13 @@
+
 {
     "$jason":{
         "head":{
-            "title": "Button",
-            "description": "Simple buttonn"
+            "title": "My App",
+            "description": "Simple App"
         },
         "body": {
             "header": {
-                "title": "Boton",
+                "title": "My App",
                 "style": {
                     "background": "#646464",
                     "color": "#ffffff"
@@ -16,18 +17,43 @@
                 "items":[
                     {
                         "type": "button",
-                        "text": "LogIn",
+                        "text": "JASON 1",
                         "style":{
                             "color": "#000000",
                             "size": "20"
                         },
                         "action": {
-                            "type": "$util.alert",
+                            "type": "$href",
                             "options": {
-                                "title": "Success",
-                                "description": "Figon"
+                                "url": "button.json",
+                                "transition": "replace"
                             }                        
                         }
+                    },
+                    {
+                        "type": "button",
+                        "text": "JASON 2",
+                        "style":{
+                            "color": "#000000",
+                            "size": "20"
+                        },
+                        "action": {
+                            "type": "$href",
+                            "options": {
+                                "url": "button2.json",
+                                "transition": "replace"
+                            }                        
+                        }
+                    },
+                    {
+                         "type": "space",
+                         "style": {
+                             "height": "20"
+                         }
+                    },
+                    {
+                          "type": "label",
+                          "text": "content A"
                     }
                 ]
             }]
