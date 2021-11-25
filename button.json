@@ -25,7 +25,7 @@
                         "action": {
                             "type": "$href",
                             "options": {
-                                "url": "button.json",
+                                "url": "https://giffynet.github.io/jasonelle/button.json",
                                 "transition": "replace"
                             }                        
                         }
@@ -40,7 +40,7 @@
                         "action": {
                             "type": "$href",
                             "options": {
-                                "url": "button2.json",
+                                "url": "https://giffynet.github.io/jasonelle/button2.json",
                                 "transition": "replace"
                             }                        
                         }
